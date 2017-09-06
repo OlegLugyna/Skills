@@ -1,0 +1,93 @@
+//Variables color
+$white: #fff;
+$black: #000;
+$green: #a2ca28;
+$pink: #fd634e;
+$blue-fb: #2e3192;
+$blue-in: #171a8f;
+$blue-tw: #00aeef;
+$red-yt: #ed3123;
+$fonts_gray: #656e74;
+$footer_title: #bec0c2;
+$footer_text: #657684;
+
+
+$font-black: #000;
+
+$fonts-placeholder: #a2b0b7;;
+
+//Variables fonts
+$openSans:'Open Sans', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$openSans_bold:'Open Sans bold', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$openSans_light:'Open Sans light', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$proxima:'Proxima Nova Rg', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$proxima_bold:'Proxima Nova Lt', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$avenir:'Avenir Next LT Pro', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$montserratBold:'MontserratBold', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$montserratRegular:'MontserratRegular', 'Arial', sans-serif, 'Tahoma', sans-serif;
+
+//MIXINS
+@mixin clearfix {
+            &:after {
+              display: block;
+              content: '';
+              clear: both;
+              visibility: hidden;
+              height: 0;
+            }
+}
+
+@mixin placeholder_color {
+  input::-moz-placeholder {
+        color: $fonts-placeholder;
+  }
+  input::-webkit-input-placeholder {
+    color: $fonts-placeholder;
+  }
+}
+
+@mixin text_main {
+  font-family: $openSans;
+  font-size: rem(14);
+  line-height: rem(27);
+  color: $white;
+}
+
+@mixin text_content {
+  font-family: $openSans;
+  font-size: rem(14);
+  line-height: rem(27);
+  color: $fonts_gray
+}
+
+//FUNCTIONS
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+//Styles
+
+h2 {
+  font-family: $openSans;
+  font-size: rem(24);
+}
+
+h3 {
+  font-family: $openSans_light;
+  font-size: rem(35);
+  color: $green;
+}
+
+h4 {
+  font-family: $openSans_light;
+  font-size: rem(40);
+  color: $white;
+}
+
+h5 {
+  font-family: $montserratRegular;
+  font-size: rem(14);
+}
+
+
