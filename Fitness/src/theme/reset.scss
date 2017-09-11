@@ -89,7 +89,7 @@ video {
     padding: 0;
     border: 0;
     font-size: inherit;
-    vertical-align: baseline;
+    //vertical-align: baseline;
 }
 
 html {
@@ -100,7 +100,8 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     line-height: 1;
-    overflow-x: hidden;
+    //overflow-x: hidden;
+
 }
 
 // HTML5 display-role reset for older browsers

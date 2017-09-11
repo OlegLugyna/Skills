@@ -1,0 +1,195 @@
+article {
+  background-color: $pink;
+
+  .content__barel {
+    width: 86.7%;
+    margin: 0 auto;
+
+    .content__wrapper {
+      display: grid;
+      grid-template-columns: 400px 780px;
+
+      .elements {
+
+        i {
+          display: block;
+          height: 359px;
+        }
+
+        .box {
+          padding: 55px  65px 70px 45px;
+          position: relative;
+          background-color: $white;
+          height: 341px;
+
+          &__caption {
+            text-transform: uppercase;
+
+          }
+
+          &__title {
+            text-transform: uppercase;
+            padding: 16px 0 40px;
+          }
+
+          &__text {
+            line-height: 27px;
+            font-size: rem(14);
+            font-family: $openSans;
+          }
+
+          &__icon {
+            display: block;
+            width: 30px;
+            height: 40px;
+            background-image: url(../img/sprite.png);
+            background-repeat: no-repeat;
+            background-position: -74px 0;
+            position: absolute;
+            top: 55px;
+            right: 28px;
+
+          }
+
+
+        }
+
+        &__picture {
+          position: relative;
+
+          &--big {
+            img {
+              display: block;
+              width: 782px;
+              height: rem(359);
+            }
+          }
+
+          .picture__date {
+            position: absolute;
+            top: rem(62);
+            left: rem(60);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            outline: 1px solid red;
+            width: 82%;
+            text-transform: uppercase;
+            color: $white;
+          }
+        }
+      }
+
+      #summer {
+        background-color: $green;
+        height: 341px;
+        width: 781px;
+
+        .box__title {
+          color:$white;
+        }
+
+        .box__text {
+          color: $white;
+        }
+      }
+
+    }
+
+    .content__container {
+      display: grid;
+      grid-template-columns: 780px 400px;
+
+
+
+        i {
+          display: block;
+          height: 359px;
+        }
+
+        .elements__picture--big {
+          i {
+
+            img {
+              display: block;
+              width: 780px;
+
+            }
+
+          }
+        }
+
+
+      .box {
+        background-color: $white;
+        padding: 55px 70px 100px 40px;
+        position: relative;
+
+        &__caption {
+          text-transform: uppercase;
+
+        }
+
+        &__title {
+          text-transform: uppercase;
+          padding: 16px 0 40px;
+        }
+
+        &__text {
+          line-height: 27px;
+          font-size: rem(14);
+          font-family: $openSans;
+
+        }
+
+        &__icon {
+          display: block;
+          width: 35px;
+          height: 40px;
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -189px 0;
+          position: absolute;
+          top: 55px;
+          right: 28px;
+        }
+      }
+
+      #habits {
+        background-color: $green;
+        padding-bottom: 73px;
+
+        .box__caption {
+          color: $white;
+
+        }
+
+        .box__title {
+          color: $white;
+
+        }
+
+        .box__text {
+          color: $white;
+
+        }
+
+        .box__icon {
+          display: block;
+          width: 35px;
+          height: 40px;
+          background-image: url(../img/sprite.png);
+          background-repeat: no-repeat;
+          background-position: -149px 0;
+          position: absolute;
+          top: 55px;
+          right: 28px;
+        }
+
+      }
+
+
+    }
+
+
+  }
+}

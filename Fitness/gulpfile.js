@@ -5,14 +5,14 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var rigger = require('gulp-rigger');
-var autoprefixer = require('gulp-autoprefixer');
+//var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync');
 var cssnano = require('gulp-cssnano');
 var del = require('del');
 var uglify = require('gulp-uglify');
 var babel = require('gulp-babel');
-var imagemin = require('gulp-imagemin');
-var pngquant = require('imagemin-pngquant');
+//var imagemin = require('gulp-imagemin');
+//var pngquant = require('imagemin-pngquant');
 
 // обьект путей нашего проекта
 var paths = {
@@ -62,10 +62,10 @@ gulp.task('bundleCss', function() {
   return gulp.src(paths.src.css)
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('styles.css'))
-    .pipe(autoprefixer({
-      browsers: ['last 2 versions'],
-      cascade: false
-    }))
+    // .pipe(autoprefixer({
+    //   browsers: ['last 2 versions'],
+    //   cascade: false
+    // }))
     .pipe(cssnano())
     .pipe(gulp.dest(paths.dist.css))
     .pipe(browserSync.reload({
@@ -96,14 +96,14 @@ gulp.task('bundleFonts', function() {
 // собираем картинки
 gulp.task('bundleImg', function() {
   return gulp.src(paths.src.img)
-    .pipe(imagemin({
-      progressive: true,
-      svgoPlugins: [{
-        removeViewBox: false
-      }],
-      use: [pngquant()],
-      interlaced: true
-    }))
+    // .pipe(imagemin({
+    //   progressive: true,
+    //   svgoPlugins: [{
+    //     removeViewBox: false
+    //   }],
+    //   use: [pngquant()],
+    //   interlaced: true
+    // }))
     .pipe(gulp.dest(paths.dist.img))
     .pipe(browserSync.reload({
       stream: true

@@ -1,0 +1,37 @@
+.leaders {
+  background-image: url(../img/pic_down1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: rem(805);
+  padding-top: 242px;
+  display: flex;
+  justify-content: center;
+
+
+  .wrapper {
+    width: 55%;
+    color: $white;
+    text-align: center;
+
+    &__title {
+      font-family: $openSans;
+      font-size: rem(45);
+      padding-bottom: 40px;
+    }
+
+    &__text {
+      font-family: $openSans;
+      font-size: rem(14);
+      width: 60%;
+      margin: 0 auto;
+      line-height: 25px;
+    }
+
+
+
+
+
+  }
+
+
+}

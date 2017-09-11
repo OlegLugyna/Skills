@@ -14,7 +14,7 @@ $footer_text: #657684;
 
 $font-black: #000;
 
-$fonts-placeholder: #a2b0b7;;
+$fonts-placeholder: #a2b0b7;
 
 //Variables fonts
 $openSans:'Open Sans', 'Arial', sans-serif, 'Tahoma', sans-serif;
@@ -57,7 +57,7 @@ $montserratRegular:'MontserratRegular', 'Arial', sans-serif, 'Tahoma', sans-seri
   font-family: $openSans;
   font-size: rem(14);
   line-height: rem(27);
-  color: $fonts_gray
+  color: $fonts_gray;
 }
 
 //FUNCTIONS
@@ -71,6 +71,7 @@ $montserratRegular:'MontserratRegular', 'Arial', sans-serif, 'Tahoma', sans-seri
 h2 {
   font-family: $openSans;
   font-size: rem(24);
+  color:$white;
 }
 
 h3 {
@@ -80,9 +81,10 @@ h3 {
 }
 
 h4 {
-  font-family: $openSans_light;
-  font-size: rem(40);
-  color: $white;
+  font-family: $montserratRegular;
+  font-size: rem(14);
+  color: $pink;
+  letter-spacing: 2;
 }
 
 h5 {
