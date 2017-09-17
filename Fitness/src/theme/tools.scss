@@ -1,6 +1,7 @@
 //Variables color
 $white: #fff;
 $black: #000;
+$black-footer: #0d1119;
 $green: #a2ca28;
 $pink: #fd634e;
 $blue-fb: #2e3192;
@@ -38,11 +39,11 @@ $montserratRegular:'MontserratRegular', 'Arial', sans-serif, 'Tahoma', sans-seri
 }
 
 @mixin placeholder_color {
-  input::-moz-placeholder {
-        color: $fonts-placeholder;
+  &::-moz-placeholder {
+        color: $footer_title;
   }
-  input::-webkit-input-placeholder {
-    color: $fonts-placeholder;
+  &::-webkit-input-placeholder {
+    color: $footer_title;
   }
 }
 

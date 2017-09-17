@@ -1,5 +1,6 @@
 .footer {
-  background-color: $black;
+  background-color: $black-footer;
+  height: 100vh;
 
   .container {
     width: 72.5%;
@@ -7,7 +8,7 @@
     padding: 70px 0 30px;
     display: grid;
     grid-template-columns: 31.33% 37.8% 27.87%;
-    grid-column-gap: 3%;
+    grid-column-gap: 2.5%;
 
     &__items {
 
@@ -84,6 +85,50 @@
           background-color: $blue-in;
         }
       }
+    }
+  }
+
+  &__form {
+    width: 72.5%;
+    margin: 0 auto;
+    @include clearfix;
+
+    .form {
+      float: right;
+
+      input {
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        @include placeholder_color;
+      }
+
+      &__name {
+        width: 200px;
+        margin-right: 6px;
+        padding-left: 23px;
+        font-size: rem(14);
+        font-family: $proxima;
+      }
+
+      &__mail {
+        width: 340px;
+        margin-right: 6px;
+        padding-left: 23px;
+        font-size: rem(14);
+        font-family: $proxima;
+      }
+
+      &__btn {
+        width: 180px;
+        background-color: $green;
+        font-size: rem(15);
+        font-family: $proxima_bold;
+        cursor: pointer;
+        color: $white;
+      }
+
     }
   }
 }

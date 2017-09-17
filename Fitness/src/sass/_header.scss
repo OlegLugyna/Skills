@@ -2,11 +2,14 @@ header {
   background-image: url(../img/header_bg.png);
   background-repeat: no-repeat;
   background-position: center;
-  height: rem(890);
-  padding-top: rem(40);
-  display: grid;
-  grid-auto-rows: 50px 260px;
-  grid-gap: 600px;
+  height: 100vh;
+  padding-top: 2.5%;
+  padding-bottom: 9.2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-attachment: fixed;
 
   .menu {
     display: grid;
