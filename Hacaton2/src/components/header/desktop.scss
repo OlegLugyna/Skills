@@ -1,0 +1,71 @@
+& {
+  background-color: $color-header;
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: rem(250) 1fr 320px;
+    grid-template-rows: rem(90);
+
+    .item {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: center;
+
+      &__menu {
+        display: block;
+
+        .menu__icon {
+          width: rem(40);
+          height: rem(30);
+        }
+      }
+
+      &__channels {
+
+        a {
+          text-decoration: none;
+          color: $white;
+          font-family: $montserratBold;
+          font-size: rem(14.7);
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &__center {
+      display: grid;
+      align-self: center;
+      justify-self: center;
+    }
+
+    .box {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-column-gap: rem(45);
+      align-items: center;
+      justify-items: center;
+
+      .connect {
+
+        &__icon {
+          width: rem(35);
+          height: rem(35);
+        }
+      }
+
+      .box__account {
+
+        a {
+
+          img {
+            width: rem(47);
+            height: rem(47);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

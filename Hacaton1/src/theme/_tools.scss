@@ -1,0 +1,70 @@
+//Variables color
+$color-btn: #f96332;
+$white: #fff;
+$fonts_gray: #908d8b;
+
+//Variables fonts
+$montserratBold:'MontserratBold', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$montserratRegular:'MontserratRegular', 'Arial', sans-serif, 'Tahoma', sans-serif;
+
+//MIXINS
+@mixin clearfix {
+            &:after {
+              display: block;
+              content: '';
+              clear: both;
+              visibility: hidden;
+              height: 0;
+            }
+}
+
+@mixin placeholder_color {
+  &__input::-moz-placeholder {
+        color: $white;
+  }
+  &__input::-webkit-input-placeholder {
+    color: $white;
+  }
+}
+
+@mixin text {
+  font-family: $robotoLight;
+  font-size: rem(14);
+  line-height: 18px;
+}
+
+//FUNCTIONS
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+//Styles
+h2 {
+    font-family: $montserratBold;
+    font-size: rem(22);
+}
+
+
+h3 {
+  font-family: $montserratBold;
+  font-size: rem(24);
+  line-height: rem(30);
+}
+
+h4,
+.footer__link a {
+    font-family: $montserratBold;
+    font-size: rem(14);
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+

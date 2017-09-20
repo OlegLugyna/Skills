@@ -1,0 +1,106 @@
+& {
+    background-image: url('../images/bg_pic_mp.png');
+    background-repeat: no-repeat;
+    background-position: center, top;
+    background-size: cover;
+    height: rem(640);
+    padding-top: rem(70);
+
+    &__logo {
+      display: block;
+      width: 51.78%;
+      margin: 0 auto;
+      padding-bottom: rem(70);
+      object-fit: contain;
+
+      a {
+        height: 200px;
+      }
+    }
+
+    .form {
+      width: 87.5%;
+      margin: 0 auto;
+      position: relative;
+
+      &__input {
+        height: rem(70);
+        width: 100%;
+        border-radius: rem(35);
+        margin: rem(7.5) auto;
+        background-color: rgba(#000, .2);
+        font-size: rem(15);
+        padding-left: rem(104);
+        font-family: $montserratRegular;
+        outline: none;
+        border: none;
+      }
+
+      &__icon {
+        display: block;
+        background-image: url(../images/sprite_icon.png);
+        background-repeat: no-repeat;
+
+      }
+
+      .icon__username {
+        background-position: rem(1) rem(-6);
+        position: absolute;
+        width: rem(43);
+        height: rem(43);
+        left: rem(20);
+        top: rem(22);
+      }
+
+      .icon__password {
+        background-position: -49px -2px;
+        height: rem(46);
+        width: rem(39);
+        position: absolute;
+        left: rem(20);
+        top: rem(103);
+      }
+
+      &__input::-moz-placeholder {
+        color: $white;
+      }
+
+      &__input::-webkit-input-placeholder {
+        color: $white;
+      }
+
+      &__btn {
+        height: rem(70);
+        width: 100%;
+        background-color: $color-btn;
+        border-radius: rem(35);
+        text-align: center;
+        margin-top: rem(7.5);
+        font-family: $montserratBold;
+        font-size: rem(18);
+        color: $white;
+      }
+    }
+
+    .box {
+      width: 87.5%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      nav {
+        padding-top: rem(20);
+      }
+
+      a {
+        text-decoration: none;
+        color: $fonts_gray;
+
+        font-size: rem(12);
+        font-family: $montserratRegular;
+
+      }
+
+    }
+
+}

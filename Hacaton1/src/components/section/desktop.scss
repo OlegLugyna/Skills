@@ -1,0 +1,102 @@
+& {
+    background-image: url('../images/bg_pic_mp.png');
+    background-repeat: no-repeat;
+    background-position: center, top;
+    background-size: cover;
+    height: rem(1550);
+    padding-top: rem(438);
+
+    &__logo {
+      display: block;
+      width: 12%;
+      margin: 0 auto;
+      padding-bottom: rem(150);
+      object-fit: contain;
+    }
+
+    .form {
+      width: 64.75%;
+      margin: 0 auto;
+      position: relative;
+
+      &__input {
+        height: rem(112);
+        width: 100%;
+        border-radius: rem(47);
+        margin: rem(15) auto;
+        background-color: rgba(#000, .2);
+        font-size: rem(19);
+        padding-left: rem(127);
+        font-family: $montserratRegular;
+        outline: none;
+        border: none;
+      }
+
+      &__icon {
+        display: block;
+        background-image: url(../images/sprite_icon.png);
+        background-repeat: no-repeat;
+        width: rem(43);
+        height: rem(43);
+      }
+
+      .icon__username {
+        background-position: rem(1) rem(-6);
+        position: absolute;
+        left: rem(36);
+        top: rem(50);
+      }
+
+      .icon__password {
+        background-position: rem(-49) rem(-2);
+        position: absolute;
+        height: rem(46);
+        width: rem(39);
+        left: rem(36);
+        top: rem(188);
+      }
+
+      &__input::-moz-placeholder {
+        color: $white;
+      }
+
+      &__input::-webkit-input-placeholder {
+        color: $white;
+      }
+
+      &__btn {
+        height: rem(112);
+        width: 100%;
+        background-color: $color-btn;
+        border-radius: rem(47);
+        margin-top: rem(42);
+        text-align: center;
+        font-family: $montserratBold;
+        font-size: rem(19);
+        color: $white;
+      }
+    }
+
+    .box {
+      width: 64.75%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      nav {
+        padding-top: rem(50);
+      }
+
+      a {
+        text-decoration: none;
+        color: $fonts_gray;
+
+        font-size: rem(16);
+        font-family: $montserratRegular;
+
+      }
+
+    }
+
+}
+

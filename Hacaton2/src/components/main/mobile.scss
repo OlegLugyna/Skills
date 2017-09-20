@@ -1,0 +1,64 @@
+& {
+  background-image: url(../images/bg_main.png);
+  padding-top: rem(60);
+
+  .container {
+    display: grid;
+    grid-template-rows: rem(80) rem(110) rem(95);
+    justify-items: center;
+
+
+    &__science {
+      font-family: $montserratBold;
+      font-size: rem(25);
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: rem(55);
+    }
+
+    &__btn {
+
+      input {
+        height: rem(63);
+        width: rem(175);
+        border-radius: rem(32.5);
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+
+      }
+
+      input::-moz-placeholder {
+        color: $fonts-placeholder;
+        font-family: $montserratBold;
+      }
+
+      input::-webkit-input-placeholder {
+        color: $fonts-placeholder;
+        font-family: $montserratBold;
+      }
+    }
+
+    &__text {
+
+      p {
+        font-family: $montserratBold;
+        font-size: rem(17.67);
+
+        a{
+          text-decoration: none;
+          color: $white;
+        }
+
+        span {
+          color: $white;
+        }
+      }
+    }
+
+    .followers {
+      display: none;
+    }
+  }
+}

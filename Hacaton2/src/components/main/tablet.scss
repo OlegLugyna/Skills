@@ -1,0 +1,75 @@
+& {
+  background-image: url(../images/bg_main.png);
+  padding-top: rem(136);
+
+  .container {
+    display: grid;
+    grid-template-rows: 118px 290px 76px 102px;
+    justify-items: center;
+
+
+    &__science {
+      font-family: $montserratBold;
+      font-size: rem(67.61);
+      text-transform: uppercase;
+      color: $white;
+      padding-bottom: rem(55);
+    }
+
+    &__btn {
+
+      input {
+        height: rem(76);
+        width: rem(200);
+        border-radius: rem(38);
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        border: none;
+
+      }
+
+      input::-moz-placeholder {
+        color: $fonts-placeholder;
+        font-family: $montserratBold;
+      }
+
+      input::-webkit-input-placeholder {
+        color: $fonts-placeholder;
+        font-family: $montserratBold;
+      }
+    }
+
+    &__text {
+
+      p {
+        font-family: $montserratBold;
+        font-size: rem(17.67);
+
+        a{
+          text-decoration: none;
+          color: $white;
+        }
+
+        span {
+          color: $white;
+        }
+      }
+    }
+
+    .followers {
+      display: grid;
+      grid-template-columns: repeat(5, 45px);
+      grid-column-gap: rem(26);
+
+      &__item {
+
+        img {
+          width: rem(45);
+          height: rem(45);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
