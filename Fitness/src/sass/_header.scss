@@ -35,7 +35,14 @@ header {
             text-transform: uppercase;
             color: $white;
             line-height: 50px;
+
+            &:hover {
+              color: $pink;
+              text-decoration: underline;
+            }
           }
+
+
         }
       }
     }

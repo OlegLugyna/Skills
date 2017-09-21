@@ -13,19 +13,30 @@
     color: $white;
     text-align: center;
 
-    &__title {
-      font-family: $openSans;
-      font-size: rem(45);
-      padding-bottom: 40px;
+    a {
+      text-decoration: none;
+      color: $white;
+
+      &:hover {
+        color: $leaders-font;
+      }
+
+      .wrapper__title {
+        font-family: $openSans;
+        font-size: rem(45);
+        padding-bottom: 40px;
+      }
+
+      .wrapper__text {
+        font-family: $openSans;
+        font-size: rem(14);
+        width: 60%;
+        margin: 0 auto;
+        line-height: 25px;
+      }
     }
 
-    &__text {
-      font-family: $openSans;
-      font-size: rem(14);
-      width: 60%;
-      margin: 0 auto;
-      line-height: 25px;
-    }
+
 
 
 

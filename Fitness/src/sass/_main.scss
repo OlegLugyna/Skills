@@ -6,7 +6,6 @@
     width: 86.7%;
     margin: 0 auto;
 
-
     .content {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
@@ -36,11 +35,9 @@
           font-size: rem(14);
           height: 85px;
           margin-bottom: 30px;
-
         }
 
         &__more {
-
 
           a {
             color: $white;
@@ -49,16 +46,14 @@
             &:hover {
               color: $pink;
             }
-
           }
-
         }
       }
     }
 
     .blocks {
       display: grid;
-      grid-template-rows: repeat(2, 395px);
+      grid-template-rows: repeat(2, 394px);
 
       &__item {
 
@@ -74,7 +69,6 @@
             margin: 0 auto;
             text-transform: uppercase;
             text-align: center;
-
           }
 
           &__title {
@@ -116,7 +110,6 @@
               &:hover {
                 text-decoration: underline;
               }
-
             }
           }
         }
@@ -129,9 +122,10 @@
 
             img {
               display: block;
-              object-fit: contain;
+              object-fit: cover;
+              height: 100%;
+              //width: 100%;
             }
-
           }
 
           &__users {
@@ -147,46 +141,46 @@
               display: inline-block;
               text-decoration: none;
               color: $white;
+
               &:hover {
                 text-decoration: underline;
               }
-
-            i {
-              display: inline-block;
-              width: 35px;
-              height: 35px;
-              background-image: url(../img/sprite.png);
-              background-repeat: no-repeat;
-              //background-position: 0 0;
-              outline: 1px solid red;
-
             }
-            }
+
+              i {
+                display: inline-block;
+                width: 30px;
+                height: 37px;
+                background-image: url(../img/sprite.png);
+                background-repeat: no-repeat;
+                background-position: 0 -6px;
+                position: absolute;
+                top: -16px;
+                right: -35px;
+              }
 
           }
 
           &__users--active {
-            right: rem(40);
+            right: rem(60);
             bottom: rem(45);
           }
 
           &__users--used {
             left: rem(50);
             bottom: rem(45);
-
           }
-
         }
       }
 
       .blocks__item--about {
         display: grid;
-        grid-template-columns: 385px 780px;
+        grid-template-columns: 31.6% 67.55%;
       }
 
       .blocks__item--love {
         display: grid;
-        grid-template-columns: 780px 400px;
+        grid-template-columns: 67.5% 32.5%;
       }
     }
   }
