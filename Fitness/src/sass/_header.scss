@@ -17,7 +17,7 @@ header {
 
     &__logo {
       display: block;
-      padding-left: 52px;
+      padding-left: rem(52);
     }
 
     &__item {
@@ -28,32 +28,30 @@ header {
 
         li {
           display: block;
-          margin-right: 65px;
+          margin-right: rem(65);
 
           a {
             text-decoration: none;
             text-transform: uppercase;
             color: $white;
-            line-height: 50px;
+            line-height: rem(50);
 
             &:hover {
               color: $pink;
               text-decoration: underline;
             }
           }
-
-
         }
       }
     }
   }
 
   .caption {
-    padding-left: 120px;
+    padding-left: rem(120);
 
     a {
       text-transform: uppercase;
-      font:rem(40) $avenir;
+      font: rem(40) $avenir;
       color: $white;
       text-decoration: none;
 
@@ -63,13 +61,13 @@ header {
     }
 
     &__yes {
-      padding-left: 160px;
+      padding-left: rem(160);
 
       p {
         font: rem(15) $openSans_bold;
         color: $white;
         text-transform: uppercase;
-        letter-spacing: 3.5px;
+        letter-spacing: rem(3.5);
 
         span {
           color: $red-yt;

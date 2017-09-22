@@ -13,11 +13,11 @@ article {
 
         i {
           display: block;
-          height: 359px;
+          height: rem(359);
         }
 
         .box {
-          padding: 55px  65px 70px 45px;
+          padding: rem(55)  rem(65) rem(70) rem(45);
           position: relative;
           background-color: $white;
           height: 341px;
@@ -41,25 +41,25 @@ article {
 
           &__title {
             text-transform: uppercase;
-            padding: 16px 0 40px;
+            padding: rem(16) 0 rem(40);
           }
 
           &__text {
-            line-height: 27px;
+            line-height: rem(27);
             font-size: rem(14);
             font-family: $openSans;
           }
 
           &__icon {
             display: block;
-            width: 30px;
-            height: 40px;
+            width: rem(30);
+            height: rem(40);
             background-image: url(../img/sprite.png);
             background-repeat: no-repeat;
-            background-position: -74px 0;
+            background-position: rem(-74) 0;
             position: absolute;
-            top: 55px;
-            right: 28px;
+            top: rem(55);
+            right: rem(28);
           }
         }
 
@@ -92,13 +92,13 @@ article {
                 content: " ";
                 display: inline-block;
                 position: absolute;
-                top: -6px;
-                right: -28px;
-                height: 25px;
-                width: 25px;
+                top: rem(-6);
+                right: rem(-28);
+                height: rem(25);
+                width: rem(25);
                 background-image: url(../img/sprite.png);
                 background-repeat: no-repeat;
-                background-position: -35px -9px;
+                background-position: rem(-35) rem(-9);
               }
             }
           }
@@ -107,7 +107,7 @@ article {
 
       #summer {
         background-color: $green;
-        height: 341px;
+        height: rem(341);
 
         .box__title {
           color:$white;
@@ -125,7 +125,7 @@ article {
 
         i {
           display: block;
-          height: 359px;
+          height: rem(359);
         }
 
         .elements__picture {
@@ -142,9 +142,9 @@ article {
 
       .box {
         background-color: $white;
-        padding: 55px 50px 100px 40px;
+        padding: rem(55) rem(50) rem(100) rem(40);
         position: relative;
-        height: 320px;
+        height: rem(320);
 
         a {
           text-decoration: none;
@@ -165,31 +165,31 @@ article {
 
         &__title {
           text-transform: uppercase;
-          padding: 16px 0 40px;
+          padding: rem(16) 0 rem(40);
         }
 
         &__text {
-          line-height: 27px;
+          line-height: rem(27);
           font-size: rem(14);
           font-family: $openSans;
         }
 
         &__icon {
           display: block;
-          width: 35px;
-          height: 40px;
+          width: rem(35);
+          height: rem(40);
           background-image: url(../img/sprite.png);
           background-repeat: no-repeat;
-          background-position: -189px 0;
+          background-position: rem(-189) 0;
           position: absolute;
-          top: 55px;
-          right: 28px;
+          top: rem(55);
+          right: rem(28);
         }
       }
 
       #habits {
         background-color: $green;
-        padding-bottom: 73px;
+        padding-bottom: rem(73);
 
         .box__caption {
           color: $white;

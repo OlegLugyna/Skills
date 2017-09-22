@@ -3,7 +3,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: rem(805);
-  padding-top: 242px;
+  padding-top: rem(242);
   display: flex;
   justify-content: center;
 
@@ -24,7 +24,7 @@
       .wrapper__title {
         font-family: $openSans;
         font-size: rem(45);
-        padding-bottom: 40px;
+        padding-bottom: rem(40);
       }
 
       .wrapper__text {
@@ -32,7 +32,7 @@
         font-size: rem(14);
         width: 60%;
         margin: 0 auto;
-        line-height: 25px;
+        line-height: rem(25);
       }
     }
 

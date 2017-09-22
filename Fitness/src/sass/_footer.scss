@@ -6,7 +6,7 @@
   .container {
     width: 72.5%;
     margin: 0 auto;
-    padding: 70px 0 30px;
+    padding: rem(70) 0 rem(30);
     display: grid;
     grid-template-columns: 31.33% 37.8% 27.87%;
     grid-column-gap: 2.3%;
@@ -28,11 +28,11 @@
           font-family: $openSans_bold;
           font-size: rem(15);
           color: $footer_title;
-          padding-bottom: 30px;
+          padding-bottom: rem(30);
         }
 
         p {
-          line-height: 25px;
+          line-height: rem(25);
           font-family: $openSans;
           font-size: rem(14);
           color: $footer_text;
@@ -46,7 +46,7 @@
         font-family: $openSans_bold;
         font-size: rem(15);
         color: $footer_title;
-        padding-bottom: 25px;
+        padding-bottom: rem(25);
       }
 
       .links {
@@ -55,8 +55,8 @@
 
         .item {
           display: block;
-          width: 52px;
-          height: 52px;
+          width: rem(52);
+          height: rem(52);
           border-radius: 50%;
 
           a {
@@ -67,8 +67,8 @@
             .item__icon {
               fill: $white;
               margin: auto;
-              width: 20px;
-              height: 20px;
+              width: rem(20);
+              height: rem(20);
             }
           }
         }
@@ -100,33 +100,33 @@
       position: relative;
 
       input {
-        height: 50px;
-        border-radius: 5px;
+        height: rem(50);
+        border-radius: rem(5);
         outline: none;
         border: none;
         @include placeholder_color;
       }
 
       &__name {
-        width: 200px;
-        margin-right: 6px;
-        padding-left: 23px;
+        width: rem(200);
+        margin-right: rem(6);
+        padding-left: rem(23);
         font-size: rem(14);
         font-family: $proxima;
       }
 
       &__mail {
-        width: 340px;
-        margin-right: 6px;
-        padding-left: 23px;
+        width: rem(340);
+        margin-right: rem(6);
+        padding-left: rem(23);
         font-size: rem(14);
         font-family: $proxima;
       }
 
       &__btn {
-        width: 180px;
+        width: rem(180);
         text-align: left;
-        padding-left: 25px;
+        padding-left: rem(25);
         background-color: $green;
         font-size: rem(15);
         font-family: $proxima_bold;
@@ -138,15 +138,14 @@
         content: " ";
         display: inline-block;
         position: absolute;
-        top: 20px;
-        right: 25px;
-        height: 15px;
-        width: 15px;
+        top: rem(19);
+        right: rem(30);
+        height: rem(15);
+        width: rem(15);
         background-image: url(../img/arrow.png);
+        background-size: contain;
         background-repeat: no-repeat;
       }
-
-
     }
   }
 }
