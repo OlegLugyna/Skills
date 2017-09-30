@@ -23,6 +23,30 @@
 
       .block {
         width: 50%;
+
+        .inner {
+          display: flex;
+          justify-content: flex-start;
+
+          &__numeric {
+
+            .numeric__line {
+              width: 20px;
+              height: 7px;
+              background-color: $blue-light;
+              border-radius: 3.5px;
+            }
+          }
+
+          h3 {
+            display: block;
+          }
+        }
+
+        &__text {
+          @include text_content;
+          width: 100%;
+        }
       }
     }
 
@@ -32,6 +56,13 @@
 
     &--grow {
       background-color: $blue_light;
+
+      .row {
+        .block__text {
+          color: $white;
+        }
+
+      }
     }
   }
 
@@ -49,16 +80,52 @@
       }
 
       .block {
-        width: 50%;
+       width: 50%;
+
+       .inner {
+        display: flex;
+        justify-content: flex-start;
+
+        &__numeric {
+
+          .numeric__line {
+            width: 20px;
+            height: 7px;
+            background-color: $blue-light;
+            border-radius: 3.5px;
+          }
+        }
+
+        h3 {
+          display: block;
+        }
       }
+
+        &__text {
+          @include text_content;
+          width: 100%;
+        }
+      }
+
     }
 
     &--collaboration {
       background-color: $gray_light;
+
+
     }
 
     &--grow {
       background-color: $blue_light;
+
+      .row {
+        .block__text {
+          color: $white;
+        }
+
+      }
+
+
     }
   }
 }

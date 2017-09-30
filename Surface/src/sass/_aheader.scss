@@ -1,5 +1,5 @@
 .header {
-  background-color: rgba(21,23,57, .8);
+
   background-image: url(../img/bg_header.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -7,10 +7,11 @@
   background-size: cover;
   background-attachment: fixed;
 
-  //opacity: 0.1;
-  padding: 2.60% 0 5.83%;
-
-
+  &__bakcgraund {
+    background-color: rgba(21,23,57, .9);
+    height: 100%;
+    padding: 2.60% 0 5.83%;
+  }
 
   .container {
     width: 80.20%;
@@ -23,9 +24,9 @@
     .top {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      //padding-bottom: 16.25%;
 
       &__logo {
+
         a {
           display: block;
 
@@ -34,7 +35,6 @@
             width: 200px;
             height: 38px;
             object-fit: cover;
-
           }
         }
       }
@@ -62,7 +62,7 @@
         color: $white;
         font-family: $proximaBt;
         text-transform: uppercase;
-        font-size: rem(90);
+        font-size: rem(70);
         line-height: 0.8;
 
         .middle__second {
@@ -75,7 +75,6 @@
         width: 40%;
         justify-self: end;
 
-
         ul {
           display: flex;
           justify-content: space-between;
@@ -87,7 +86,7 @@
               color: $font_menu;
               text-transform: uppercase;
               font-family: $proximaLt;
-              font-size: rem(14);
+              font-size: rem(12);
 
               &:hover {
                 color: $white;
@@ -103,15 +102,12 @@
       display: flex;
       justify-content: center;
 
-
       a {
         display: block;
-        width: 311px;
-        height: 77px;
-        margin: 0 25px 0;
-        -webkit-border-radius: 39px 38px 38px 39px/38px;
-        -moz-border-radius: 39px 38px 38px 39px/38px;
-        border-radius: 39px 38px 38px 39px/38px;
+        width: 20%;
+        height: 52px;
+        margin: 0 20px 0;
+        border-radius: 27px 27px 27px 27px/27px;
         background-color: $blue_light;
         box-shadow:0 16px 24px $shadow_btn;
         display: flex;
@@ -123,14 +119,14 @@
 
           i {
             display: block;
-            margin-right: 25px;
+            margin-right: 20px;
             width: 36px;
-            height: 38px;
+            height: 34px;
 
             svg {
               fill:$white;
               width: 38px;
-              height: 40px;
+              height: 34px;
             }
           }
 
@@ -147,7 +143,6 @@
 
               span {
                 font-family: $proximaSb;
-
               }
             }
           }

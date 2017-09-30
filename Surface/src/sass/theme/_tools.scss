@@ -5,6 +5,7 @@ $white: #fff;
 $black: #000;
 $blue: #0a0e34;
 $blue_light:#5e42b0;
+$blue_line: #8f7bc8;
 $gray_light: #f6f4fa;
 
 $shadow_btn: #0a0e34;
@@ -45,7 +46,7 @@ $proximaSb:'Proxima Nova Sb', 'Arial', sans-serif, 'Tahoma', sans-serif;
 
 @mixin text_content {
   font-family: $proximaRg;
-  font-size: rem(24);
+  font-size: rem(20);
   line-height: rem(30);
   color: $black;
 }
@@ -60,7 +61,7 @@ $proximaSb:'Proxima Nova Sb', 'Arial', sans-serif, 'Tahoma', sans-serif;
 
 h2 {
   font-family: $proximaBt;
-  font-size: rem(90);
+  font-size: 3.95em;
   color:$font_bigContent;
   text-transform: uppercase;
 }

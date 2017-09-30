@@ -166,7 +166,7 @@ button {
 /*TOOLS: Variables, Mixins, standart styles*/
 h2 {
   font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
-  font-size: 5.625rem;
+  font-size: 3.95em;
   color: #e7e7e7;
   text-transform: uppercase; }
 
@@ -177,14 +177,16 @@ h3 {
   text-transform: uppercase; }
 
 .header {
-  background-color: rgba(21, 23, 57, 0.8);
   background-image: url(../img/bg_header.png);
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
   background-size: cover;
-  background-attachment: fixed;
-  padding: 2.60% 0 5.83%; }
+  background-attachment: fixed; }
+  .header__bakcgraund {
+    background-color: rgba(21, 23, 57, 0.9);
+    height: 100%;
+    padding: 2.60% 0 5.83%; }
   .header .container {
     width: 80.20%;
     margin: 0 auto;
@@ -222,7 +224,7 @@ h3 {
         color: #fff;
         font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
         text-transform: uppercase;
-        font-size: 5.625rem;
+        font-size: 4.375rem;
         line-height: 0.8; }
         .header .container .middle__block .middle__second {
           text-align: right;
@@ -243,7 +245,7 @@ h3 {
               color: #9071ea;
               text-transform: uppercase;
               font-family: "Proxima Nova Lt", "Arial", sans-serif, "Tahoma", sans-serif;
-              font-size: 0.875rem; }
+              font-size: 0.75rem; }
               .header .container .middle .menu ul li a:hover {
                 color: #fff;
                 text-decoration: underline; }
@@ -256,10 +258,10 @@ h3 {
       justify-content: center; }
       .header .container .bottom a {
         display: block;
-        width: 311px;
-        height: 77px;
-        margin: 0 25px 0;
-        border-radius: 39px 38px 38px 39px/38px;
+        width: 20%;
+        height: 52px;
+        margin: 0 20px 0;
+        border-radius: 27px 27px 27px 27px/27px;
         background-color: #5e42b0;
         -webkit-box-shadow: 0 16px 24px #0a0e34;
         box-shadow: 0 16px 24px #0a0e34;
@@ -276,13 +278,13 @@ h3 {
           justify-content: center; }
           .header .container .bottom a .btn__box i {
             display: block;
-            margin-right: 25px;
+            margin-right: 20px;
             width: 36px;
-            height: 38px; }
+            height: 34px; }
             .header .container .bottom a .btn__box i svg {
               fill: #fff;
               width: 38px;
-              height: 40px; }
+              height: 34px; }
           .header .container .bottom a .btn__box .btn__text {
             color: #fff;
             font-family: "Proxima Nova Lt", "Arial", sans-serif, "Tahoma", sans-serif;
@@ -327,10 +329,32 @@ h3 {
       text-align: left; }
     .content .wrapper .row .block {
       width: 50%; }
+      .content .wrapper .row .block .inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
+        .content .wrapper .row .block .inner__numeric .numeric__line {
+          width: 20px;
+          height: 7px;
+          background-color: #5e42b0;
+          border-radius: 3.5px; }
+        .content .wrapper .row .block .inner h3 {
+          display: block; }
+      .content .wrapper .row .block__text {
+        font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        color: #000;
+        width: 100%; }
   .content .wrapper--collaboration {
     background-color: #f6f4fa; }
   .content .wrapper--grow {
     background-color: #5e42b0; }
+    .content .wrapper--grow .row .block__text {
+      color: #fff; }
 
 .content .container {
   display: -webkit-box;
@@ -347,7 +371,257 @@ h3 {
       text-align: left; }
     .content .container .row .block {
       width: 50%; }
+      .content .container .row .block .inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start; }
+        .content .container .row .block .inner__numeric .numeric__line {
+          width: 20px;
+          height: 7px;
+          background-color: #5e42b0;
+          border-radius: 3.5px; }
+        .content .container .row .block .inner h3 {
+          display: block; }
+      .content .container .row .block__text {
+        font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        color: #000;
+        width: 100%; }
   .content .container--collaboration {
     background-color: #f6f4fa; }
   .content .container--grow {
     background-color: #5e42b0; }
+    .content .container--grow .row .block__text {
+      color: #fff; }
+
+.main .wrapper {
+  display: grid;
+  grid-template-rows: repeat(3, 38.54%);
+  margin: 0 auto; }
+  .main .wrapper figure {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 50%); }
+    .main .wrapper figure i img {
+      width: 100%;
+      -o-object-fit: cover;
+      object-fit: cover; }
+    .main .wrapper figure .box {
+      padding: 26% 0 0 14.16%; }
+      .main .wrapper figure .box h2 {
+        padding-bottom: 13%; }
+      .main .wrapper figure .box p {
+        width: 50%;
+        padding-bottom: 10%;
+        font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
+        font-size: 1.25rem;
+        line-height: 1.875rem;
+        color: #000;
+        width: 100%;
+        line-height: 1; }
+      .main .wrapper figure .box__line {
+        width: 20px;
+        height: 7px;
+        background-color: #5e42b0;
+        border-radius: 3.5px; }
+    .main .wrapper figure .row__box--contact {
+      padding: 26% 0 0 20.42%; }
+  .main .wrapper .block {
+    position: absolute;
+    left: 45.5%;
+    top: 29.5%;
+    width: 9.16%;
+    height: 21%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #5e42b0; }
+    .main .wrapper .block__numeric {
+      margin: auto; }
+      .main .wrapper .block__numeric .numeric__number {
+        font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
+        font-size: 1.5rem; }
+      .main .wrapper .block__numeric .numeric__line {
+        width: 25px;
+        height: 7px;
+        background-color: #8f7bc8;
+        border-radius: 3.5px;
+        margin: 0 auto; }
+
+.footer {
+  background-image: url(../img/bg_footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed; }
+  .footer .container {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: rgba(21, 23, 57, 0.9);
+    padding: 13% 2.81% 3.63%; }
+    .footer .container__headline {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%; }
+      .footer .container__headline i {
+        display: block;
+        width: 6.89%;
+        height: 7.4%; }
+        .footer .container__headline i img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          -o-object-fit: cover;
+          object-fit: cover; }
+      .footer .container__headline .title {
+        padding-left: 30px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .footer .container__headline .title h1 {
+          color: #fff;
+          font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
+          text-transform: uppercase;
+          font-size: 4.375rem; }
+        .footer .container__headline .title p {
+          font-size: 1.75rem;
+          font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
+          text-transform: uppercase;
+          color: #a496ca; }
+    .footer .container .bottom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-bottom: 50px; }
+      .footer .container .bottom a {
+        display: block;
+        width: 20%;
+        height: 52px;
+        margin: 0 20px 0;
+        border-radius: 27px 27px 27px 27px/27px;
+        background-color: #5e42b0;
+        -webkit-box-shadow: 0 16px 24px #0a0e34;
+        box-shadow: 0 16px 24px #0a0e34;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .footer .container .bottom a .btn__box {
+          margin: auto;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .footer .container .bottom a .btn__box i {
+            display: block;
+            margin-right: 20px;
+            width: 36px;
+            height: 34px; }
+            .footer .container .bottom a .btn__box i svg {
+              fill: #fff;
+              width: 36px;
+              height: 34px; }
+          .footer .container .bottom a .btn__box .btn__text {
+            color: #fff;
+            font-family: "Proxima Nova Lt", "Arial", sans-serif, "Tahoma", sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            padding-top: 4px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center; }
+            .footer .container .bottom a .btn__box .btn__text p span {
+              font-family: "Proxima Nova Sb", "Arial", sans-serif, "Tahoma", sans-serif; }
+    .footer .container .aside {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
+      .footer .container .aside__logo a {
+        display: block;
+        width: 118px;
+        height: 27px; }
+        .footer .container .aside__logo a img {
+          display: block;
+          -o-object-fit: cover;
+          object-fit: cover; }
+      .footer .container .aside .social__list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: 40%;
+        margin: 0 auto; }
+        .footer .container .aside .social__list a {
+          display: block;
+          height: 30px;
+          width: 30px; }
+          .footer .container .aside .social__list a svg {
+            fill: #fff;
+            height: 25px;
+            width: 25px; }
+      .footer .container .aside .info {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+        .footer .container .aside .info__items {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: end;
+          -ms-flex-pack: end;
+          justify-content: flex-end; }
+          .footer .container .aside .info__items a {
+            font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
+            font-size: 1.125rem;
+            color: #fff; }
+            .footer .container .aside .info__items a:hover {
+              text-decoration: underline;
+              color: #fff; }
+          .footer .container .aside .info__items .items__link:first-child {
+            padding-right: 8px; }
+          .footer .container .aside .info__items .items__link:last-child {
+            border-left: 1px solid #fff;
+            padding-left: 8px; }
