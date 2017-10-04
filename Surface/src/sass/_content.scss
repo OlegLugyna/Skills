@@ -4,6 +4,26 @@
     display: grid;
     grid-template-rows: 150px 150px 200px 300px;
     padding-top: 3.90%;
+
+
+
+  }
+
+  .content__athlets {
+    position: relative;
+  }
+
+  .content__athlets::before {
+    content: '';
+    display: block;
+    height: 798px;
+    width: 516px;
+    position: absolute;
+    background-image: url(../img/football.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 10%;
+    top: 45px;
   }
 
   .wrapper {
@@ -29,9 +49,20 @@
           justify-content: flex-start;
 
           &__numeric {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .numeric__number {
+              font-family: $proximaBt;
+              font-size: rem(18);
+              font-weight: bold;
+              padding-bottom: 1px;
+              text-align: center;
+            }
 
             .numeric__line {
-              width: 20px;
+              width: 23px;
               height: 7px;
               background-color: $blue-light;
               border-radius: 3.5px;
@@ -40,6 +71,7 @@
 
           h3 {
             display: block;
+            padding-left: 11px;
           }
         }
 
@@ -58,12 +90,44 @@
       background-color: $blue_light;
 
       .row {
+
+        .inner {
+
+          .inner__numeric {
+
+            .numeric__number {
+              color: $blue_line;
+            }
+
+            .numeric__line {
+              background-color: $white;
+            }
+          }
+        }
+
         .block__text {
           color: $white;
         }
-
       }
     }
+  }
+
+  .content__players {
+    position: relative;
+  }
+
+  .content__players::before {
+    content: '';
+    display: block;
+    height: 755px;
+    width: 870px;
+    position: absolute;
+    background-image: url(../img/basketball.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    right: -1%;
+    top: -45px;
   }
 
   .container {
@@ -87,9 +151,20 @@
         justify-content: flex-start;
 
         &__numeric {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .numeric__number {
+            font-family: $proximaBt;
+            font-size: rem(18);
+            font-weight: bold;
+            padding-bottom: 1px;
+            text-align: center;
+          }
 
           .numeric__line {
-            width: 20px;
+            width: 23px;
             height: 7px;
             background-color: $blue-light;
             border-radius: 3.5px;
@@ -98,6 +173,7 @@
 
         h3 {
           display: block;
+          padding-left: 11px;
         }
       }
 
@@ -106,26 +182,34 @@
           width: 100%;
         }
       }
-
     }
 
     &--collaboration {
       background-color: $gray_light;
-
-
     }
 
     &--grow {
-      background-color: $blue_light;
+      background-color: $shadow_btn;
 
       .row {
+
+        .inner {
+          .inner__numeric {
+
+            .numeric__number {
+              color: $blue_line;
+            }
+
+            .numeric__line {
+              background-color: $white;
+            }
+          }
+        }
+
         .block__text {
           color: $white;
         }
-
       }
-
-
     }
   }
 }

@@ -186,7 +186,27 @@ h3 {
   .header__bakcgraund {
     background-color: rgba(21, 23, 57, 0.9);
     height: 100%;
-    padding: 2.60% 0 5.83%; }
+    padding: 2.60% 0 5.83%;
+    position: relative; }
+    .header__bakcgraund::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 227px;
+      height: 250px;
+      background-image: url(../img/line_long.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 136px;
+      left: 29.5%;
+      z-index: 0; }
+      @media screen and (max-width: 60.5rem) {
+        .header__bakcgraund::before {
+          top: 107px;
+          left: 37.5%; } }
+    @media screen and (max-width: 60.5rem) {
+      .header__bakcgraund {
+        padding: 6.9% 0 8%; } }
   .header .container {
     width: 80.20%;
     margin: 0 auto;
@@ -201,6 +221,9 @@ h3 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     height: 100%; }
+    @media screen and (max-width: 60.5rem) {
+      .header .container {
+        width: 94.79%; } }
     .header .container .top {
       display: grid;
       grid-template-columns: repeat(2, 1fr); }
@@ -210,10 +233,16 @@ h3 {
           display: block;
           width: 200px;
           height: 38px;
-          -o-object-fit: cover;
-          object-fit: cover; }
+          -o-object-fit: contain;
+          object-fit: contain; }
+          @media screen and (max-width: 60.5rem) {
+            .header .container .top__logo a img {
+              width: 190px;
+              height: 35px; } }
       .header .container .top__title {
         justify-self: end;
+        -ms-flex-item-align: center;
+        align-self: center;
         color: #fff;
         text-transform: uppercase;
         font-family: "Proxima Nova Lt", "Arial", sans-serif, "Tahoma", sans-serif;
@@ -226,12 +255,27 @@ h3 {
         text-transform: uppercase;
         font-size: 4.375rem;
         line-height: 0.8; }
+        @media screen and (max-width: 60.5rem) {
+          .header .container .middle__block {
+            font-size: 4rem;
+            line-height: 80px; } }
+        @media screen and (max-width: 60.5rem) {
+          .header .container .middle__block .middle__first {
+            padding-left: 8.85%; } }
         .header .container .middle__block .middle__second {
           text-align: right;
           padding-bottom: 2.6%; }
+          @media screen and (max-width: 60.5rem) {
+            .header .container .middle__block .middle__second {
+              padding-right: 8.85%;
+              padding-bottom: 3.125%; } }
       .header .container .middle .menu {
         width: 40%;
         justify-self: end; }
+        @media screen and (max-width: 60.5rem) {
+          .header .container .middle .menu {
+            width: 87.85%;
+            justify-self: center; } }
         .header .container .middle .menu ul {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -258,7 +302,7 @@ h3 {
       justify-content: center; }
       .header .container .bottom a {
         display: block;
-        width: 20%;
+        width: 23%;
         height: 52px;
         margin: 0 20px 0;
         border-radius: 27px 27px 27px 27px/27px;
@@ -268,6 +312,11 @@ h3 {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
+        @media screen and (max-width: 60.5rem) {
+          .header .container .bottom a {
+            width: 40.5%;
+            height: 78px;
+            border-radius: 39px 39px 39px 39px/38px; } }
         .header .container .bottom a .btn__box {
           margin: auto;
           display: -webkit-box;
@@ -288,7 +337,7 @@ h3 {
           .header .container .bottom a .btn__box .btn__text {
             color: #fff;
             font-family: "Proxima Nova Lt", "Arial", sans-serif, "Tahoma", sans-serif;
-            font-size: 0.875rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
             display: -webkit-box;
             display: -ms-flexbox;
@@ -300,6 +349,9 @@ h3 {
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center; }
+            @media screen and (max-width: 60.5rem) {
+              .header .container .bottom a .btn__box .btn__text {
+                font-size: 0.875rem; } }
             .header .container .bottom a .btn__box .btn__text p span {
               font-family: "Proxima Nova Sb", "Arial", sans-serif, "Tahoma", sans-serif; }
 
@@ -307,6 +359,21 @@ h3 {
   display: grid;
   grid-template-rows: 150px 150px 200px 300px;
   padding-top: 3.90%; }
+
+.content .content__athlets {
+  position: relative; }
+
+.content .content__athlets::before {
+  content: '';
+  display: block;
+  height: 798px;
+  width: 516px;
+  position: absolute;
+  background-image: url(../img/football.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 10%;
+  top: 45px; }
 
 .content .wrapper {
   display: -webkit-box;
@@ -336,13 +403,31 @@ h3 {
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start; }
-        .content .wrapper .row .block .inner__numeric .numeric__line {
-          width: 20px;
-          height: 7px;
-          background-color: #5e42b0;
-          border-radius: 3.5px; }
+        .content .wrapper .row .block .inner__numeric {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .content .wrapper .row .block .inner__numeric .numeric__number {
+            font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
+            font-size: 1.125rem;
+            font-weight: bold;
+            padding-bottom: 1px;
+            text-align: center; }
+          .content .wrapper .row .block .inner__numeric .numeric__line {
+            width: 23px;
+            height: 7px;
+            background-color: #5e42b0;
+            border-radius: 3.5px; }
         .content .wrapper .row .block .inner h3 {
-          display: block; }
+          display: block;
+          padding-left: 11px; }
       .content .wrapper .row .block__text {
         font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
         font-size: 1.25rem;
@@ -353,8 +438,28 @@ h3 {
     background-color: #f6f4fa; }
   .content .wrapper--grow {
     background-color: #5e42b0; }
+    .content .wrapper--grow .row .inner .inner__numeric .numeric__number {
+      color: #8f7bc8; }
+    .content .wrapper--grow .row .inner .inner__numeric .numeric__line {
+      background-color: #fff; }
     .content .wrapper--grow .row .block__text {
       color: #fff; }
+
+.content .content__players {
+  position: relative; }
+
+.content .content__players::before {
+  content: '';
+  display: block;
+  height: 755px;
+  width: 870px;
+  position: absolute;
+  background-image: url(../img/basketball.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  right: -1%;
+  top: -45px; }
 
 .content .container {
   display: -webkit-box;
@@ -378,13 +483,31 @@ h3 {
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start; }
-        .content .container .row .block .inner__numeric .numeric__line {
-          width: 20px;
-          height: 7px;
-          background-color: #5e42b0;
-          border-radius: 3.5px; }
+        .content .container .row .block .inner__numeric {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+          .content .container .row .block .inner__numeric .numeric__number {
+            font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
+            font-size: 1.125rem;
+            font-weight: bold;
+            padding-bottom: 1px;
+            text-align: center; }
+          .content .container .row .block .inner__numeric .numeric__line {
+            width: 23px;
+            height: 7px;
+            background-color: #5e42b0;
+            border-radius: 3.5px; }
         .content .container .row .block .inner h3 {
-          display: block; }
+          display: block;
+          padding-left: 11px; }
       .content .container .row .block__text {
         font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
         font-size: 1.25rem;
@@ -394,7 +517,11 @@ h3 {
   .content .container--collaboration {
     background-color: #f6f4fa; }
   .content .container--grow {
-    background-color: #5e42b0; }
+    background-color: #0a0e34; }
+    .content .container--grow .row .inner .inner__numeric .numeric__number {
+      color: #8f7bc8; }
+    .content .container--grow .row .inner .inner__numeric .numeric__line {
+      background-color: #fff; }
     .content .container--grow .row .block__text {
       color: #fff; }
 
@@ -444,10 +571,12 @@ h3 {
       margin: auto; }
       .main .wrapper .block__numeric .numeric__number {
         font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
-        font-size: 1.5rem; }
+        font-size: 1.5rem;
+        color: #fff;
+        text-align: center; }
       .main .wrapper .block__numeric .numeric__line {
         width: 25px;
-        height: 7px;
+        height: 8px;
         background-color: #8f7bc8;
         border-radius: 3.5px;
         margin: 0 auto; }
@@ -472,7 +601,32 @@ h3 {
     -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: rgba(21, 23, 57, 0.9);
-    padding: 13% 2.81% 3.63%; }
+    padding: 13% 2.81% 2.2%;
+    position: relative; }
+    .footer .container::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 190px;
+      height: 130px;
+      background-image: url(../img/line_shot.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 156px;
+      left: 34.5%;
+      z-index: 0; }
+    .footer .container::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 195px;
+      height: 190px;
+      background-image: url(../img/line_long.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 112px;
+      right: 29.5%;
+      z-index: 0; }
     .footer .container__headline {
       display: -webkit-box;
       display: -ms-flexbox;

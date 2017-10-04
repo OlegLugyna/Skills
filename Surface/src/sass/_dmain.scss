@@ -69,12 +69,13 @@
         .numeric__number {
           font-family: $proximaBt;
           font-size: rem(24);
-
+          color: $white;
+          text-align: center;
         }
 
         .numeric__line {
           width: 25px;
-          height: 7px;
+          height: 8px;
           background-color: $blue-line;
           border-radius: 3.5px;
           margin: 0 auto;

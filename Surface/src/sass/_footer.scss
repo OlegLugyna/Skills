@@ -12,7 +12,36 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: rgba(21,23,57, .9);
-    padding: 13% 2.81% 3.63%;
+    padding: 13% 2.81% 2.2%;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 190px;
+      height: 130px;
+      background-image: url(../img/line_shot.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 156px;
+      left: 34.5%;
+      z-index: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 195px;
+      height: 190px;
+      background-image: url(../img/line_long.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      top: 112px;
+      right: 29.5%;
+      z-index: 0;
+    }
 
     &__headline {
       display: flex;

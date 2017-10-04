@@ -23,6 +23,14 @@ $proximaLt:'Proxima Nova Lt', 'Arial', sans-serif, 'Tahoma', sans-serif;
 $proximaBt:'Proxima Nova Bt', 'Arial', sans-serif, 'Tahoma', sans-serif;
 $proximaSb:'Proxima Nova Sb', 'Arial', sans-serif, 'Tahoma', sans-serif;
 
+//Media
+// Для телефонов
+$mobile: "screen and (min-width: rem(320))";
+// Для нетбуков и планшетов
+$tablet: "screen and (max-width: rem(968))";
+// Для больших экранов
+$notebook: "screen and (min-width: rem(960))";
+
 
 //MIXINS
 @mixin clearfix {
