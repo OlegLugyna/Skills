@@ -5,7 +5,10 @@
     grid-template-rows: 150px 150px 200px 300px;
     padding-top: 3.90%;
 
-
+    @media #{$tablet} {
+      grid-template-rows: 100px 180px 238px 205px;
+      padding-top: 5%;
+    }
 
   }
 
@@ -24,6 +27,10 @@
     background-size: cover;
     left: 10%;
     top: 45px;
+
+    @media #{$tablet} {
+      left: -25%;
+    }
   }
 
   .wrapper {
@@ -36,17 +43,30 @@
       display: flex;
       justify-content: flex-end;
 
+      @media #{$tablet} {
+        width: 100%;
+      }
+
       h2 {
         width: 50%;
         text-align: left;
+
+        @media #{$tablet} {
+          width: 58%;
+        }
       }
 
       .block {
         width: 50%;
 
+        @media #{$tablet} {
+          width: 58%;
+        }
+
         .inner {
           display: flex;
           justify-content: flex-start;
+          padding-bottom: 30px;
 
           &__numeric {
             display: flex;
@@ -126,8 +146,15 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    right: -1%;
+    right: 0;
     top: -45px;
+
+    @media #{$tablet} {
+      right: -31%;
+      height: 555px;
+      width: 670px;
+      top: -2px;
+    }
   }
 
   .container {
@@ -138,6 +165,10 @@
       width: 72.5%;
       margin: 0 auto;
 
+      @media #{$tablet} {
+        width: 90%;
+      }
+
       h2 {
         width: 50%;
         text-align: left;
@@ -146,9 +177,14 @@
       .block {
        width: 50%;
 
+       @media #{$tablet} {
+         width: 60%;
+       }
+
        .inner {
         display: flex;
         justify-content: flex-start;
+        padding-bottom: 30px;
 
         &__numeric {
           display: flex;

@@ -27,7 +27,7 @@
       z-index: 0;
 
       @media #{$tablet} {
-        top: 107px;
+        top: 110px;
         left: 37.5%;
       }
     }
@@ -53,10 +53,23 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
 
+      @media #{$mobile} {
+        display: block;
+      }
+
       &__logo {
+
+        @media #{$mobile} {
+          width: 64%;
+          margin: 0 auto;
+        }
 
         a {
           display: block;
+
+          @media #{$mobile} {
+            margin: 0 auto;
+          }
 
           img {
             display: block;
@@ -79,6 +92,10 @@
         text-transform: uppercase;
         font-family: $proximaLt;
         font-size: rem(14);
+
+        @media #{$mobile} {
+          display: none;
+        }
       }
     }
 
@@ -90,26 +107,36 @@
         font-family: $proximaBt;
         text-transform: uppercase;
         font-size: rem(70);
-        line-height: 0.8;
+        display: flex;
+        flex-direction: column;
 
         @media #{$tablet} {
           font-size: rem(64);
-          line-height: 80px;
+          //line-height: 80px;
+        }
+
+        @media #{$mobile} {
+          font-size: rem(32);
         }
 
         .middle__first {
+          padding-bottom: 10px;
+
           @media #{$tablet} {
             padding-left: 8.85%;
+            padding-bottom: 0;
+            line-height: 1;
           }
         }
 
         .middle__second {
-          text-align: right;
           padding-bottom: 2.6%;
+          align-self: flex-end;
 
           @media #{$tablet} {
-            padding-right: 8.85%;
-            padding-bottom: 3.125%;
+            padding-bottom: 5.125%;
+            width: 77%;
+            line-height: 1;
           }
         }
       }
@@ -124,12 +151,28 @@
 
         }
 
+        @media #{$mobile} {
+          width: 82%;
+          justify-self: center;
+        }
+
         ul {
           display: flex;
           justify-content: space-between;
 
+
+          @media #{$mobile} {
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+          }
+
           li {
             display: block;
+            @media #{$mobile} {
+              margin-right: 8.5%;
+            }
 
             a {
               color: $font_menu;

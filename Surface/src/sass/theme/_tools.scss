@@ -25,7 +25,7 @@ $proximaSb:'Proxima Nova Sb', 'Arial', sans-serif, 'Tahoma', sans-serif;
 
 //Media
 // Для телефонов
-$mobile: "screen and (min-width: rem(320))";
+$mobile: "screen and (max-width: rem(500))";
 // Для нетбуков и планшетов
 $tablet: "screen and (max-width: rem(968))";
 // Для больших экранов
