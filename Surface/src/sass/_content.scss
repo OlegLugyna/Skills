@@ -10,6 +10,10 @@
       padding-top: 5%;
     }
 
+    @media #{$mobile} {
+      display: block;
+    }
+
   }
 
   .content__athlets {
@@ -31,6 +35,10 @@
     @media #{$tablet} {
       left: -25%;
     }
+
+    @media #{$mobile} {
+      display: none;
+    }
   }
 
   .wrapper {
@@ -45,6 +53,10 @@
 
       @media #{$tablet} {
         width: 100%;
+      }
+
+      @media #{$mobile} {
+        display: block;
       }
 
       h2 {
@@ -150,10 +162,17 @@
     top: -45px;
 
     @media #{$tablet} {
-      right: -31%;
+      right: 0;
       height: 555px;
-      width: 670px;
+      width: 427px;
       top: -2px;
+      overflow: hidden;
+      background-position: left;
+      background-size: cover;
+    }
+
+    @media #{$mobile} {
+      display: none;
     }
   }
 
