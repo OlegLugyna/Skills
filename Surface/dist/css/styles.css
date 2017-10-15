@@ -210,7 +210,7 @@ h3 {
     @media screen and (max-width: 60.5rem) {
       .header__bakcgraund {
         padding: 6.9% 0 8%; } }
-    @media screen and (max-width: 28.125rem) {
+    @media screen and (max-width: 28.75rem) {
       .header__bakcgraund {
         padding: 38px 13px 20px 10px; } }
   .header .container {
@@ -230,22 +230,22 @@ h3 {
     @media screen and (max-width: 60.5rem) {
       .header .container {
         width: 94.79%; } }
-    @media screen and (max-width: 28.125rem) {
+    @media screen and (max-width: 28.75rem) {
       .header .container {
         width: 100%; } }
     .header .container .top {
       display: grid;
       grid-template-columns: repeat(2, 1fr); }
-      @media screen and (max-width: 28.125rem) {
+      @media screen and (max-width: 28.75rem) {
         .header .container .top {
           display: block; } }
-      @media screen and (max-width: 28.125rem) {
+      @media screen and (max-width: 28.75rem) {
         .header .container .top__logo {
           width: 64%;
           margin: 0 auto; } }
       .header .container .top__logo a {
         display: block; }
-        @media screen and (max-width: 28.125rem) {
+        @media screen and (max-width: 28.75rem) {
           .header .container .top__logo a {
             margin: 0 auto; } }
         .header .container .top__logo a img {
@@ -266,7 +266,7 @@ h3 {
         text-transform: uppercase;
         font-family: "Proxima Nova Lt", "Arial", sans-serif, "Tahoma", sans-serif;
         font-size: 0.875rem; }
-        @media screen and (max-width: 28.125rem) {
+        @media screen and (max-width: 28.75rem) {
           .header .container .top__title {
             display: none; } }
     .header .container .middle {
@@ -286,7 +286,7 @@ h3 {
         @media screen and (max-width: 60.5rem) {
           .header .container .middle__block {
             font-size: 4rem; } }
-        @media screen and (max-width: 28.125rem) {
+        @media screen and (max-width: 28.75rem) {
           .header .container .middle__block {
             font-size: 2rem; } }
         .header .container .middle__block .middle__first {
@@ -296,7 +296,7 @@ h3 {
               padding-left: 8.85%;
               padding-bottom: 0;
               line-height: 1; } }
-          @media screen and (max-width: 28.125rem) {
+          @media screen and (max-width: 28.75rem) {
             .header .container .middle__block .middle__first {
               padding: 0 0 20px 0; } }
         .header .container .middle__block .middle__second {
@@ -307,7 +307,7 @@ h3 {
             .header .container .middle__block .middle__second {
               padding-bottom: 5.125%;
               line-height: 1; } }
-          @media screen and (max-width: 28.125rem) {
+          @media screen and (max-width: 28.75rem) {
             .header .container .middle__block .middle__second {
               padding-bottom: 5.125%;
               width: 77%;
@@ -336,7 +336,7 @@ h3 {
             width: 40.5%;
             height: 78px;
             border-radius: 39px 39px 39px 39px/38px; } }
-        @media screen and (max-width: 28.125rem) {
+        @media screen and (max-width: 28.75rem) {
           .header .container .bottom a {
             width: 143px;
             height: 39px;
@@ -354,7 +354,7 @@ h3 {
             margin-right: 20px;
             width: 36px;
             height: 34px; }
-            @media screen and (max-width: 28.125rem) {
+            @media screen and (max-width: 28.75rem) {
               .header .container .bottom a .btn__box i {
                 width: 15px;
                 height: 19px; } }
@@ -362,7 +362,7 @@ h3 {
               fill: #fff;
               width: 36px;
               height: 34px; }
-              @media screen and (max-width: 28.125rem) {
+              @media screen and (max-width: 28.75rem) {
                 .header .container .bottom a .btn__box i svg {
                   width: 15px;
                   height: 19px; } }
@@ -384,7 +384,7 @@ h3 {
             @media screen and (max-width: 60.5rem) {
               .header .container .bottom a .btn__box .btn__text {
                 font-size: 0.875rem; } }
-            @media screen and (max-width: 28.125rem) {
+            @media screen and (max-width: 28.75rem) {
               .header .container .bottom a .btn__box .btn__text {
                 font-size: 0.5rem; } }
             .header .container .bottom a .btn__box .btn__text p span {
@@ -403,7 +403,7 @@ h3 {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between; }
-        @media screen and (max-width: 28.125rem) {
+        @media screen and (max-width: 28.75rem) {
           .header .container .menu ul {
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -412,7 +412,7 @@ h3 {
             justify-content: center; } }
         .header .container .menu ul li {
           display: block; }
-          @media screen and (max-width: 28.125rem) {
+          @media screen and (max-width: 28.75rem) {
             .header .container .menu ul li {
               margin: 0 13px 0; } }
           .header .container .menu ul li a {
@@ -425,7 +425,7 @@ h3 {
               text-decoration: underline; }
     .header .container .middle__menu--down {
       display: none; }
-      @media screen and (max-width: 28.125rem) {
+      @media screen and (max-width: 28.75rem) {
         .header .container .middle__menu--down {
           display: block;
           margin: 0 auto;
@@ -433,7 +433,7 @@ h3 {
           text-align: center; } }
     .header .container .middle__menu--up {
       display: block; }
-      @media screen and (max-width: 28.125rem) {
+      @media screen and (max-width: 28.75rem) {
         .header .container .middle__menu--up {
           display: none; } }
 
@@ -445,7 +445,7 @@ h3 {
     .content section {
       grid-template-rows: 100px 180px 238px 205px;
       padding-top: 5%; } }
-  @media screen and (max-width: 28.125rem) {
+  @media screen and (max-width: 28.75rem) {
     .content section {
       display: block; } }
 
@@ -466,7 +466,7 @@ h3 {
   @media screen and (max-width: 60.5rem) {
     .content .content__athlets::before {
       left: -25%; } }
-  @media screen and (max-width: 28.125rem) {
+  @media screen and (max-width: 28.75rem) {
     .content .content__athlets::before {
       display: none; } }
 
@@ -489,20 +489,28 @@ h3 {
     @media screen and (max-width: 60.5rem) {
       .content .wrapper .row {
         width: 100%; } }
-    @media screen and (max-width: 28.125rem) {
+    @media screen and (max-width: 28.75rem) {
       .content .wrapper .row {
-        display: block; } }
+        display: block;
+        width: 90%; } }
     .content .wrapper .row h2 {
       width: 50%;
       text-align: left; }
       @media screen and (max-width: 60.5rem) {
         .content .wrapper .row h2 {
           width: 58%; } }
+      @media screen and (max-width: 28.75rem) {
+        .content .wrapper .row h2 {
+          font-size: 3.125rem;
+          padding-bottom: 20px; } }
     .content .wrapper .row .block {
       width: 50%; }
       @media screen and (max-width: 60.5rem) {
         .content .wrapper .row .block {
-          width: 58%; } }
+          width: 60%; } }
+      @media screen and (max-width: 28.75rem) {
+        .content .wrapper .row .block {
+          width: 100%; } }
       .content .wrapper .row .block .inner {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -536,12 +544,20 @@ h3 {
         .content .wrapper .row .block .inner h3 {
           display: block;
           padding-left: 11px; }
+          @media screen and (max-width: 28.75rem) {
+            .content .wrapper .row .block .inner h3 {
+              font-size: 1.75rem;
+              letter-spacing: 2.5px; } }
       .content .wrapper .row .block__text {
         font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
         font-size: 1.25rem;
         line-height: 1.875rem;
         color: #000;
         width: 100%; }
+        @media screen and (max-width: 28.75rem) {
+          .content .wrapper .row .block__text {
+            font-size: 0.9375rem;
+            line-height: 1.2; } }
   .content .wrapper--collaboration {
     background-color: #f6f4fa; }
   .content .wrapper--grow {
@@ -552,6 +568,17 @@ h3 {
       background-color: #fff; }
     .content .wrapper--grow .row .block__text {
       color: #fff; }
+
+@media screen and (max-width: 28.75rem) {
+  .content .row__picture {
+    display: block;
+    height: 282px;
+    width: 100%;
+    background-image: url(../img/football.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 28px; } }
 
 .content .content__players {
   position: relative; }
@@ -577,7 +604,7 @@ h3 {
       overflow: hidden;
       background-position: left;
       background-size: cover; } }
-  @media screen and (max-width: 28.125rem) {
+  @media screen and (max-width: 28.75rem) {
     .content .content__players::before {
       display: none; } }
 
@@ -597,11 +624,18 @@ h3 {
     .content .container .row h2 {
       width: 50%;
       text-align: left; }
+      @media screen and (max-width: 28.75rem) {
+        .content .container .row h2 {
+          font-size: 3.125rem;
+          padding-bottom: 20px; } }
     .content .container .row .block {
       width: 50%; }
       @media screen and (max-width: 60.5rem) {
         .content .container .row .block {
           width: 60%; } }
+      @media screen and (max-width: 28.75rem) {
+        .content .container .row .block {
+          width: 100%; } }
       .content .container .row .block .inner {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -635,12 +669,20 @@ h3 {
         .content .container .row .block .inner h3 {
           display: block;
           padding-left: 11px; }
+          @media screen and (max-width: 28.75rem) {
+            .content .container .row .block .inner h3 {
+              font-size: 1.75rem;
+              letter-spacing: 2.5px; } }
       .content .container .row .block__text {
         font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
         font-size: 1.25rem;
         line-height: 1.875rem;
         color: #000;
         width: 100%; }
+        @media screen and (max-width: 28.75rem) {
+          .content .container .row .block__text {
+            font-size: 0.9375rem;
+            line-height: 1.2; } }
   .content .container--collaboration {
     background-color: #f6f4fa; }
   .content .container--grow {
@@ -651,6 +693,17 @@ h3 {
       background-color: #fff; }
     .content .container--grow .row .block__text {
       color: #fff; }
+
+@media screen and (max-width: 28.75rem) {
+  .content .row__picture--basketball {
+    display: block;
+    height: 250px;
+    width: 100%;
+    background-image: url(../img/basketball.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 28px; } }
 
 .main .wrapper {
   display: grid;
@@ -678,16 +731,26 @@ h3 {
       @media screen and (max-width: 60.5rem) {
         .main .wrapper figure i img {
           height: 590px; } }
+      @media screen and (max-width: 28.75rem) {
+        .main .wrapper figure i img {
+          height: 350px; } }
     .main .wrapper figure .box {
       padding: 26% 0 0 14.16%; }
       @media screen and (max-width: 60.5rem) {
         .main .wrapper figure .box {
           padding: 80px 0 73px 33px; } }
+      @media screen and (max-width: 28.75rem) {
+        .main .wrapper figure .box {
+          padding: 36px 19px 0; } }
       .main .wrapper figure .box h2 {
         padding-bottom: 13%; }
         @media screen and (max-width: 60.5rem) {
           .main .wrapper figure .box h2 {
             padding-bottom: 40px; } }
+        @media screen and (max-width: 28.75rem) {
+          .main .wrapper figure .box h2 {
+            font-size: 1.75rem;
+            padding-bottom: 25px; } }
       .main .wrapper figure .box p {
         padding-bottom: 10%;
         font-family: "Proxima Nova Rg", "Arial", sans-serif, "Tahoma", sans-serif;
@@ -699,16 +762,26 @@ h3 {
           .main .wrapper figure .box p {
             padding-bottom: 40px;
             width: 86%; } }
+        @media screen and (max-width: 28.75rem) {
+          .main .wrapper figure .box p {
+            padding-bottom: 18px;
+            width: 100%; } }
       .main .wrapper figure .box__line {
         width: 20px;
         height: 7px;
         background-color: #5e42b0;
         border-radius: 3.5px; }
+        @media screen and (max-width: 28.75rem) {
+          .main .wrapper figure .box__line {
+            margin-bottom: 52px; } }
     .main .wrapper figure .row__box--contact {
       padding: 26% 0 0 20.42%; }
       @media screen and (max-width: 60.5rem) {
         .main .wrapper figure .row__box--contact {
           padding: 80px 0 73px 33px; } }
+      @media screen and (max-width: 28.75rem) {
+        .main .wrapper figure .row__box--contact {
+          padding: 36px 19px 0; } }
   .main .wrapper .block {
     position: absolute;
     left: 45.5%;
@@ -725,6 +798,12 @@ h3 {
         height: 118px;
         left: 33px;
         top: 500px; } }
+    @media screen and (max-width: 28.75rem) {
+      .main .wrapper .block {
+        width: 70px;
+        height: 70px;
+        top: 291px;
+        left: 19px; } }
     .main .wrapper .block__numeric {
       margin: auto; }
       .main .wrapper .block__numeric .numeric__number {
@@ -732,12 +811,20 @@ h3 {
         font-size: 1.5rem;
         color: #fff;
         text-align: center; }
+        @media screen and (max-width: 28.75rem) {
+          .main .wrapper .block__numeric .numeric__number {
+            font-size: 0.875rem;
+            padding-bottom: 5px; } }
       .main .wrapper .block__numeric .numeric__line {
         width: 25px;
         height: 8px;
         background-color: #8f7bc8;
         border-radius: 3.5px;
         margin: 0 auto; }
+        @media screen and (max-width: 28.75rem) {
+          .main .wrapper .block__numeric .numeric__line {
+            width: 17px;
+            height: 4px; } }
 
 .footer {
   background-image: url(../img/bg_footer.png);
@@ -767,6 +854,10 @@ h3 {
     @media screen and (max-width: 60.5rem) {
       .footer .container {
         padding-top: 21.65%; } }
+    @media screen and (max-width: 28.75rem) {
+      .footer .container {
+        padding-top: 97px;
+        display: block; } }
     .footer .container::before {
       content: '';
       position: absolute;
@@ -783,6 +874,9 @@ h3 {
         .footer .container::before {
           top: 377px;
           left: 7%; } }
+      @media screen and (max-width: 28.75rem) {
+        .footer .container::before {
+          display: none; } }
     .footer .container::after {
       content: '';
       position: absolute;
@@ -799,6 +893,9 @@ h3 {
         .footer .container::after {
           top: 330px;
           right: 20%; } }
+      @media screen and (max-width: 28.75rem) {
+        .footer .container::after {
+          display: none; } }
     .footer .container__headline {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -841,6 +938,9 @@ h3 {
           .footer .container__headline .title {
             padding: 10.6% 0 13%;
             text-align: center; } }
+        @media screen and (max-width: 28.75rem) {
+          .footer .container__headline .title {
+            padding-top: 60px; } }
         .footer .container__headline .title h1 {
           color: #fff;
           font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
@@ -850,6 +950,10 @@ h3 {
             .footer .container__headline .title h1 {
               font-size: 5rem;
               letter-spacing: 0.4375rem; } }
+          @media screen and (max-width: 28.75rem) {
+            .footer .container__headline .title h1 {
+              font-size: 2.125rem;
+              letter-spacing: 0.5px; } }
         .footer .container__headline .title p {
           font-size: 1.75rem;
           font-family: "Proxima Nova Bt", "Arial", sans-serif, "Tahoma", sans-serif;
@@ -862,6 +966,10 @@ h3 {
               font-size: 2.25rem;
               letter-spacing: 0.04375rem;
               line-height: 35px; } }
+          @media screen and (max-width: 28.75rem) {
+            .footer .container__headline .title p {
+              font-size: 0.9375rem;
+              letter-spacing: 0; } }
     .footer .container .bottom {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -887,6 +995,11 @@ h3 {
             width: 315px;
             height: 80px;
             border-radius: 40px 40px 40px 40px/40px; } }
+        @media screen and (max-width: 28.75rem) {
+          .footer .container .bottom a {
+            width: 143px;
+            height: 39px;
+            margin: 0 5px 0; } }
         .footer .container .bottom a .btn__box {
           margin: auto;
           display: -webkit-box;
@@ -900,10 +1013,18 @@ h3 {
             margin-right: 20px;
             width: 36px;
             height: 34px; }
+            @media screen and (max-width: 28.75rem) {
+              .footer .container .bottom a .btn__box i {
+                width: 15px;
+                height: 19px; } }
             .footer .container .bottom a .btn__box i svg {
               fill: #fff;
               width: 36px;
               height: 34px; }
+              @media screen and (max-width: 28.75rem) {
+                .footer .container .bottom a .btn__box i svg {
+                  width: 15px;
+                  height: 19px; } }
           .footer .container .bottom a .btn__box .btn__text {
             color: #fff;
             font-family: "Proxima Nova Lt", "Arial", sans-serif, "Tahoma", sans-serif;
@@ -920,6 +1041,12 @@ h3 {
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center; }
+            @media screen and (max-width: 60.5rem) {
+              .footer .container .bottom a .btn__box .btn__text {
+                font-size: 0.875rem; } }
+            @media screen and (max-width: 28.75rem) {
+              .footer .container .bottom a .btn__box .btn__text {
+                font-size: 0.5rem; } }
             .footer .container .bottom a .btn__box .btn__text p span {
               font-family: "Proxima Nova Sb", "Arial", sans-serif, "Tahoma", sans-serif; }
     .footer .container .aside {
@@ -931,6 +1058,10 @@ h3 {
       @media screen and (max-width: 60.5rem) {
         .footer .container .aside {
           display: block; } }
+      @media screen and (max-width: 28.75rem) {
+        .footer .container .aside {
+          height: 50px;
+          padding: 0; } }
       .footer .container .aside__logo {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -974,14 +1105,25 @@ h3 {
           @media screen and (max-width: 60.5rem) {
             .footer .container .aside .social__list {
               width: 20%; } }
+          @media screen and (max-width: 28.75rem) {
+            .footer .container .aside .social__list {
+              width: 45%; } }
           .footer .container .aside .social__list a {
             display: block;
             height: 30px;
             width: 30px; }
+            @media screen and (max-width: 28.75rem) {
+              .footer .container .aside .social__list a {
+                height: 20px;
+                width: 20px; } }
             .footer .container .aside .social__list a svg {
               fill: #fff;
               height: 25px;
               width: 25px; }
+              @media screen and (max-width: 28.75rem) {
+                .footer .container .aside .social__list a svg {
+                  height: 20px;
+                  width: 20px; } }
       .footer .container .aside .info {
         display: -webkit-box;
         display: -ms-flexbox;

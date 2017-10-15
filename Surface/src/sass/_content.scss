@@ -57,6 +57,7 @@
 
       @media #{$mobile} {
         display: block;
+        width: 90%;
       }
 
       h2 {
@@ -66,13 +67,24 @@
         @media #{$tablet} {
           width: 58%;
         }
+
+        @media #{$mobile} {
+          font-size: rem(50);
+          padding-bottom: 20px;
+        }
       }
+
+
 
       .block {
         width: 50%;
 
         @media #{$tablet} {
-          width: 58%;
+          width: 60%;
+        }
+
+        @media #{$mobile} {
+          width: 100%;
         }
 
         .inner {
@@ -104,12 +116,22 @@
           h3 {
             display: block;
             padding-left: 11px;
+
+            @media #{$mobile} {
+              font-size: rem(28);
+              letter-spacing: 2.5px;
+            }
           }
         }
 
         &__text {
           @include text_content;
           width: 100%;
+
+          @media #{$mobile} {
+            font-size: rem(15);
+            line-height: 1.2;
+          }
         }
       }
     }
@@ -141,6 +163,21 @@
           color: $white;
         }
       }
+    }
+
+
+  }
+
+  .row__picture {
+    @media #{$mobile} {
+      display: block;
+      height: 282px;
+      width: 100%;
+      background-image: url(../img/football.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin-bottom: 28px;
     }
   }
 
@@ -191,6 +228,11 @@
       h2 {
         width: 50%;
         text-align: left;
+
+        @media #{$mobile} {
+          font-size: rem(50);
+          padding-bottom: 20px;
+        }
       }
 
       .block {
@@ -199,6 +241,10 @@
        @media #{$tablet} {
          width: 60%;
        }
+
+       @media #{$mobile} {
+        width: 100%;
+      }
 
        .inner {
         display: flex;
@@ -229,12 +275,22 @@
         h3 {
           display: block;
           padding-left: 11px;
+
+          @media #{$mobile} {
+            font-size: rem(28);
+            letter-spacing: 2.5px;
+          }
         }
       }
 
         &__text {
           @include text_content;
           width: 100%;
+
+          @media #{$mobile} {
+            font-size: rem(15);
+            line-height: 1.2;
+          }
         }
       }
     }
@@ -266,5 +322,21 @@
         }
       }
     }
+
+
   }
+  .row__picture--basketball {
+    @media #{$mobile} {
+      display: block;
+      height: 250px;
+      width: 100%;
+      background-image: url(../img/basketball.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      margin-bottom: 28px;
+
+    }
+  }
+
 }

@@ -23,6 +23,11 @@
       padding-top: 21.65%;
     }
 
+    @media #{$mobile} {
+      padding-top: 97px;
+      display: block;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -39,7 +44,10 @@
       @media #{$tablet} {
         top: 377px;
         left: 7%;
+      }
 
+      @media #{$mobile} {
+        display: none;
       }
     }
 
@@ -59,6 +67,10 @@
       @media #{$tablet} {
         top: 330px;
         right: 20%;
+      }
+
+      @media #{$mobile} {
+        display: none;
 
       }
     }
@@ -103,6 +115,10 @@
           text-align: center;
         }
 
+        @media #{$mobile} {
+          padding-top: 60px;
+        }
+
         h1 {
           color: $white;
           font-family: $proximaBt;
@@ -112,6 +128,11 @@
           @media #{$tablet} {
             font-size: rem(80);
             letter-spacing: rem(7);
+          }
+
+          @media #{$mobile} {
+            font-size: rem(34);
+            letter-spacing: 0.5px;
           }
         }
 
@@ -128,6 +149,11 @@
             letter-spacing: rem(0.7);
             line-height: 35px;
           }
+
+          @media #{$mobile} {
+            font-size: rem(15);
+            letter-spacing: 0;
+          }
         }
       }
 
@@ -137,8 +163,6 @@
       display: flex;
       justify-content: center;
       padding: 100px 0 130px;
-
-
 
       a {
         display: block;
@@ -156,6 +180,12 @@
           border-radius: 40px 40px 40px 40px/40px;
         }
 
+        @media #{$mobile} {
+          width: 143px;
+          height: 39px;
+          margin: 0 5px 0;
+        }
+
         .btn__box {
           margin: auto;
           display: flex;
@@ -167,11 +197,22 @@
             width: 36px;
             height: 34px;
 
+            @media #{$mobile} {
+              width: 15px;
+              height: 19px;
+            }
+
             svg {
               fill:$white;
               width: 36px;
               height: 34px;
+
+              @media #{$mobile} {
+                width: 15px;
+                height: 19px;
+              }
             }
+
           }
 
           .btn__text {
@@ -183,6 +224,14 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media #{$tablet} {
+              font-size: rem(14);
+            }
+
+            @media #{$mobile} {
+              font-size: rem(8);
+            }
 
             p {
 
@@ -204,6 +253,11 @@
 
       @media #{$tablet} {
         display: block;
+      }
+
+      @media #{$mobile} {
+        height: 50px;
+        padding:0;
       }
 
       &__logo {
@@ -247,16 +301,29 @@
           @media #{$tablet} {
             width: 20%;
           }
+          @media #{$mobile} {
+            width: 45%;
+          }
 
           a {
             display: block;
             height: 30px;
             width: 30px;
 
+            @media #{$mobile} {
+              height: 20px;
+              width: 20px;
+            }
+
             svg {
               fill: $white;
               height: 25px;
               width: 25px;
+
+              @media #{$mobile} {
+                height: 20px;
+                width: 20px;
+              }
             }
           }
         }
