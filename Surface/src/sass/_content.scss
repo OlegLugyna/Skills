@@ -2,11 +2,11 @@
 
   section {
     display: grid;
-    grid-template-rows: 150px 150px 200px 300px;
+    grid-template-rows: rem(150) rem(150) rem(200) rem(300);
     padding-top: 3.90%;
 
     @media #{$tablet} {
-      grid-template-rows: 100px 180px 238px 205px;
+      grid-template-rows: rem(100) rem(180) rem(238) rem(205);
       padding-top: 5%;
     }
 
@@ -23,14 +23,14 @@
   .content__athlets::before {
     content: '';
     display: block;
-    height: 798px;
-    width: 516px;
+    height: rem(798);
+    width: rem(516);
     position: absolute;
     background-image: url(../img/football.png);
     background-repeat: no-repeat;
     background-size: cover;
     left: 10%;
-    top: 45px;
+    top: rem(45);
 
     @media #{$tablet} {
       left: -25%;
@@ -70,11 +70,9 @@
 
         @media #{$mobile} {
           font-size: rem(50);
-          padding-bottom: 20px;
+          padding-bottom: rem(20);
         }
       }
-
-
 
       .block {
         width: 50%;
@@ -85,12 +83,13 @@
 
         @media #{$mobile} {
           width: 100%;
+          padding-bottom: rem(20);
         }
 
         .inner {
           display: flex;
           justify-content: flex-start;
-          padding-bottom: 30px;
+          padding-bottom: rem(30);
 
           &__numeric {
             display: flex;
@@ -101,15 +100,15 @@
               font-family: $proximaBt;
               font-size: rem(18);
               font-weight: bold;
-              padding-bottom: 1px;
+              padding-bottom: rem(1);
               text-align: center;
             }
 
             .numeric__line {
-              width: 23px;
-              height: 7px;
+              width: rem(23);
+              height: rem(7);
               background-color: $blue-light;
-              border-radius: 3.5px;
+              border-radius: rem(3.5);
             }
           }
 
@@ -119,7 +118,7 @@
 
             @media #{$mobile} {
               font-size: rem(28);
-              letter-spacing: 2.5px;
+              letter-spacing: rem(2.5);
             }
           }
         }
@@ -142,6 +141,11 @@
 
     &--grow {
       background-color: $blue_light;
+      padding: rem(30) 0 rem(30);
+
+      @media #{$mobile} {
+        padding: rem(20) 0 rem(20);
+      }
 
       .row {
 
@@ -164,20 +168,18 @@
         }
       }
     }
-
-
   }
 
   .row__picture {
     @media #{$mobile} {
       display: block;
-      height: 282px;
+      height: rem(282);
       width: 100%;
       background-image: url(../img/football.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      margin-bottom: 28px;
+      margin-bottom: rem(28);
     }
   }
 
@@ -188,21 +190,21 @@
   .content__players::before {
     content: '';
     display: block;
-    height: 755px;
-    width: 870px;
+    height: rem(755);
+    width: rem(870);
     position: absolute;
     background-image: url(../img/basketball.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     right: 0;
-    top: -45px;
+    top: rem(-45);
 
     @media #{$tablet} {
       right: 0;
-      height: 555px;
-      width: 427px;
-      top: -2px;
+      height: rem(555);
+      width: rem(427);
+      top: rem(-2);
       overflow: hidden;
       background-position: left;
       background-size: cover;
@@ -231,7 +233,7 @@
 
         @media #{$mobile} {
           font-size: rem(50);
-          padding-bottom: 20px;
+          padding-bottom: rem(20);
         }
       }
 
@@ -244,12 +246,13 @@
 
        @media #{$mobile} {
         width: 100%;
+        padding-bottom: rem(20);
       }
 
        .inner {
         display: flex;
         justify-content: flex-start;
-        padding-bottom: 30px;
+        padding-bottom: rem(30);
 
         &__numeric {
           display: flex;
@@ -260,25 +263,25 @@
             font-family: $proximaBt;
             font-size: rem(18);
             font-weight: bold;
-            padding-bottom: 1px;
+            padding-bottom: rem(1);
             text-align: center;
           }
 
           .numeric__line {
-            width: 23px;
-            height: 7px;
+            width: rem(23);
+            height: rem(7);
             background-color: $blue-light;
-            border-radius: 3.5px;
+            border-radius: rem(3.5);
           }
         }
 
         h3 {
           display: block;
-          padding-left: 11px;
+          padding-left: rem(11);
 
           @media #{$mobile} {
             font-size: rem(28);
-            letter-spacing: 2.5px;
+            letter-spacing: rem(2.5);
           }
         }
       }
@@ -301,6 +304,12 @@
 
     &--grow {
       background-color: $shadow_btn;
+      padding: rem(30) 0 rem(30);
+
+      @media #{$mobile} {
+        padding: rem(20) 0 rem(20);
+
+      }
 
       .row {
 
@@ -322,21 +331,18 @@
         }
       }
     }
-
-
   }
+
   .row__picture--basketball {
     @media #{$mobile} {
       display: block;
-      height: 250px;
+      height: rem(250);
       width: 100%;
       background-image: url(../img/basketball.png);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
-      margin-bottom: 28px;
-
+      margin-bottom: rem(28);
     }
   }
-
 }

@@ -1,5 +1,4 @@
 .header {
-
   background-image: url(../img/bg_header.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -17,23 +16,22 @@
       content: '';
       position: absolute;
       display: block;
-      width: 227px;
-      height: 250px;
+      width: rem(227);
+      height: rem(250);
       background-image: url(../img/line_long.png);
       background-repeat: no-repeat;
       background-size: contain;
-      top: 136px;
+      top: rem(136);
       left: 29.5%;
-      z-index: 0;
 
       @media #{$tablet} {
-        top: 110px;
+        top: rem(110);
         left: 37.5%;
       }
 
-      @media #{$tablet} {
-        top:74px;
-        left:58px;
+      @media #{$mobile} {
+        top: rem(80);
+        left: rem(80);
       }
     }
 
@@ -42,7 +40,7 @@
     }
 
     @media #{$mobile} {
-      padding: 38px 13px 20px 10px;
+      padding: rem(38) rem(13) rem(20) rem(10);
     }
   }
 
@@ -86,13 +84,13 @@
 
           img {
             display: block;
-            width: 200px;
-            height: 38px;
+            width: rem(200);
+            height: rem(38);
             object-fit: contain;
 
             @media #{$tablet} {
-              width: 190px;
-              height: 35px;
+              width: rem(190);
+              height: rem(35);
             }
           }
         }
@@ -115,10 +113,6 @@
     .middle {
       display: grid;
 
-      @media #{$mobile} {
-        //display: block;
-      }
-
       &__block {
         color: $white;
         font-family: $proximaBt;
@@ -129,7 +123,6 @@
 
         @media #{$tablet} {
           font-size: rem(64);
-          //line-height: 80px;
         }
 
         @media #{$mobile} {
@@ -146,7 +139,7 @@
           }
 
           @media #{$mobile} {
-            padding: 0 0 20px 0;
+            padding: 0 0 rem(20) 0;
           }
         }
 
@@ -157,6 +150,7 @@
           @media #{$tablet} {
             padding-bottom: 5.125%;
             line-height: 1;
+            width: 78%;
           }
 
           @media #{$mobile} {
@@ -166,54 +160,6 @@
           }
         }
       }
-
-      // .menu {
-      //   width: 40%;
-      //   justify-self: end;
-
-      //   @media #{$tablet} {
-      //     width: 87.85%;
-      //     justify-self: center;
-
-      //   }
-
-      //   @media #{$mobile} {
-      //     width: 82%;
-      //     justify-self: center;
-      //   }
-
-      //   ul {
-      //     display: flex;
-      //     justify-content: space-between;
-
-
-      //     @media #{$mobile} {
-      //       flex-wrap: wrap;
-      //       justify-content: center;
-
-
-      //     }
-
-      //     li {
-      //       display: block;
-      //       @media #{$mobile} {
-      //         margin-right: 8.5%;
-      //       }
-
-      //       a {
-      //         color: $font_menu;
-      //         text-transform: uppercase;
-      //         font-family: $proximaLt;
-      //         font-size: rem(12);
-
-      //         &:hover {
-      //           color: $white;
-      //           text-decoration: underline;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
     }
 
     .bottom {
@@ -223,22 +169,22 @@
       a {
         display: block;
         width: 23%;
-        height: 52px;
-        margin: 0 20px 0;
-        border-radius: 27px 27px 27px 27px/27px;
+        height: rem(52);
+        margin: 0 rem(20) 0;
+        border-radius: rem(27) rem(27) rem(27) rem(27)/rem(27);
         background-color: $blue_light;
-        box-shadow:0 16px 24px $shadow_btn;
+        box-shadow:0 rem(16) rem(24) $shadow_btn;
         display: flex;
 
         @media #{$tablet} {
           width: 40.5%;
-          height: 78px;
+          height: rem(78);
           border-radius: 39px 39px 39px 39px/38px;
         }
         @media #{$mobile} {
-          width: 143px;
-          height: 39px;
-          margin: 0 5px 0;
+          width: rem(143);
+          height: rem(39);
+          margin: 0 rem(5) 0;
         }
 
         .btn__box {
@@ -248,23 +194,23 @@
 
           i {
             display: block;
-            margin-right: 20px;
-            width: 36px;
-            height: 34px;
+            margin-right: rem(20);
+            width: rem(36);
+            height: rem(34);
 
             @media #{$mobile} {
-              width: 15px;
-              height: 19px;
+              width: rem(15);
+              height: rem(19);
             }
 
             svg {
               fill: $white;
-              width: 36px;
-              height: 34px;
+              width: rem(36);
+              height: rem(34);
 
               @media #{$mobile} {
-                width: 15px;
-                height: 19px;
+                width: rem(15);
+                height: rem(19);
               }
             }
           }
@@ -287,7 +233,6 @@
             }
 
             p {
-
               span {
                 font-family: $proximaSb;
               }
@@ -307,11 +252,6 @@
 
       }
 
-      // @media #{$mobile} {
-      //   width: 82%;
-      //   justify-self: center;
-      // }
-
       ul {
         display: flex;
         justify-content: space-between;
@@ -325,10 +265,9 @@
 
         li {
           display: block;
-          //text-align: center;
 
           @media #{$mobile} {
-            margin: 0 13px 0;
+            margin: 0 rem(13) 0;
           }
 
           a {
@@ -364,7 +303,5 @@
         display: none;
       }
     }
-
-
   }
 }

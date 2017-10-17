@@ -24,7 +24,7 @@
     }
 
     @media #{$mobile} {
-      padding-top: 97px;
+      padding-top: rem(97);
       display: block;
     }
 
@@ -32,17 +32,17 @@
       content: '';
       position: absolute;
       display: block;
-      width: 190px;
-      height: 130px;
+      width: rem(190);
+      height: rem(130);
       background-image: url(../img/line_shot.png);
       background-repeat: no-repeat;
       background-size: contain;
-      top: 156px;
+      top: rem(156);
       left: 34.5%;
       z-index: 0;
 
       @media #{$tablet} {
-        top: 377px;
+        top: rem(377);
         left: 7%;
       }
 
@@ -55,23 +55,22 @@
       content: '';
       position: absolute;
       display: block;
-      width: 195px;
-      height: 190px;
+      width: rem(195);
+      height: rem(190);
       background-image: url(../img/line_long.png);
       background-repeat: no-repeat;
       background-size: contain;
-      top: 112px;
+      top: rem(112);
       right: 29.5%;
       z-index: 0;
 
       @media #{$tablet} {
-        top: 330px;
+        top: rem(330);
         right: 20%;
       }
 
       @media #{$mobile} {
         display: none;
-
       }
     }
 
@@ -91,9 +90,8 @@
 
         @media #{$tablet} {
           margin: 0 auto;
-          width: 132px;
-          height: 135px;
-
+          width: rem(132);
+          height: rem(135);
         }
 
         img {
@@ -105,7 +103,7 @@
       }
 
       .title {
-        padding-left: 30px;
+        padding-left: rem(30);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -116,7 +114,7 @@
         }
 
         @media #{$mobile} {
-          padding-top: 60px;
+          padding-top: rem(60);
         }
 
         h1 {
@@ -132,7 +130,7 @@
 
           @media #{$mobile} {
             font-size: rem(34);
-            letter-spacing: 0.5px;
+            letter-spacing: rem(0.5);
           }
         }
 
@@ -147,7 +145,7 @@
             text-align: center;
             font-size: rem(36);
             letter-spacing: rem(0.7);
-            line-height: 35px;
+            line-height: rem(35);
           }
 
           @media #{$mobile} {
@@ -156,34 +154,32 @@
           }
         }
       }
-
     }
 
     .bottom {
       display: flex;
       justify-content: center;
-      padding: 100px 0 130px;
+      padding: rem(100) 0 rem(130);
 
       a {
-        display: block;
         width: 20%;
-        height: 52px;
-        margin: 0 20px 0;
-        border-radius: 27px 27px 27px 27px/27px;
+        height: rem(52);
+        margin: 0 rem(20) 0;
+        border-radius: rem(27) rem(27) rem(27) rem(27)/rem(27);
         background-color: $blue_light;
-        box-shadow:0 16px 24px $shadow_btn;
+        box-shadow:0 rem(16) rem(24) $shadow_btn;
         display: flex;
 
         @media #{$tablet} {
-          width: 315px;
-          height: 80px;
-          border-radius: 40px 40px 40px 40px/40px;
+          width: rem(315);
+          height: rem(80);
+          border-radius: rem(40) rem(40) rem(40) rem(40)/rem(40);
         }
 
         @media #{$mobile} {
-          width: 143px;
-          height: 39px;
-          margin: 0 5px 0;
+          width: rem(143);
+          height: rem(39);
+          margin: 0 rem(5) 0;
         }
 
         .btn__box {
@@ -193,26 +189,25 @@
 
           i {
             display: block;
-            margin-right: 20px;
-            width: 36px;
-            height: 34px;
+            margin-right: rem(20);
+            width: rem(36);
+            height: rem(34);
 
             @media #{$mobile} {
-              width: 15px;
-              height: 19px;
+              width: rem(15);
+              height: rem(19);
             }
 
             svg {
               fill:$white;
-              width: 36px;
-              height: 34px;
+              width: rem(36);
+              height: rem(34);
 
               @media #{$mobile} {
-                width: 15px;
-                height: 19px;
+                width: rem(15);
+                height: rem(19);
               }
             }
-
           }
 
           .btn__text {
@@ -220,7 +215,7 @@
             font-family: $proximaLt;
             font-size: rem(12);
             text-transform: uppercase;
-            padding-top: 4px;
+            padding-top: rem(4);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -248,7 +243,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       background-color: rgba(21,23,57, .6);
-      height: 92px;
+      height: rem(92);
       padding: 0 2.81% 0;
 
       @media #{$tablet} {
@@ -256,8 +251,8 @@
       }
 
       @media #{$mobile} {
-        height: 50px;
-        padding:0;
+        height: rem(50);
+        padding: 0;
       }
 
       &__logo {
@@ -270,13 +265,13 @@
 
         a {
           display: block;
-          width: 180px;
-          height: 32px;
+          width: rem(180);
+          height: rem(32);
 
           img {
             display: block;
-            width: 180px;
-            height: 32px;
+            width: rem(180);
+            height: rem(32);
             object-fit: cover;
           }
         }
@@ -288,7 +283,6 @@
         height: 100%;
 
         @media #{$tablet} {
-          //width: 50%;
           margin: 0 auto;
         }
 
@@ -307,22 +301,22 @@
 
           a {
             display: block;
-            height: 30px;
-            width: 30px;
+            height: rem(30);
+            width: rem(30);
 
             @media #{$mobile} {
-              height: 20px;
-              width: 20px;
+              height: rem(20);
+              width: rem(20);
             }
 
             svg {
               fill: $white;
-              height: 25px;
-              width: 25px;
+              height: rem(25);
+              width: rem(25);
 
               @media #{$mobile} {
-                height: 20px;
-                width: 20px;
+                height: rem(20);
+                width: rem(20);
               }
             }
           }
@@ -337,7 +331,6 @@
         @media #{$tablet} {
           display: none;
         }
-
 
         &__items {
           display: flex;
@@ -357,12 +350,12 @@
           }
 
           .items__link:first-child {
-            padding-right: 8px;
+            padding-right: rem(8);
           }
 
           .items__link:last-child {
-            border-left: 1px solid $white;
-            padding-left: 8px;
+            border-left: rem(1) solid $white;
+            padding-left: rem(8);
           }
         }
       }
