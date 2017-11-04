@@ -1,0 +1,12 @@
+// {
+//   "git.ignoreLimitWarning": true
+// }
+
+{
+  "window.zoomLevel": 0,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "vscode-icons",
+  "git.confirmSync": false,
+  "vsicons.dontShowNewVersionMessage": true
+}
