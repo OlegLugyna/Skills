@@ -1,0 +1,150 @@
+.header {
+  background-image: url(../img/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: $white;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &__bg {
+    background: -webkit-linear-gradient(180deg, rgb(128, 128, 128) 7%, rgb(255, 255, 255) 45%);
+    background: -o-linear-gradient(180deg, rgb(128, 128, 128) 7%, rgb(255, 255, 255) 45%);
+    background: -ms-linear-gradient(180deg, rgb(128, 128, 128) 7%, rgb(255, 255, 255) 45%);
+    background: linear-gradient(180deg, rgb(128, 128, 128) 7%, rgb(255, 255, 255) 45%);
+    background: rgba(21, 50, 51, .9);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.13% 0 13.33%;
+
+
+    .primary {
+      width: 70.75%;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin: 0 auto;
+      padding-bottom: rem(30);
+      border-bottom: 1px solid $font_menu;
+
+      &__logo {
+
+        .logo {
+          text-transform: uppercase;
+          display: inline-block;
+          font-family: $proximaRg;
+          font-weight: bold;
+          font-size: rem(28.75);
+          line-height: rem(23);
+          padding-right: rem(27);
+          border-right: 1px solid $font_menu;
+        }
+
+        .tlf {
+          display: inline-block;
+          padding-left: rem(28);
+
+          i {
+            display: inline-block;
+            background-image: url(../img/hendset.png);
+            background-repeat: no-repeat;
+            background-position: center 1px;
+            height: rem(20);
+            width: rem(25);
+            vertical-align: middle;
+
+          }
+
+          span {
+            font-family: $montserrat;
+            font-size: rem(13);
+            font-weight: normal;
+            vertical-align: top;
+          }
+        }
+      }
+
+      &__menu {
+        display: flex;
+        justify-content: space-between;
+
+        .menu {
+
+          ul {
+            display: flex;
+            justify-content: space-between;
+            width: rem(350);
+            line-height: 42px;
+
+            a {
+
+              li {
+                color: $font_menu;
+                text-transform: uppercase;
+
+                &:hover {
+                  color: $white;
+                }
+              }
+
+              .active {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+
+      .menu__btn {
+        display: inline-block;
+        text-align: center;
+        vertical-align: top;
+        color:$font_menu;
+        padding: rem(10) rem(12) rem(10);
+        background-color: $getStart_btn;
+        border-radius: 5px;
+        margin-left: rem(32);
+        font-family: $montserrat;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    .caption {
+      width: 70.75%;
+      margin: 0 auto;
+      font-family: $robotoLt;
+
+      h1 {
+        font-family: $robotoLt;
+        font-size: rem(38);
+        padding-bottom: rem(20);
+        line-height: 1;
+      }
+
+      p {
+        width: 57%;
+        font-size: rem(16);
+        padding-bottom: rem(25);
+      }
+
+      &__btn {
+
+        a {
+          display: block;
+          width: rem(187);
+          line-height: rem(50);
+          text-align: center;
+          color: $white;
+          background-color: $learnMore_btn;
+          border-radius: rem(5);
+        }
+      }
+    }
+  }
+}

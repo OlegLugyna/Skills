@@ -1,0 +1,68 @@
+/*TOOLS: Variables, Mixins, standart styles*/
+
+//Variables color
+$white: #fff;
+$black: #000;
+$getStart_btn: #6a7f7f;
+$learnMore_btn: #6fb048;
+
+
+
+$shadow_btn: #0a0e34;
+
+$font_menu: #bdc8c8;
+
+
+
+//Variables fonts
+$proximaRg:'Proxima Nova Rg', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$robotoLt:'Roboto light', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$robotoMd:'Roboto Medium', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$robotoLt:'Proxima Nova Sb', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$merriweather:'Merriweather', 'Arial', sans-serif, 'Tahoma', sans-serif;
+$montserrat:'Montserrat', 'Arial', sans-serif, 'Tahoma', sans-serif;
+
+//Media
+// Для телефонов
+$mobile: "screen and (max-width: rem(460))";
+// Для нетбуков и планшетов
+$tablet: "screen and (max-width: rem(850))";
+// Для больших экранов
+$notebook: "screen and (max-width: rem(960))";
+
+
+//MIXINS
+@mixin clearfix {
+            &:after {
+              display: block;
+              content: '';
+              clear: both;
+              visibility: hidden;
+              height: 0;
+            }
+}
+
+@mixin placeholder_color {
+  &::-moz-placeholder {
+        color: $footer_title;
+  }
+  &::-webkit-input-placeholder {
+    color: $footer_title;
+  }
+}
+
+// @mixin text_content {
+//   font-family: $proximaRg;
+//   font-size: rem(20);
+//   line-height: rem(30);
+//   color: $black;
+// }
+
+//FUNCTIONS
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+
+
