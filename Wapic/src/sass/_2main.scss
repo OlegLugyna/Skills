@@ -1,0 +1,158 @@
+main {
+
+  .wrapper__main {
+    width: 70.75%;
+    margin: 0 auto;
+    padding: 7% 0 12%;
+    color: $font_main;
+
+    .main__heading {
+      width: 50%;
+      margin: 0 auto;
+      padding-bottom: rem(70);
+
+      h2 {
+        text-align: center;
+        font-family: $robotoLt;
+        font-size: rem(32);
+        color: $font_heading;
+        padding-bottom: rem(22);
+      }
+
+      i {
+        display: block;
+        margin: 0 auto;
+        width: rem(65);
+        height: rem(2);
+        background-color: $learnMore_btn;
+        margin-bottom: rem(22);
+      }
+
+      p {
+        text-align: center;
+        font-family: $robotoRg;
+        font-size: rem(15);
+      }
+    }
+
+    .articals {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: rem(30);
+
+      &__item {
+        width: 30%;
+
+        i {
+          display:block;
+          width: 60px;
+          height: 60px;
+          margin: 0 auto;
+          background-image: url(../img/sprite_main.png);
+          background-repeat: no-repeat;
+          margin-bottom: rem(30);
+        }
+
+        h3 {
+          text-transform: capitalize;
+          text-align: center;
+          font-family: $robotoRg;
+          font-size: rem(16);
+          color: $font_heading;
+          padding-bottom: rem(25);
+        }
+
+        p {
+          text-align: center;
+          font-family: $robotoRg;
+          font-size: rem(14);
+        }
+
+        .articals__item--second {
+          background-position: -58px center;
+        }
+
+        .articals__item--third {
+          background-position: -122px center;
+        }
+      }
+    }
+
+    .main_rectangle {
+      display: flex;
+      justify-content: center;
+      padding-bottom: rem(55);
+
+      i {
+        display: block;
+        width: rem(45);
+        height: 90px;
+      }
+
+      .rectangle--left {
+        border-right: 2px solid $borders_rectangle;
+        border-bottom: 2px solid $borders_rectangle;
+      }
+      .rectangle--right {
+        border-bottom: 2px solid $borders_rectangle;
+      }
+    }
+
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &__block {
+        width: 47%;
+
+
+
+        i {
+          display: inline-block;
+          width: 35px;
+          height: 35px;
+          background-image: url(../img/sprite_main2.png);
+          vertical-align: middle;
+        }
+
+        h3 {
+          display: inline-block;
+          text-transform: capitalize;
+          font-family: $robotoRg;
+          font-size: rem(16);
+          color: $font_heading;
+          padding: 0 0 rem(20) rem(20);
+        }
+
+        p {
+          font-family: $robotoRg;
+          font-size: rem(14);
+          padding: rem(20) 0 rem(60)x;
+
+        }
+
+        .block__icon--first {
+          background-position: -1px -4px;
+        }
+        .block__icon--second {
+          background-position: -34px -1px;
+        }
+
+        .block__icon--third {
+          background-position: -67px -4px;
+        }
+
+        .block__icon--fourth {
+          background-position: -109px -2px;
+          width: 37px;
+          height: 37px;
+        }
+
+        &:first-child {
+          padding-bottom: rem(70);
+        }
+      }
+    }
+  }
+}

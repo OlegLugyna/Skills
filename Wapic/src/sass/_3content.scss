@@ -1,0 +1,145 @@
+.content {
+  padding-bottom: 9.35%;
+  color: $font_main;
+
+
+  .section--bg {
+    background-color: $bg_content;
+    padding-top: 5.35%;
+  }
+
+    section {
+      width: 70.75%;
+      margin: 0 auto;
+
+      .slider__title {
+
+        h2 {
+          text-align: center;
+          font-family: $robotoLt;
+          font-size: rem(32);
+          color: $font_heading;
+          padding-bottom: rem(22);
+
+        }
+
+        i {
+          display: block;
+          margin: 0 auto;
+          width: rem(65);
+          height: rem(2);
+          background-color: $learnMore_btn;
+          margin-bottom: rem(22);
+        }
+
+        p {
+          text-align: center;
+          font-family: $robotoRg;
+          font-size: rem(15);
+          padding-bottom: rem(25);
+        }
+      }
+
+      .slider__content {
+        display: flex;
+        justify-content: space-between;
+
+        i {
+          width: 45%;
+
+          img {
+            display: block;
+            height: 490px;
+            object-fit: contain;
+          }
+        }
+
+        .right {
+          width: 53%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h2 {
+            text-transform: capitalize;
+            font-family: $robotoLt;
+            font-size: rem(32);
+            color: $font_heading;
+            padding-bottom: rem(25);
+          }
+
+          p {
+            font-family: $robotoRg;
+            font-size: rem(14);
+            padding-bottom: rem(25);
+          }
+
+          &__lead {
+
+            i {
+              display: inline-block;
+              width: 27px;
+              height: 37px;
+              background-image: url(../img/sprite_plans.png);
+              background-repeat: no-repeat;
+              vertical-align: middle;
+              background-position: -1px -8px;
+            }
+
+            p {
+              display: inline-block;
+              padding-left: rem(20);
+            }
+          }
+        }
+      }
+    }
+    .section__post {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10%;
+
+      .excerpt {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &__text {
+          font-family: $merriweather;
+          font-size: rem(22);
+          padding-bottom: rem(35);
+        }
+
+        &__name {
+          text-transform: capitalize;
+          font-family: $robotoMd;
+          font-size: rem(14);
+          color: $learnMore_btn;
+          padding-bottom: rem(12);
+        }
+
+        &__company {
+          font-family: $robotoMd;
+          font-size: rem(14);
+        }
+      }
+
+      i {
+        display: block;
+        width: 50%;
+        width: 400px;
+        height: 400px;
+        border-radius: 200px;
+
+        img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+
+    }
+}
