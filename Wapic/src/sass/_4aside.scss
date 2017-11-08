@@ -1,0 +1,242 @@
+aside {
+  color: $font_main;
+  padding-bottom: rem(100);
+
+  .wrapper--first {
+    background-color: $bg_content;
+    padding: rem(60) 0 rem(60);
+    margin-bottom: rem(98);
+
+    .aside__attention {
+      display: flex;
+      justify-content: flex-end;
+
+      .attention__page {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h2 {
+          text-align: left;
+          font-family: $robotoLt;
+          font-size: rem(32);
+          color: $font_heading;
+          padding-bottom: rem(26);
+        }
+
+        p {
+          font-family: $robotoRg;
+          font-size: rem(14);
+        }
+      }
+
+      i {
+        width: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .wrapper--second {
+    width: 70.75%;
+    margin: 0 auto;
+
+    .aside__title {
+      width: 55%;
+      margin: 0 auto;
+
+
+      h2 {
+        text-align: center;
+        font-family: $robotoLt;
+        font-size: rem(32);
+        color: $font_heading;
+        padding-bottom: rem(22);
+        text-transform: capitalize;
+      }
+
+      i {
+        display: block;
+        margin: 0 auto;
+        width: rem(65);
+        height: rem(2);
+        background-color: $learnMore_btn;
+        margin-bottom: rem(22);
+      }
+
+      p {
+        text-align: center;
+        font-family: $robotoRg;
+        font-size: rem(15);
+        padding-bottom: rem(25);
+      }
+    }
+
+    .aside__pricing {
+      display: flex;
+      justify-content: center;
+      padding: 0 0 rem(80);
+
+      .pricing__box {
+        outline: 1px solid $border_pricing;
+        width: 27%;
+        padding: rem(30) 0 rem(30);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 1;
+
+        h4 {
+          text-transform: uppercase;
+          font-family: $robotoMd;
+          font-size: rem(15);
+          color: $font_heading;
+          color: $title_pricing;
+          padding-bottom: rem(28);
+        }
+
+        .price {
+          font-family: $montserrat;
+          font-size: rem(65);
+          color: $pricing;
+          line-height: 0.3;
+        }
+
+        span {
+          color: $pricing;
+          padding-bottom: rem(28);
+        }
+
+        p {
+          text-transform: capitalize;
+          padding-bottom: rem(18);
+
+
+          &:last-child {
+            padding-bottom: rem(30);
+          }
+        }
+
+        a {
+          text-transform: uppercase;
+          font-family: $montserrat;
+          font-size: rem(13);
+          margin: 0  auto;
+          width: 140px;
+          line-height: 43px;
+          text-align: center;
+          background-color: $font_main;
+          border-radius: 3px;
+          color: $white;
+        }
+
+        .green__btn {
+          background-color: $title_pricing;
+        }
+      }
+    }
+
+    .aside__included {
+      padding: 0 0 rem(57);
+
+      .included__title {
+
+        h3 {
+          text-align: center;
+          font-family: $robotoLt;
+          font-size: rem(22);
+          color: $font_heading;
+          padding-bottom: rem(20);
+        }
+
+        i {
+          display: block;
+          margin: 0 auto;
+          width: rem(65);
+          height: rem(2);
+          background-color: $learnMore_btn;
+          margin-bottom: rem(22);
+        }
+      }
+
+      .included__plans {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .plans_items {
+          width: 265px;
+
+          i {
+            display: inline-block;
+            width: 27px;
+            height: 37px;
+            background-image: url(../img/sprite_plans.png);
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            background-position: -1px -8px;
+
+          }
+
+          p {
+            display: inline-block;
+            font-family: $robotoRg;
+            font-size: rem(12);
+
+          }
+
+        }
+
+      }
+    }
+
+    .aside__help {
+      line-height: 1;
+
+      .title__pic {
+        display:block;
+        width: 60px;
+        height: 60px;
+        margin: 0 auto;
+        background-image: url(../img/sprite_plans.png);
+        background-repeat: no-repeat;
+        margin-bottom: rem(15);
+        background-position-x: -35px;
+        line-height: 1;
+      }
+
+      h2 {
+        text-transform: capitalize;
+        font-family: $robotoLt;
+        font-size: rem(32);
+        text-align: center;
+        color: $title_pricing;
+        padding-bottom: rem(20);
+      }
+      .title__line {
+        display: block;
+        margin: 0 auto;
+        width: rem(65);
+        height: rem(2);
+        background-color: $learnMore_btn;
+        margin-bottom: rem(22);
+      }
+      p {
+        text-align: center;
+        margin: 0 auto;
+        font-family: $robotoRg;
+        font-size: rem(15);
+        padding-bottom: rem(40);
+        width: 50%;
+        line-height: 1.5;
+      }
+
+    }
+  }
+}
