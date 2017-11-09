@@ -655,11 +655,11 @@ aside {
           font-family: "Montserrat", "Arial", sans-serif, "Tahoma", sans-serif;
           font-size: 0.8125rem;
           margin: 0  auto;
-          width: 140px;
-          line-height: 43px;
+          width: 8.75rem;
+          line-height: 2.6875rem;
           text-align: center;
           background-color: #83a7a5;
-          border-radius: 3px;
+          border-radius: 0.1875rem;
           color: #fff; }
         aside .wrapper--second .aside__pricing .pricing__box .green__btn {
           background-color: #6fb048; }
@@ -688,11 +688,11 @@ aside {
         -ms-flex-pack: justify;
         justify-content: space-between; }
         aside .wrapper--second .aside__included .included__plans .plans_items {
-          width: 265px; }
+          width: 27%; }
           aside .wrapper--second .aside__included .included__plans .plans_items i {
             display: inline-block;
-            width: 27px;
-            height: 37px;
+            width: 1.6875rem;
+            height: 2.3125rem;
             background-image: url(../img/sprite_plans.png);
             background-repeat: no-repeat;
             vertical-align: middle;
@@ -703,31 +703,31 @@ aside {
             font-size: 0.75rem; }
     aside .wrapper--second .aside__help {
       line-height: 1; }
-      aside .wrapper--second .aside__help .title__pic {
+      aside .wrapper--second .aside__help .help__title .title__pic {
         display: block;
-        width: 60px;
-        height: 60px;
+        width: 3.75rem;
+        height: 3.75rem;
         margin: 0 auto;
         background-image: url(../img/sprite_plans.png);
         background-repeat: no-repeat;
         margin-bottom: 0.9375rem;
         background-position-x: -35px;
         line-height: 1; }
-      aside .wrapper--second .aside__help h2 {
+      aside .wrapper--second .aside__help .help__title h2 {
         text-transform: capitalize;
         font-family: "Roboto light", "Arial", sans-serif, "Tahoma", sans-serif;
         font-size: 2rem;
         text-align: center;
         color: #6fb048;
         padding-bottom: 1.25rem; }
-      aside .wrapper--second .aside__help .title__line {
+      aside .wrapper--second .aside__help .help__title .title__line {
         display: block;
         margin: 0 auto;
         width: 4.0625rem;
         height: 0.125rem;
         background-color: #6fb048;
         margin-bottom: 1.375rem; }
-      aside .wrapper--second .aside__help p {
+      aside .wrapper--second .aside__help .help__title p {
         text-align: center;
         margin: 0 auto;
         font-family: "Roboto Regular", "Arial", sans-serif, "Tahoma", sans-serif;
@@ -735,3 +735,145 @@ aside {
         padding-bottom: 2.5rem;
         width: 50%;
         line-height: 1.5; }
+      aside .wrapper--second .aside__help .help__email {
+        text-align: center;
+        font-size: 1.125rem;
+        color: #0f5f5c; }
+
+.footer {
+  color: #83a7a5; }
+  .footer__download {
+    background-image: url(../img/bg_download.png);
+    background-repeat: no-repeat;
+    max-height: 12.5rem;
+    line-height: 1; }
+    .footer__download .bg__download {
+      background-color: rgba(239, 242, 237, 0.9);
+      height: 100%;
+      padding: 4.6875rem 0 5rem; }
+      .footer__download .bg__download .filling {
+        width: 70.75%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .footer__download .bg__download .filling__descr h3 {
+          text-transform: capitalize;
+          font-family: "Roboto light", "Arial", sans-serif, "Tahoma", sans-serif;
+          font-size: 1.75rem;
+          color: #0f5f5c;
+          padding-bottom: 0.9375rem; }
+        .footer__download .bg__download .filling__descr p {
+          font-family: "Roboto Regular", "Arial", sans-serif, "Tahoma", sans-serif;
+          font-size: 0.9375rem; }
+        .footer__download .bg__download .filling__btn a {
+          display: block;
+          width: 17.9375rem;
+          line-height: 2.6875rem;
+          border-radius: 5px;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: "Montserrat", "Arial", sans-serif, "Tahoma", sans-serif;
+          font-size: 0.8125rem;
+          color: #fff;
+          background-color: #6fb048; }
+  .footer__primary {
+    padding: 6.25rem 0 1.875rem; }
+    .footer__primary .primary {
+      width: 70.75%;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      border-bottom: 0.125rem solid #e3dada;
+      padding-bottom: 3.75rem; }
+      .footer__primary .primary .box {
+        width: 26%; }
+        .footer__primary .primary .box h4 {
+          font-family: "Roboto Medium", "Arial", sans-serif, "Tahoma", sans-serif;
+          font-size: 0.8125rem;
+          color: #0f5f5c;
+          text-transform: capitalize;
+          padding-bottom: 1.25rem; }
+        .footer__primary .primary .box li, .footer__primary .primary .box p {
+          font-family: "Roboto Regular", "Arial", sans-serif, "Tahoma", sans-serif;
+          font-size: 0.8125rem;
+          text-transform: capitalize;
+          padding-bottom: 0.9375rem; }
+          .footer__primary .primary .box li:last-child, .footer__primary .primary .box p:last-child {
+            padding: 0; }
+      .footer__primary .primary__adress h3 {
+        text-transform: uppercase;
+        color: #0f5f5c;
+        padding-bottom: 1.25rem; }
+      .footer__primary .primary__adress ul li:first-child {
+        color: #0f5f5c;
+        text-transform: none; }
+      .footer__primary .primary .newsletter p {
+        text-transform: none; }
+  .footer__bottom {
+    padding-bottom: 1.875rem; }
+    .footer__bottom .bottom {
+      width: 70.75%;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .footer__bottom .bottom__right p {
+        font-family: "Roboto Regular", "Arial", sans-serif, "Tahoma", sans-serif;
+        font-size: 0.75rem; }
+      .footer__bottom .bottom__social ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+        .footer__bottom .bottom__social ul .cell {
+          display: block;
+          width: 1.875rem;
+          height: 1.875rem;
+          border-radius: 50%;
+          margin-right: 0.625rem; }
+          .footer__bottom .bottom__social ul .cell:last-child {
+            margin: 0; }
+          .footer__bottom .bottom__social ul .cell a {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            height: 100%;
+            width: 100%; }
+            .footer__bottom .bottom__social ul .cell a svg {
+              fill: #fff;
+              margin: auto;
+              width: 1.125rem;
+              height: 1.125rem; }
+        .footer__bottom .bottom__social ul .cell_tw {
+          background-color: #55acee; }
+        .footer__bottom .bottom__social ul .cell_fb {
+          background-color: #3b5998; }
+          .footer__bottom .bottom__social ul .cell_fb a svg {
+            padding-right: 0.1875rem; }
+        .footer__bottom .bottom__social ul .cell_instagr {
+          background-color: #fff; }
+          .footer__bottom .bottom__social ul .cell_instagr a svg {
+            fill: #3f729b;
+            width: 100%;
+            height: 100%; }
+        .footer__bottom .bottom__social ul .cell_dribble {
+          background-color: #fff; }
+          .footer__bottom .bottom__social ul .cell_dribble a svg {
+            fill: #ea4c89;
+            width: 100%;
+            height: 100%; }
+        .footer__bottom .bottom__social ul .cell_github {
+          background-color: #333333; }

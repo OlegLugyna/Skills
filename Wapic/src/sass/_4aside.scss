@@ -50,7 +50,6 @@ aside {
       width: 55%;
       margin: 0 auto;
 
-
       h2 {
         text-align: center;
         font-family: $robotoLt;
@@ -128,11 +127,11 @@ aside {
           font-family: $montserrat;
           font-size: rem(13);
           margin: 0  auto;
-          width: 140px;
-          line-height: 43px;
+          width: rem(140);
+          line-height: rem(43);
           text-align: center;
           background-color: $font_main;
-          border-radius: 3px;
+          border-radius: rem(3);
           color: $white;
         }
 
@@ -171,72 +170,78 @@ aside {
         justify-content: space-between;
 
         .plans_items {
-          width: 265px;
+          width: 27%;
 
           i {
             display: inline-block;
-            width: 27px;
-            height: 37px;
+            width: rem(27);
+            height: rem(37);
             background-image: url(../img/sprite_plans.png);
             background-repeat: no-repeat;
             vertical-align: middle;
             background-position: -1px -8px;
-
           }
 
           p {
             display: inline-block;
             font-family: $robotoRg;
             font-size: rem(12);
-
           }
-
         }
-
       }
     }
 
     .aside__help {
       line-height: 1;
 
-      .title__pic {
-        display:block;
-        width: 60px;
-        height: 60px;
-        margin: 0 auto;
-        background-image: url(../img/sprite_plans.png);
-        background-repeat: no-repeat;
-        margin-bottom: rem(15);
-        background-position-x: -35px;
-        line-height: 1;
+      .help__title {
+
+        .title__pic {
+          display:block;
+          width: rem(60);
+          height: rem(60);
+          margin: 0 auto;
+          background-image: url(../img/sprite_plans.png);
+          background-repeat: no-repeat;
+          margin-bottom: rem(15);
+          background-position-x: -35px;
+          line-height: 1;
+        }
+
+        h2 {
+          text-transform: capitalize;
+          font-family: $robotoLt;
+          font-size: rem(32);
+          text-align: center;
+          color: $title_pricing;
+          padding-bottom: rem(20);
+        }
+
+        .title__line {
+          display: block;
+          margin: 0 auto;
+          width: rem(65);
+          height: rem(2);
+          background-color: $learnMore_btn;
+          margin-bottom: rem(22);
+        }
+
+        p {
+          text-align: center;
+          margin: 0 auto;
+          font-family: $robotoRg;
+          font-size: rem(15);
+          padding-bottom: rem(40);
+          width: 50%;
+          line-height: 1.5;
+        }
       }
 
-      h2 {
-        text-transform: capitalize;
-        font-family: $robotoLt;
-        font-size: rem(32);
+      .help__email {
         text-align: center;
-        color: $title_pricing;
-        padding-bottom: rem(20);
+        font-size: rem(18);
+        color: $font_heading;
       }
-      .title__line {
-        display: block;
-        margin: 0 auto;
-        width: rem(65);
-        height: rem(2);
-        background-color: $learnMore_btn;
-        margin-bottom: rem(22);
-      }
-      p {
-        text-align: center;
-        margin: 0 auto;
-        font-family: $robotoRg;
-        font-size: rem(15);
-        padding-bottom: rem(40);
-        width: 50%;
-        line-height: 1.5;
-      }
-
     }
   }
 }

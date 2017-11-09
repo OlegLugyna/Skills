@@ -1,0 +1,211 @@
+.footer {
+  color: $font_main;
+
+  &__download {
+    background-image: url(../img/bg_download.png);
+    background-repeat: no-repeat;
+    max-height: rem(200);
+    line-height: 1;
+
+    .bg__download {
+
+      background-color: rgba(239, 242, 237, .9);
+      height: 100%;
+      padding: rem(75) 0 rem(80);
+
+      .filling {
+        width: 70.75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+
+        &__descr {
+
+          h3 {
+            text-transform: capitalize;
+            font-family: $robotoLt;
+            font-size: rem(28);
+            color: $font_heading;
+            padding-bottom: rem(15);
+          }
+
+          p {
+            font-family: $robotoRg;
+            font-size: rem(15);
+          }
+        }
+
+        &__btn {
+
+          a {
+            display: block;
+            width: rem(287);
+            line-height: rem(43);
+            border-radius: 5px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: rem(13);
+            color: $white;
+            background-color: $title_pricing;
+          }
+        }
+      }
+    }
+  }
+
+  &__primary {
+
+    padding: rem(100) 0 rem(30);
+
+    .primary {
+      width: 70.75%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: rem(2) solid $borders_rectangle;
+      padding-bottom: rem(60);
+
+      .box {
+        width: 26%;
+
+        h4 {
+          font-family: $robotoMd;
+          font-size: rem(13);
+          color: $font_heading;
+          text-transform: capitalize;
+          padding-bottom: rem(20);
+        }
+
+        li, p {
+          font-family: $robotoRg;
+          font-size: rem(13);
+          text-transform: capitalize;
+          padding-bottom: rem(15);
+
+          &:last-child {
+            padding: 0;
+          }
+        }
+      }
+
+      &__adress {
+
+        h3 {
+          text-transform: uppercase;
+          color: $font_heading;
+          padding-bottom: rem(20);
+        }
+
+        ul {
+          li:first-child {
+            color: $font_heading;
+            text-transform: none;
+          }
+        }
+      }
+
+      .newsletter {
+
+        p {
+          text-transform: none;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    padding-bottom: rem(30);
+
+    .bottom {
+      width: 70.75%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+
+      &__right {
+
+        p {
+          font-family: $robotoRg;
+          font-size: rem(12);
+        }
+      }
+
+      &__social {
+
+        ul {
+          display: flex;
+          justify-content: flex-end;
+
+          .cell {
+            display: block;
+            width: rem(30);
+            height: rem(30);
+            border-radius: 50%;
+            margin-right: rem(10);
+
+            &:last-child {
+              margin: 0;
+            }
+
+            a {
+              display: flex;
+              height: 100%;
+              width: 100%;
+
+              svg {
+                fill: $white;
+                margin: auto;
+                width: rem(18);
+                height: rem(18);
+
+
+              }
+            }
+          }
+
+          .cell_tw {
+            background-color: $twitter;
+          }
+
+          .cell_fb {
+            background-color: $fb;
+
+            a svg {
+              padding-right: rem(3);
+            }
+          }
+
+          .cell_instagr {
+            background-color: $white;
+
+            a {
+              svg {
+                fill:  $instagr;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+          .cell_dribble {
+            background-color: $white;
+
+            a {
+              svg {
+                fill:  $dribble;
+                width: 100%;
+                height: 100%;
+              }
+            }
+          }
+
+          .cell_github {
+            background-color: $github;
+          }
+        }
+      }
+    }
+  }
+}
