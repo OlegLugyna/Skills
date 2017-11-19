@@ -10,8 +10,7 @@
     .bg__download {
 
       background-color: rgba(239, 242, 237, .9);
-      height: 100%;
-      padding: rem(75) 0 rem(80);
+      padding: rem(70) 0 rem(70);
 
       .filling {
         width: 70.75%;
@@ -56,7 +55,6 @@
   }
 
   &__primary {
-
     padding: rem(100) 0 rem(30);
 
     .primary {
@@ -111,6 +109,33 @@
         p {
           text-transform: none;
         }
+
+        &_form {
+
+         input {
+          background-color: $bg_content;
+         }
+
+          form {
+            background-color: $bg_content;
+            display: flex;
+            justify-content: space-between;
+            padding: 7px 0px;
+          }
+
+          .form--txt {
+            width: 85%;
+            margin-right: 7px;
+            padding-left: rem(18);
+            border: none;
+            color: $font_main;
+          }
+
+          .form--img {
+            padding-right: rem(18);
+            vertical-align: middle;
+          }
+        }
       }
     }
   }
@@ -159,8 +184,6 @@
                 margin: auto;
                 width: rem(18);
                 height: rem(18);
-
-
               }
             }
           }

@@ -1,0 +1,112 @@
+.pricing-content {
+  padding: 6.81% 0 8.19%;
+
+  .pricing-content__wrapper {
+    width: 70.75%;
+    margin: 0 auto;
+
+    .aside__included {
+      padding: 0 0 rem(57);
+
+      .included__title {
+
+        h3 {
+          text-align: center;
+          font: rem(32) $robotoLt;
+          color: $included_plans;
+          padding-bottom: rem(20);
+        }
+
+        i {
+          display: block;
+          margin: 0 auto;
+          width: rem(65);
+          height: rem(2);
+          background-color: $learnMore_btn;
+          margin-bottom: rem(22);
+        }
+      }
+
+      .included__plans {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .plans_items {
+          width: 30%;
+
+          i {
+            display: inline-block;
+            width: rem(27);
+            height: rem(37);
+            background-image: url(../img/sprite_plans.png);
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            background-position: -1px -8px;
+          }
+
+          p {
+            display: inline-block;
+            font-family: $robotoRg;
+            font-size: rem(13);
+            color: $included_plans_item;
+          }
+        }
+      }
+    }
+
+    .aside__help {
+      line-height: 1;
+
+      .help__title {
+
+        .title__pic {
+          display:block;
+          width: rem(60);
+          height: rem(60);
+          margin: 0 auto;
+          background-image: url(../img/sprite_plans.png);
+          background-repeat: no-repeat;
+          margin-bottom: rem(15);
+          background-position-x: -35px;
+          line-height: 1;
+        }
+
+        h2 {
+          text-transform: capitalize;
+          font-family: $robotoLt;
+          font-size: rem(32);
+          text-align: center;
+          color: $title_pricing;
+          padding-bottom: rem(20);
+        }
+
+        .title__line {
+          display: block;
+          margin: 0 auto;
+          width: rem(65);
+          height: rem(2);
+          background-color: $learnMore_btn;
+          margin-bottom: rem(22);
+        }
+
+        p {
+          text-align: center;
+          margin: 0 auto;
+          font-family: $robotoRg;
+          color: $included_plans_item;
+          font-size: rem(15);
+          padding-bottom: rem(40);
+          width: 50%;
+          line-height: 1.5;
+        }
+      }
+
+      .help__email {
+        text-align: center;
+        font-size: rem(18);
+        color: $included_plans;
+      }
+    }
+  }
+}

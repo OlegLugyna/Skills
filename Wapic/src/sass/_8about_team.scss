@@ -1,0 +1,68 @@
+.about-team {
+  background-color: $bg_content;
+  color: $font_main;
+  padding: rem(76) 0 rem(120);
+
+  .wrapper__team {
+    width: 70.75%;
+    margin: 0 auto;
+
+    .team__heading {
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: rem(70);
+
+      h2 {
+        text-transform: capitalize;
+        text-align: center;
+        font-family: $robotoLt;
+        font-size: rem(32);
+        color: $font_heading;
+        padding-bottom: rem(22);
+      }
+
+      i {
+        display: block;
+        margin: 0 auto;
+        width: rem(65);
+        height: rem(2);
+        background-color: $learnMore_btn;
+        margin-bottom: rem(22);
+      }
+
+      p {
+        text-align: center;
+        font-family: $robotoRg;
+        font-size: rem(15);
+      }
+    }
+
+    .member {
+      display: flex;
+      justify-content: space-between;
+
+      .element {
+
+        i {
+          display: block;
+          width: 250px;
+          height: 180px;
+        }
+
+        &__caption {
+
+          h3 {
+            text-transform: capitalize;
+            font: rem(16) $robotoMd;
+            color: $font_heading;
+          }
+
+          p {
+            text-transform: capitalize;
+            font: rem(14) $robotoRg;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+/*styles page  Pricing*/
+
+.pricing-header {
+  background-image: none;
+  background-attachment: scroll;
+  height: 100%;
+
+  .header__bg--pricing {
+    background-color: $bg_content;
+    display: block;
+    padding:2.13% 0 6%;
+
+    .primary {
+      color: $pricing_menu;
+      font: rem(13) $montserrat;
+      margin-bottom: rem(60);
+
+      .logo {
+        color: $pricing;
+      }
+
+      &__menu {
+
+        .menu {
+          ul {
+            line-height: rem(33);
+
+            a li{
+              color: $pricing_menu;
+            }
+          }
+        }
+
+        .menu__btn {
+          background-color: $learnMore_btn;
+          color: $white;
+          padding: 0 rem(14) 0;
+          line-height: rem(33);
+        }
+      }
+    }
+
+    .plans {
+      //margin: auto;
+      padding-bottom: rem(32);
+
+      .caption__title--pricing {
+        color: $pricing_caption;
+        text-align: center;
+      }
+
+      .caption__text--pricing {
+        color: $pricing_caption;
+        text-align: center;
+        padding-bottom: rem(50);
+        margin: 0 auto;
+        font: rem(15) $robotoRg;
+      }
+
+      .pricing {
+        display: flex;
+        justify-content: center;
+
+        &__box {
+          outline: 1px solid $border_pricing;
+          width: 27%;
+          padding: rem(30) 0 rem(30);
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          line-height: 1;
+          background-color: $white;
+
+          h4 {
+            text-transform: uppercase;
+            font-family: $robotoMd;
+            font-size: rem(15);
+            color: $font_heading;
+            color: $title_pricing;
+            padding-bottom: rem(28);
+          }
+
+          .price {
+            font-family: $montserrat;
+            font-size: rem(65);
+            color: $pricing;
+            line-height: 0.3;
+            margin: 0 auto;
+          }
+
+          span {
+            color: $pricing;
+            padding-bottom: rem(28);
+            font: rem(14) $robotoRg;
+          }
+
+          p {
+            text-transform: capitalize;
+            font: rem(14) $robotoRg;
+            padding-bottom: rem(18);
+            color: $pricing_menu;
+            margin: 0 auto;
+
+
+            &:last-child {
+              padding-bottom: rem(30);
+            }
+          }
+
+          a {
+            text-transform: uppercase;
+            font-family: $montserrat;
+            font-size: rem(13);
+            margin: 0  auto;
+            width: rem(140);
+            line-height: rem(43);
+            text-align: center;
+            background-color: $font_main;
+            border-radius: rem(3);
+            color: $white;
+          }
+
+          .green__btn {
+            background-color: $title_pricing;
+          }
+        }
+      }
+    }
+
+    .header__limit {
+      font: bold rem(15) $robotoRg;
+      color: $pricing_menu;
+      text-align: center;
+    }
+
+  }
+}

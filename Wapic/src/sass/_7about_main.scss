@@ -1,0 +1,23 @@
+.about-main {
+
+  .wrapper__main {
+    padding: 7% 0 8%;
+
+    .main__heading {
+      width: 80%;
+
+      h2 {
+        text-transform: capitalize;
+      }
+    }
+
+    .articals {
+      padding: 0;
+      // &__item {
+      //   p {
+      //     padding: 0;
+      //   }
+      // }
+    }
+  }
+}
