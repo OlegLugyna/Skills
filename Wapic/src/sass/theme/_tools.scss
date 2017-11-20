@@ -54,7 +54,7 @@ $notebook: "screen and (max-width: rem(960))";
               height: 0;
             }
 }
-
+/*
 @mixin placeholder_color {
   &::-moz-placeholder {
         color: $footer_title;
@@ -62,7 +62,7 @@ $notebook: "screen and (max-width: rem(960))";
   &::-webkit-input-placeholder {
     color: $footer_title;
   }
-}
+}*/
 
 // @mixin text_content {
 //   font-family: $proximaRg;

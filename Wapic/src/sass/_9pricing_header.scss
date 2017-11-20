@@ -22,11 +22,27 @@
       &__menu {
 
         .menu {
+
           ul {
             line-height: rem(33);
 
-            a li{
-              color: $pricing_menu;
+            a {
+              li{
+                color: $pricing_menu;
+
+                &:hover {
+                  color: $white;
+                  background-color: $pricing_menu;
+                  border-radius: rem(3);
+                }
+              }
+
+              .active {
+                color: $white;
+                background-color: $pricing_menu;
+                border-radius: rem(3);
+              }
+
             }
           }
         }
@@ -36,6 +52,10 @@
           color: $white;
           padding: 0 rem(14) 0;
           line-height: rem(33);
+
+          &:hover {
+            color: $getStart_btn;
+          }
         }
       }
     }

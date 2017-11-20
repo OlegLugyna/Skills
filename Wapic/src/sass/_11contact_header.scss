@@ -1,0 +1,107 @@
+.contact-header {
+  padding: 2.57% 0 6.81%;
+
+  .primary {
+    width: 70.75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: $pricing_menu;
+    font: rem(13) $montserrat;
+    margin: 0 auto;
+    padding-bottom: rem(30);
+    border-bottom: 1px solid $font_menu;
+
+    &__logo {
+
+
+      .logo {
+        text-transform: uppercase;
+        display: inline-block;
+        font-family: $proximaRg;
+        font-weight: bold;
+        font-size: rem(28.75);
+        color: $pricing;
+        line-height: rem(23);
+        padding-right: rem(27);
+        border-right: 1px solid $font_menu;
+      }
+
+      .tlf {
+        display: inline-block;
+        padding-left: rem(28);
+
+        i {
+          display: inline-block;
+          background-image: url(../img/hendset.png);
+          background-repeat: no-repeat;
+          background-position: center 1px;
+          height: rem(20);
+          width: rem(25);
+          vertical-align: middle;
+
+        }
+
+        span {
+          font-family: $montserrat;
+          font-size: rem(13);
+          font-weight: normal;
+          vertical-align: top;
+        }
+      }
+    }
+
+    &__menu {
+      display: flex;
+      justify-content: space-between;
+
+      .menu {
+
+        ul {
+          display: flex;
+          justify-content: space-between;
+          width: rem(350);
+          line-height: rem(33);
+
+          a {
+
+            li {
+              color: $pricing_menu;
+              text-transform: uppercase;
+
+              &:hover {
+                color: $white;
+                background-color: $pricing_menu;
+                border-radius: rem(3);
+              }
+            }
+
+            .active {
+              color: $white;
+              background-color: $pricing_menu;
+              border-radius: rem(3);
+            }
+          }
+        }
+      }
+    }
+
+    .menu__btn {
+      display: inline-block;
+      text-align: center;
+      //vertical-align: top;
+      color: $white;
+      padding: 0 rem(14) 0;
+      line-height: rem(33);
+      background-color: $learnMore_btn;
+      border-radius: rem(5);
+      margin-left: rem(32);
+      font-family: $montserrat;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $getStart_btn;
+      }
+    }
+  }
+}

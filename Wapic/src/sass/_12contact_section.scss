@@ -1,0 +1,152 @@
+.contact-section {
+
+  .section {
+    width: 70.75%;
+    margin: 0 auto;
+
+    &__heading {
+      padding-bottom: 9%;
+
+      h2 {
+        text-align: center;
+        font-family: $robotoLt;
+        font-size: rem(32);
+        text-transform: capitalize;
+        color: $font_heading;
+        padding-bottom: rem(22);
+      }
+
+      i {
+        display: block;
+        margin: 0 auto;
+        width: rem(65);
+        height: rem(2);
+        background-color: $learnMore_btn;
+        margin-bottom: rem(22);
+      }
+
+      p {
+        width: 45%;
+        margin: 0 auto;
+        text-align: center;
+        font-family: $robotoRg;
+        font-size: rem(15);
+        color: $pricing_menu;
+      }
+
+    }
+
+    .form {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0 11.78%;
+
+      .form__input {
+        width: 50%;
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 15px;
+          color: $pricing_menu;
+          border: none;
+          outline: 1px solid $pricing_menu;
+          margin-bottom: rem(30);
+
+          &:focus {
+            outline: 2px solid $pricing_menu;
+          }
+
+          &::-moz-placeholder {
+            color: $pricing_menu;;
+          }
+          &::-webkit-input-placeholder {
+            color: $pricing_menu;;
+          }
+        }
+
+        textarea {
+          height: rem(125);
+        }
+
+        input[type=submit] {
+          text-transform: uppercase;
+          font: rem(13 ) $montserrat;
+          color: $white;
+          background: $learnMore_btn;
+          outline: none;
+          width: rem(190);
+          padding: 0;
+          line-height: rem(40);
+          border-radius: rem(3);
+          cursor: pointer;
+          margin: 0;
+        }
+      }
+
+      .sidebar {
+        outline: 2px dashed $border_pricing;
+        padding: rem(35);
+        font-family: $robotoRg;
+        font-size: rem(15);
+        color:  $pricing_menu;
+        width: 45%;
+        height: 100%;
+
+        h1 {
+          font-family: $robotoLt;
+          font-size: rem(22);
+          color: $font_heading;
+          text-transform: uppercase;
+          padding-bottom: rem(25);
+        }
+
+        p {
+
+          &:before {
+            content:'';
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 25px;
+            margin-right: rem(10);
+            background: url(../img/contact_sprite.png) no-repeat;
+          }
+        }
+
+        .sidebar__address {
+          text-transform: capitalize;
+          width: 200px;
+          display: flex;
+          flex-wrap: nowrap;
+          padding-bottom: rem(30);
+
+          &:before {
+            width: 40px;
+          }
+
+          span {
+            display: inline-block;
+          }
+        }
+
+        .sidebar__phone {
+          padding-bottom: rem(16);
+
+          &:before {
+            background-position: -24px 0;
+          }
+        }
+
+        .sidebar__email {
+          color: $font_heading;
+          font-weight: bold;
+
+          &:before {
+            background-position: -53px -2px;
+          }
+        }
+      }
+    }
+  }
+}
