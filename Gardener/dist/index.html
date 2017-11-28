@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gardener-About</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Playfair+Display:700" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/general.css">
+</head>
+<body>
+
+  <header class="header__otherpage header">
+  
+    <div class="header__top">
+      <div class="header__wrapper top">
+        <div class="top__callus">
+          <p class="callus__text">Call Us</p>
+          <p class="callus_number">8 800 146-23-65</p>
+        </div>
+        <div class="top__logo">
+          <a href="#"><img src="./img/logo.png" alt="logo top"></a>
+        </div>
+        <div class="top__search">
+          <form action="#">
+            <input class="form--txt" type="text" value="Search" onBlur="if(this.value=='')this.value='Search'" onFocus="if(this.value=='Search')this.value=''" />
+            <input class = "form--img" type="image" src="img/search-bg.png" name="" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="header__menu">
+      <nav class="menu">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">services</a></li>
+          <li><a href="#">order</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">team</a></li>
+          <li><a href="#">blog</a></li>
+          <li><a href="#">gallery</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__breadcrumb">
+      <div class="breadcrumb">
+        <span class="breadcrumb__homepage">Homepage</span>
+        <span class="breadcrumb__quote"> &rsaquo; </span>
+        <span class="breadcrumb__thispage">About</span>
+      </div>
+  
+    </div>
+  </header>
+  <article class="article" style="width: 100%; line-height: 150px; outline: 1px solid gray; text-align:center;">
+  EPTY PLACE
+  </article>
+  
+  
+  
+  
+  <footer>
+  <section class="footer__social">
+    <nav class="social__links">
+      <ul>
+        <li><a href="#">facebook</a></li>
+        <li><a href="#">twitter</a></li>
+        <li><a href="#">you tube</a></li>
+        <li><a href="#">instagram</a></li>
+      </ul>
+    </nav>
+    <div class="social__likes">
+      <div class="fb-like" data-href="http://localhost:9000/#" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    </div>
+  </section>
+  <section class="footer__contacts contacts">
+    <div class="contacts__logo">
+        <a href="#"><img src="./img/logo_footer.png" alt="logo footer"></a>
+    </div>
+    <div class="contacts__block block">
+      <div class="block__tlf tlf">
+        <p class="tlf__number">8 800 346-10-79</p>
+        <p class="tlf__email">info@website.com</p>
+      </div>
+      <div class="block__address address">
+        <p class="adress__ave">4220 Blue Island Ave</p>
+        <p class="adress__see"><a href="#">See on map</a></p>
+      </div>
+      <div class="block__text text">
+        <p class="text__excerpt"></p>
+        <p>&#169 2017</p>
+      </div>
+    </div>
+  
+  </section>
+  </footer>
+
+<!-- Facebook button -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+</body>
+</html>

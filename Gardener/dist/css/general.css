@@ -1,0 +1,275 @@
+/*RESET TOOLS*/
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: inherit;
+  vertical-align: baseline; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  overflow-x: hidden; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+img {
+  display: block; }
+
+ol,
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+button {
+  border: none;
+  outline: none; }
+
+/*END RESET TOOLS*/
+/*TOOLS: Variables, Mixins, standart styles*/
+/*Variables color*/
+/*Fonts color*/
+/*
+@mixin placeholder_color {
+  &::-moz-placeholder {
+        color: $footer_title;
+  }
+  &::-webkit-input-placeholder {
+    color: $footer_title;
+  }
+}*/
+/*HOMEPAGE STYLES*/
+/*OTHERPAGE HEADER STYLES*/
+.header__otherpage {
+  background-color: #2a7b39; }
+  .header__otherpage .header__top {
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff; }
+    .header__otherpage .header__top .top {
+      max-width: 60.25rem;
+      width: 75%;
+      margin: 0 auto;
+      height: 7.125rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .header__otherpage .header__top .top__callus {
+        line-height: 1; }
+        .header__otherpage .header__top .top__callus .callus__text {
+          color: #8bba66;
+          font-family: Arial, Tahoma, sans-serif;
+          font-weight: normal;
+          font-size: 0.75rem; }
+        .header__otherpage .header__top .top__callus .callus_number {
+          font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+          font-weight: bold;
+          font-size: 1.125rem; }
+      .header__otherpage .header__top .top__search form {
+        background-color: #277135;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 0 1.25rem;
+        border-radius: 17px; }
+        .header__otherpage .header__top .top__search form .form--txt {
+          background-color: #277135;
+          height: 34px;
+          border: none;
+          outline: none;
+          color: #8bba66; }
+  .header__otherpage .header__menu {
+    background-color: #95c263;
+    -webkit-box-shadow: 0 1px 73px rgba(0, 0, 0, 0.57);
+    box-shadow: 0 1px 73px rgba(0, 0, 0, 0.57); }
+    .header__otherpage .header__menu .menu {
+      text-transform: uppercase;
+      width: 75%;
+      margin: 0 auto; }
+      .header__otherpage .header__menu .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .header__otherpage .header__menu .menu ul li {
+          border-right: 1px solid rgba(0, 0, 0, 0.15); }
+          .header__otherpage .header__menu .menu ul li:first-child {
+            border-left: 1px solid rgba(0, 0, 0, 0.15); }
+          .header__otherpage .header__menu .menu ul li a {
+            display: block;
+            color: #fff;
+            font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+            font-weight: bold;
+            letter-spacing: 0.12em;
+            font-size: 0.875rem;
+            padding: 0 3rem 35 0;
+            line-height: 3.75rem;
+            padding: 0 33px; }
+            .header__otherpage .header__menu .menu ul li a:hover {
+              color: #ffde5a;
+              background: #95c263;
+              background: -webkit-gradient(left top, left bottom, color-stop(0%, #95c263), color-stop(1%, #719d3e), color-stop(100%, rgba(149, 194, 99, 0.76)));
+              background: -webkit-gradient(linear, left top, left bottom, from(#95c263), color-stop(1%, #719d3e), to(rgba(149, 194, 99, 0.76)));
+              background: linear-gradient(to bottom, #95c263 0%, #719d3e 1%, rgba(149, 194, 99, 0.76) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95c263', endColorstr='#95c263', GradientType=0 ); }
+  .header__otherpage .header__breadcrumb {
+    background-image: url(../img/mask.png); }
+    .header__otherpage .header__breadcrumb .breadcrumb {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      line-height: 4.375rem;
+      position: relative; }
+      .header__otherpage .header__breadcrumb .breadcrumb::before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 40%;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        position: absolute;
+        top: 50%;
+        left: 0; }
+      .header__otherpage .header__breadcrumb .breadcrumb::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 40%;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        position: absolute;
+        top: 50%;
+        right: 0; }
+      .header__otherpage .header__breadcrumb .breadcrumb__homepage {
+        color: #8bba66;
+        font-family: Arial, Tahoma, sans-serif;
+        font-size: 0.75rem;
+        font-weight: normal; }
+      .header__otherpage .header__breadcrumb .breadcrumb__quote {
+        color: #ffde5a;
+        padding: 0 0.9375rem; }
+      .header__otherpage .header__breadcrumb .breadcrumb__thispage {
+        font-family: Arial, Tahoma, sans-serif;
+        font-size: 0.75rem;
+        font-weight: normal; }

@@ -1,0 +1,175 @@
+/*OTHERPAGE HEADER STYLES*/
+.header__otherpage {
+  background-color: $header;
+
+  .header__top {
+    background-image: url(../img/circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+    .top {
+      max-width: rem(964);
+      width: 75%;
+      margin: 0 auto;
+      height: rem(114);
+      display: flex;
+      justify-content: space-between;
+      align-items: center ;
+
+      &__callus {
+        line-height: 1;
+
+
+        .callus__text {
+          color: $font_green;
+          font-family: $arial;
+          font-weight: normal;
+          font-size: rem(12);
+        }
+
+        .callus_number {
+          font-family: $dosis;
+          font-weight: bold;
+          font-size: rem(18);
+        }
+      }
+
+      &__search {
+
+        form {
+          background-color: $search;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 rem(20) ;
+
+          border-radius: 17px;;
+
+          .form--txt {
+            background-color: $search;
+            height: 34px;
+            border: none;
+            outline: none;
+            color: $font_green;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .header__menu {
+    background-color: $menu;
+    -webkit-box-shadow: 0 1px 73px rgba(0,0,0,.57);     -moz-box-shadow: 0 1px 73px rgba(0,0,0,.57);
+    box-shadow: 0 1px 73px rgba(0,0,0,.57);
+
+    .menu {
+      text-transform: uppercase;
+      width: 75%;
+      margin: 0 auto;
+
+      ul {
+        display: flex;
+        justify-content: center;
+
+        li {
+          border-right: 1px solid $border_menu;
+
+          &:first-child {
+            border-left: 1px solid $border_menu;
+          }
+
+          a {
+            display: block;
+            color: $white;
+            font-family: $dosis;
+            font-weight: bold;
+            letter-spacing: 0.12em;
+            font-size: rem(14);
+            padding: 0 3rem(35) 0;
+            line-height: rem(60);
+            padding: 0 33px;
+
+            &:hover {
+
+              color: $hover_menu;
+              background: rgba(149,194,99,1);
+              background: -moz-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+              background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(149,194,99,1)), color-stop(1%, rgba(113,157,62,1)), color-stop(100%, rgba(149,194,99,0.76)));
+              background: -webkit-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+              background: -o-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+              background: -ms-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+              background: linear-gradient(to bottom, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+              filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95c263', endColorstr='#95c263', GradientType=0 );
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .header__breadcrumb {
+    background-image: url(../img/mask.png);
+
+
+
+    .breadcrumb {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+      line-height: rem(70);
+      position: relative;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 40%;
+        border: 1px solid $border_crumb;
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 40%;
+        border: 1px solid $border_crumb;
+        position: absolute;
+        top: 50%;
+        right: 0;
+      }
+
+      &__homepage {
+        color: $font_green;
+        font-family: $arial;
+        font-size: rem(12);
+        font-weight: normal;
+
+
+
+      }
+
+      &__quote {
+        color: $hover_menu;
+        padding: 0 rem(15);
+
+
+      }
+
+      &__thispage {
+        font-family: $arial;
+        font-size: rem(12);
+        font-weight: normal;
+
+      }
+    }
+
+
+  }
+
+
+}

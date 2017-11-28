@@ -1,0 +1,71 @@
+/*TOOLS: Variables, Mixins, standart styles*/
+
+/*Variables color*/
+$white: #fff;
+$black: #000;
+$header: #2a7b39;
+$search: #277135;
+$menu: #95c263;
+$border_menu: rgba(0,0,0, .15);
+$border_crumb: rgba(255,255,255, 0.15);
+
+
+/*Fonts color*/
+$font_green: #8bba66;
+$font_main:#83a7a5;
+$hover_menu: #ffde5a;
+
+
+
+
+
+
+//Variables fonts
+$dosis: 'Dosis', sans-serif, 'Arial', sans-serif, 'Tahoma', sans-serif;
+$playfair:'Playfair Display', serif, 'Arial', sans-serif, 'Tahoma', sans-serif;
+$arial: Arial, Tahoma, sans-serif;
+
+//Media
+// Для телефонов
+$mobile: "screen and (max-width: rem(460))";
+// Для нетбуков и планшетов
+$tablet: "screen and (max-width: rem(850))";
+// Для больших экранов
+$notebook: "screen and (max-width: rem(960))";
+
+
+//MIXINS
+@mixin clearfix {
+            &:after {
+              display: block;
+              content: '';
+              clear: both;
+              visibility: hidden;
+              height: 0;
+            }
+}
+/*
+@mixin placeholder_color {
+  &::-moz-placeholder {
+        color: $footer_title;
+  }
+  &::-webkit-input-placeholder {
+    color: $footer_title;
+  }
+}*/
+
+// @mixin text_content {
+//   font-family: $proximaRg;
+//   font-size: rem(20);
+//   line-height: rem(30);
+//   color: $black;
+// }
+
+//FUNCTIONS
+@function rem($px) {
+  $rems: $px / 16;
+  @return #{$rems}rem;
+}
+
+
+
