@@ -1,0 +1,158 @@
+/*FOOTER STYLES*/
+footer {
+  background-color: $footer_bg;
+  padding: rem(70) 0 rem(70);
+
+  .footer__wrapper {
+    max-width: rem(1610);
+    width: 95%;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 20px;
+
+    .footer__social {
+      border-bottom: 2px solid $border_menu;
+
+      .social__wrapper {
+        max-width: rem(960);
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding: rem(40) 0 rem(40);
+
+        .social__links {
+          width: 40%;
+
+          ul {
+            display: flex;
+            justify-content: space-between;
+
+            li {
+
+              a {
+                text-transform: uppercase;
+                color: $black;
+                font-family: $dosis;
+                font-weight: bold;
+                font-size: rem(14);
+
+                &:hover {
+                  color: $fb;
+                }
+              }
+
+              &:nth-child(1) a:hover {
+                color: $fb;
+              }
+
+              &:nth-child(2) a:hover {
+                color: $twitter;
+              }
+
+              &:nth-child(3) a:hover {
+                color: $youtube;
+              }
+
+              &:nth-child(4) a:hover {
+                color: $instagr;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .contacts {
+      max-width: rem(960);
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: rem(70) 0 rem(80);
+
+      .block {
+        display: flex;
+        justify-content: flex-end;
+        text-align: right;
+
+        h4 {
+          text-transform: uppercase;
+          font-family: $dosis;
+          font-weight: bold;
+          font-size: rem(14);
+          color: $footer_caption;
+          padding: 0 0 rem(30) 0;
+        }
+
+        .tlf {
+          max-width: rem(165);
+          padding: 0 25px 0 0;
+          border-right: 2px solid $border_menu;
+          line-height: 1;
+
+          &__number {
+            font-family: $arial;
+            font-size: rem(18);
+            color: $footer_text;
+            padding-bottom: rem(13);
+          }
+
+          &__email {
+            font-family: $arial;
+            font-size: rem(12);
+            color: $footer_text;
+          }
+        }
+        .address {
+          max-width: rem(200);
+          padding: 0 35px 0 20px;
+          border-right: 2px solid $border_menu;
+          line-height: 1;
+
+          &__ave {
+            font-family: $arial;
+            font-size: rem(12);
+            color: $footer_text;
+            padding-bottom: rem(13);
+          }
+
+          &__see {
+            font-family: $arial;
+            font-size: rem(12);
+
+            a {
+              color: $footer_text;
+              text-decoration: underline;
+
+              &:hover {
+                color: $footer_caption;
+              }
+            }
+          }
+        }
+
+        .text {
+          max-width: rem(258);
+          padding: 0 0 0 rem(52);
+
+          &__excerpt {
+            font-family: $arial;
+            font-size: rem(11);
+            color: $footer_text;
+            line-height: rem(18);
+            padding-bottom: rem(13);
+          }
+
+          &__year {
+            font-family: $arial;
+            font-size: rem(11);
+            color: $footer_text;
+            line-height: rem(24);
+          }
+        }
+      }
+    }
+  }
+}

@@ -150,6 +150,130 @@ button {
   }
 }*/
 /*HOMEPAGE STYLES*/
+/*FOOTER STYLES*/
+footer {
+  background-color: #ededed;
+  padding: 4.375rem 0 4.375rem; }
+  footer .footer__wrapper {
+    max-width: 100.625rem;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px; }
+    footer .footer__wrapper .footer__social {
+      border-bottom: 2px solid rgba(0, 0, 0, 0.15); }
+      footer .footer__wrapper .footer__social .social__wrapper {
+        max-width: 60rem;
+        width: 75%;
+        margin: 0 auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        padding: 2.5rem 0 2.5rem; }
+        footer .footer__wrapper .footer__social .social__wrapper .social__links {
+          width: 40%; }
+          footer .footer__wrapper .footer__social .social__wrapper .social__links ul {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            footer .footer__wrapper .footer__social .social__wrapper .social__links ul li a {
+              text-transform: uppercase;
+              color: #000;
+              font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+              font-weight: bold;
+              font-size: 0.875rem; }
+              footer .footer__wrapper .footer__social .social__wrapper .social__links ul li a:hover {
+                color: #3b5998; }
+            footer .footer__wrapper .footer__social .social__wrapper .social__links ul li:nth-child(1) a:hover {
+              color: #3b5998; }
+            footer .footer__wrapper .footer__social .social__wrapper .social__links ul li:nth-child(2) a:hover {
+              color: #55acee; }
+            footer .footer__wrapper .footer__social .social__wrapper .social__links ul li:nth-child(3) a:hover {
+              color: #f14f4f; }
+            footer .footer__wrapper .footer__social .social__wrapper .social__links ul li:nth-child(4) a:hover {
+              color: #3f729b; }
+    footer .footer__wrapper .contacts {
+      max-width: 60rem;
+      width: 75%;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 4.375rem 0 5rem; }
+      footer .footer__wrapper .contacts .block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        text-align: right; }
+        footer .footer__wrapper .contacts .block h4 {
+          text-transform: uppercase;
+          font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+          font-weight: bold;
+          font-size: 0.875rem;
+          color: #434343;
+          padding: 0 0 1.875rem 0; }
+        footer .footer__wrapper .contacts .block .tlf {
+          max-width: 10.3125rem;
+          padding: 0 25px 0 0;
+          border-right: 2px solid rgba(0, 0, 0, 0.15);
+          line-height: 1; }
+          footer .footer__wrapper .contacts .block .tlf__number {
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 1.125rem;
+            color: #898989;
+            padding-bottom: 0.8125rem; }
+          footer .footer__wrapper .contacts .block .tlf__email {
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 0.75rem;
+            color: #898989; }
+        footer .footer__wrapper .contacts .block .address {
+          max-width: 12.5rem;
+          padding: 0 35px 0 20px;
+          border-right: 2px solid rgba(0, 0, 0, 0.15);
+          line-height: 1; }
+          footer .footer__wrapper .contacts .block .address__ave {
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 0.75rem;
+            color: #898989;
+            padding-bottom: 0.8125rem; }
+          footer .footer__wrapper .contacts .block .address__see {
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 0.75rem; }
+            footer .footer__wrapper .contacts .block .address__see a {
+              color: #898989;
+              text-decoration: underline; }
+              footer .footer__wrapper .contacts .block .address__see a:hover {
+                color: #434343; }
+        footer .footer__wrapper .contacts .block .text {
+          max-width: 16.125rem;
+          padding: 0 0 0 3.25rem; }
+          footer .footer__wrapper .contacts .block .text__excerpt {
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 0.6875rem;
+            color: #898989;
+            line-height: 1.125rem;
+            padding-bottom: 0.8125rem; }
+          footer .footer__wrapper .contacts .block .text__year {
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 0.6875rem;
+            color: #898989;
+            line-height: 1.5rem; }
+
 /*OTHERPAGE HEADER STYLES*/
 .header__otherpage {
   background-color: #2a7b39; }
@@ -225,7 +349,7 @@ button {
             font-weight: bold;
             letter-spacing: 0.12em;
             font-size: 0.875rem;
-            padding: 0 3rem 35 0;
+            padding: 0 2.1875rem 0;
             line-height: 3.75rem;
             padding: 0 33px; }
             .header__otherpage .header__menu .menu ul li a:hover {

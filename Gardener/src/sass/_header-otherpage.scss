@@ -56,12 +56,11 @@
 
       }
     }
-
   }
 
   .header__menu {
     background-color: $menu;
-    -webkit-box-shadow: 0 1px 73px rgba(0,0,0,.57);     -moz-box-shadow: 0 1px 73px rgba(0,0,0,.57);
+    -webkit-box-shadow: 0 1px 73px rgba(0,0,0,.57);   -moz-box-shadow: 0 1px 73px rgba(0,0,0,.57);
     box-shadow: 0 1px 73px rgba(0,0,0,.57);
 
     .menu {
@@ -87,7 +86,7 @@
             font-weight: bold;
             letter-spacing: 0.12em;
             font-size: rem(14);
-            padding: 0 3rem(35) 0;
+            padding: 0 rem(35) 0;
             line-height: rem(60);
             padding: 0 33px;
 
@@ -148,28 +147,18 @@
         font-family: $arial;
         font-size: rem(12);
         font-weight: normal;
-
-
-
       }
 
       &__quote {
         color: $hover_menu;
         padding: 0 rem(15);
-
-
       }
 
       &__thispage {
         font-family: $arial;
         font-size: rem(12);
         font-weight: normal;
-
       }
     }
-
-
   }
-
-
 }
