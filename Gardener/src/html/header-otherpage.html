@@ -12,7 +12,8 @@
       <div class="top__search">
         <form action="#">
           <input class="form--txt" type="text" value="Search" onBlur="if(this.value=='')this.value='Search'" onFocus="if(this.value=='Search')this.value=''" />
-          <input class = "form--img" type="image" src="img/search-bg.png" name="" />
+          <!-- <input class = "form--img" type="image" src="img/search-bg.png" name="" /> -->
+		  <input class = "form--img" type="submit" value="&#xf002" />
         </form>
       </div>
     </div>
@@ -33,9 +34,14 @@
   </div>
   <div class="header__breadcrumb">
     <div class="breadcrumb">
-      <span class="breadcrumb__homepage">Homepage</span>
-      <span class="breadcrumb__quote"> &rsaquo; </span>
-      <span class="breadcrumb__thispage">About</span>
+      <div class="breadcrumbs">
+        <a href="#">
+          <span class="breadcrumbs__homepage">Homepage</span>
+        </a>
+        <span class="breadcrumbs__quote"> &rsaquo; </span>
+        <span class="breadcrumbs__thispage">About</span>
+      </div>
+
     </div>
 
   </div>

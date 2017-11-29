@@ -52,8 +52,19 @@
             outline: none;
             color: $font_green;
           }
-        }
 
+          .form--img {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit; text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            background-color: #277135;
+            color: #8bba66;
+            outline: none;
+            border: none;
+            cursor:pointer;
+          }
+        }
       }
     }
   }
@@ -91,7 +102,6 @@
             padding: 0 33px;
 
             &:hover {
-
               color: $hover_menu;
               background: rgba(149,194,99,1);
               background: -moz-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
@@ -104,6 +114,20 @@
             }
           }
         }
+
+        .current-menu-item a {
+          color: $hover_menu;
+          background: rgba(149,194,99,1);
+          background: -moz-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(149,194,99,1)), color-stop(1%, rgba(113,157,62,1)), color-stop(100%, rgba(149,194,99,0.76)));
+          background: -webkit-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+          background: -o-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+          background: -ms-linear-gradient(top, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+          background: linear-gradient(to bottom, rgba(149,194,99,1) 0%, rgba(113,157,62,1) 1%, rgba(149,194,99,0.76) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#95c263', endColorstr='#95c263', GradientType=0 );
+        }
+
+
       }
     }
   }
@@ -142,22 +166,36 @@
         right: 0;
       }
 
-      &__homepage {
-        color: $font_green;
-        font-family: $arial;
-        font-size: rem(12);
-        font-weight: normal;
-      }
+      .breadcrumbs {
 
-      &__quote {
-        color: $hover_menu;
-        padding: 0 rem(15);
-      }
 
-      &__thispage {
-        font-family: $arial;
-        font-size: rem(12);
-        font-weight: normal;
+        &__homepage,
+        a {
+          color: $font_green;
+          font-family: $arial;
+          font-size: rem(12);
+          font-weight: normal;
+
+          &:hover {
+            color: $menu;
+          }
+
+        }
+
+
+
+        &__quote {
+          color: $hover_menu;
+          padding: 0 rem(15);
+        }
+
+        &__thispage,
+        .current {
+          font-family: $arial;
+          font-size: rem(12);
+          font-weight: normal;
+          color: $black;
+        }
       }
     }
   }

@@ -25,7 +25,8 @@
         <div class="top__search">
           <form action="#">
             <input class="form--txt" type="text" value="Search" onBlur="if(this.value=='')this.value='Search'" onFocus="if(this.value=='Search')this.value=''" />
-            <input class = "form--img" type="image" src="img/search-bg.png" name="" />
+            <!-- <input class = "form--img" type="image" src="img/search-bg.png" name="" /> -->
+  		  <input class = "form--img" type="submit" value="&#xf002" />
           </form>
         </div>
       </div>
@@ -46,9 +47,14 @@
     </div>
     <div class="header__breadcrumb">
       <div class="breadcrumb">
-        <span class="breadcrumb__homepage">Homepage</span>
-        <span class="breadcrumb__quote"> &rsaquo; </span>
-        <span class="breadcrumb__thispage">About</span>
+        <div class="breadcrumbs">
+          <a href="#">
+            <span class="breadcrumbs__homepage">Homepage</span>
+          </a>
+          <span class="breadcrumbs__quote"> &rsaquo; </span>
+          <span class="breadcrumbs__thispage">About</span>
+        </div>
+  
       </div>
   
     </div>
@@ -85,7 +91,7 @@
           <div class="block__tlf tlf">
             <h4>contacts</h4>
             <p class="tlf__number">8 800 346-10-79</p>
-            <p class="tlf__email">info@website.com</p>
+            <p class="tlf__email"><a href="#">info@website.com</a></p>
           </div>
           <div class="block__address address">
             <h4>brazil, port alegre</h4>

@@ -8,7 +8,11 @@ footer {
     width: 95%;
     margin: 0 auto;
     background-color: $white;
-    border-radius: 20px;
+    border-radius: rem(20);
+    -webkit-box-shadow: rem(11) rem(22) rem(21) rgba(0,0,0,.06); 	-moz-box-shadow: rem(11) rem(22) rem(21) rgba(0,0,0,.06);
+    box-shadow: rem(11) rem(22) rem(21) rgba(0,0,0,.06);
+    min-height: rem(300);
+
 
     .footer__social {
       border-bottom: 2px solid $border_menu;
@@ -22,7 +26,7 @@ footer {
         padding: rem(40) 0 rem(40);
 
         .social__links {
-          width: 40%;
+          width: 50%;
 
           ul {
             display: flex;
@@ -42,19 +46,23 @@ footer {
                 }
               }
 
-              &:nth-child(1) a:hover {
-                color: $fb;
+              &:nth-child(1) {
+                display: none;
               }
 
               &:nth-child(2) a:hover {
-                color: $twitter;
+                color: $fb;
               }
 
               &:nth-child(3) a:hover {
-                color: $youtube;
+                color: $twitter;
               }
 
               &:nth-child(4) a:hover {
+                color: $youtube;
+              }
+
+              &:nth-child(5) a:hover {
                 color: $instagr;
               }
             }
@@ -102,7 +110,17 @@ footer {
           &__email {
             font-family: $arial;
             font-size: rem(12);
-            color: $footer_text;
+
+
+            a {
+              color: $footer_text;
+
+
+              &:hover {
+                color: $footer_caption;
+                text-decoration: underline;
+              }
+            }
           }
         }
         .address {
