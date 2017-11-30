@@ -148,7 +148,7 @@
         content: "";
         display: block;
         height: 1px;
-        width: 40%;
+        width: 35%;
         border: 1px solid $border_crumb;
         position: absolute;
         top: 50%;
@@ -159,7 +159,7 @@
         content: "";
         display: block;
         height: 1px;
-        width: 40%;
+        width: 35%;
         border: 1px solid $border_crumb;
         position: absolute;
         top: 50%;
@@ -167,7 +167,6 @@
       }
 
       .breadcrumbs {
-
 
         &__homepage,
         a {
@@ -179,10 +178,7 @@
           &:hover {
             color: $menu;
           }
-
         }
-
-
 
         &__quote {
           color: $hover_menu;
