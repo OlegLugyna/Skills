@@ -102,59 +102,203 @@
     }
   }
 
-  .middle {
+  .content__middle {
     background-color: $single-middle_bg;
-    margin: 0 auto;
-    font-family: $arial;
-    font-size: rem(12);
-    line-height: rem(24);
-    color: $single_content;
-    padding: rem(85) 0 rem(70);
 
-    p,
-    .wrapper__blockquote {
+    .middle {
+      margin: 0 auto;
       max-width: rem(690);
       widows: 72%;
-      margin: 0 auto;
+      font-family: $arial;
+      font-size: rem(12);
+      line-height: rem(24);
+      color: $single_content;
+      padding: rem(85) 0 rem(70);
+
+
+      blockquote {
+        padding: rem(45) rem(50) rem(45) 0;
+        float: left;
+        width: 420px;
+        position: relative;
+        margin: 0 auto;
+
+        .fa-quote-left {
+          font-size: rem(35);
+          color: $icons;;
+          position: absolute;
+          left: rem(-43);
+          top: rem(33);
+        }
+
+        .blockquote__except {
+          text-align: right;
+          font-family: $arial;
+          font-size: rem(18);
+          line-height: rem(22);
+          padding-bottom: rem(30);
+        }
+
+        .blockquote__athor {
+          text-align: right;
+          font-family: $dosis;
+          font-size: rem(14);
+          font-weight: 800;
+          text-transform: uppercase;
+          line-height: rem(22);
+        }
+      }
+
+      &__video {
+        img {
+          width: 100%;
+        }
+      }
     }
 
-    .blockquote {
-      padding: rem(45) rem(50) rem(45) 0;
-      float: left;
-      width: 420px;
-      position: relative;
+    .list {
       margin: 0 auto;
+      max-width: rem(690);
+      widows: 72%;
 
-      .fa-quote-left {
-        font-size: rem(35);
-        color: $icons;;
-        position: absolute;
-        left: rem(-43);
-        top: rem(33);
-      }
-
-      .blockquote__except {
-        text-align: right;
-        font-family: $arial;
-        font-size: rem(18);
-        line-height: rem(22);
-        padding-bottom: rem(30);
-      }
-
-      .blockquote__athor {
-        text-align: right;
+      h3 {
         font-family: $dosis;
-        font-size: rem(18);
-        font-weight: bold;
+        font-size: rem(34);
+        font-weight: 700;
         text-transform: uppercase;
-        line-height: rem(22);
+        padding-bottom: rem(45);
+        line-height: 1;
+
       }
     }
 
-    &__video {
-      img {
-        width: 100%;
+    .middle__markered {
+      padding: rem(68) 0 rem(55);
+      border-bottom: 1px solid $border_menu;
+
+      ul {
+        list-style-type:none;
+
+        li {
+          position: relative;
+          font-family: $arial;
+          font-size: rem(13);
+          line-height: rem(34);
+
+          &:before {
+            content: '';
+            background: url(../img/marker_list.png) no-repeat;
+            display: block;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top:25%;
+            left: -20px;
+          }
+        }
+      }
+
+    }
+
+    .middle__numered {
+      padding: rem(55) 0 rem(55);
+      border-bottom: 1px solid $border_menu;
+
+      ol {
+        counter-reset: item;
+
+        li {
+          font-family: $arial;
+          font-size: rem(13);
+          line-height: rem(34);
+          text-indent: -1em;
+          list-style-type: none;
+          counter-increment: item;
+
+          &::before {
+            display: inline-block;
+            width: 1em;
+            padding-right: 0.5em;
+            font-weight: bold;
+            text-align: right;
+            content: counter(item) ".";
+            color: $search;
+          }
+        }
       }
     }
+
+    .middle_table {
+      padding: rem(55) 0 rem(68);
+
+      h3 {
+        padding-bottom: rem(16);
+      }
+
+      p {
+        font-family: $arial;
+        font-size: rem(11);
+        padding-bottom: rem(48);
+        color: $footer_text;
+      }
+
+      table {
+
+
+        tr {
+
+          &:nth-child(odd) {
+            background-color: $footer_bg;
+          }
+
+          th {
+            width: 126px;
+            text-transform: uppercase;
+            font-family: $dosis;
+            font-size: rem(14);
+            font-weight: 500;
+            line-height: rem(18);
+            letter-spacing: 0.2px;
+            background-color:  $search;
+            color: $white;
+            padding: 14px 0;
+
+
+            &:first-child {
+              width: 180px;
+              border-radius: 5px 0 0 0;
+            }
+
+            &:last-child {
+              width: 180px;
+              border-radius: 0 5px  0 0;
+            }
+          }
+
+          td {
+            text-align: center;
+            color: $footer_text;
+            padding: 20px 0;
+            width: 126px;
+            border-right: 1px solid $border_menu;
+            border-bottom: 1px solid $border_menu;
+
+            &:first-child {
+              width: 180px;
+              color: $single_content;
+              text-align: left;
+              padding-left: rem(26);
+            }
+
+          }
+        }
+      }
+
+
+
+    }
+
   }
+
+
 }
