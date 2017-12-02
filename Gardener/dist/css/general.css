@@ -2759,6 +2759,7 @@ footer {
         font-weight: normal;
         color: #000; }
 
+/*OUR BLOG - SINGLE PAGE STYLES*/
 .underheader .underheader__ourblog {
   background-color: #2a7b39;
   padding: 0.75rem 0 2.8125rem;
@@ -2955,34 +2956,37 @@ footer {
         font-size: 0.6875rem;
         padding-bottom: 3rem;
         color: #898989; }
-      .single-content .content__middle .middle_table table tr:nth-child(odd) {
-        background-color: #ededed; }
-      .single-content .content__middle .middle_table table tr th {
-        width: 126px;
-        text-transform: uppercase;
-        font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
-        font-size: 0.875rem;
-        font-weight: 500;
-        line-height: 1.125rem;
-        letter-spacing: 0.2px;
-        background-color: #277135;
-        color: #fff;
-        padding: 14px 0; }
-        .single-content .content__middle .middle_table table tr th:first-child {
-          width: 180px;
-          border-radius: 5px 0 0 0; }
-        .single-content .content__middle .middle_table table tr th:last-child {
-          width: 180px;
-          border-radius: 0 5px  0 0; }
-      .single-content .content__middle .middle_table table tr td {
-        text-align: center;
-        color: #898989;
-        padding: 20px 0;
-        width: 126px;
-        border-right: 1px solid rgba(0, 0, 0, 0.15);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
-        .single-content .content__middle .middle_table table tr td:first-child {
-          width: 180px;
-          color: #555555;
-          text-align: left;
-          padding-left: 1.625rem; }
+      .single-content .content__middle .middle_table table {
+        -webkit-box-shadow: 9px 18px 72px 1px rgba(0, 0, 0, 0.42);
+        box-shadow: 9px 18px 72px 1px rgba(0, 0, 0, 0.42); }
+        .single-content .content__middle .middle_table table tr:nth-child(odd) {
+          background-color: #ededed; }
+        .single-content .content__middle .middle_table table tr th {
+          width: 126px;
+          text-transform: uppercase;
+          font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+          font-size: 0.875rem;
+          font-weight: 500;
+          line-height: 1.125rem;
+          letter-spacing: 0.2px;
+          background-color: #277135;
+          color: #fff;
+          padding: 14px 0; }
+          .single-content .content__middle .middle_table table tr th:first-child {
+            width: 180px;
+            border-radius: 5px 0 0 0; }
+          .single-content .content__middle .middle_table table tr th:last-child {
+            width: 180px;
+            border-radius: 0 5px  0 0; }
+        .single-content .content__middle .middle_table table tr td {
+          text-align: center;
+          color: #898989;
+          padding: 20px 0;
+          width: 126px;
+          border-right: 1px solid rgba(0, 0, 0, 0.15);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+          .single-content .content__middle .middle_table table tr td:first-child {
+            width: 180px;
+            color: #555555;
+            text-align: left;
+            padding-left: 1.625rem; }

@@ -1,9 +1,12 @@
+/*OUR BLOG - SINGLE PAGE STYLES*/
+
 .underheader {
 
   .underheader__ourblog {
     background-color: $header;
     padding: rem(12) 0 rem(45);
     background-image: url(../img/mask.png);
+    //background-image: url(../css/images/mask.png);
 
     .ourblog__title {
       text-transform: uppercase;
