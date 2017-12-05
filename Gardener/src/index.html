@@ -11,11 +11,28 @@
 </head>
 <body>
 
-  //= html/header-otherpage.html
-  //= html/single/1single_underheader.html
-  //= html/single/2single_content.html
-  //= html/single/3single_comments.html
+  //= html/homepage/header-homepage.html
+  //= html/homepage/header-slider.html
   //= html/footer.html
+
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+<!-- Flexslider   -->
+<script defer src="js/scripts.js"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+	  $('.flexslider').flexslider({
+		animation: "fade",
+    slideshowSpeed: '9000',
+    prevText: "",
+    nextText: "",
+    directioNav: false,
+    pauseOnHover: true,
+	  });
+	});
+</script>
 
 <!-- Facebook button -->
   <div id="fb-root"></div>
@@ -25,6 +42,8 @@
     js = d.createElement(s); js.id = id;
     js.src = 'https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.11';
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script></script>
 </body>
 </html>
