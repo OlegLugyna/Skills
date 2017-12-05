@@ -1,0 +1,243 @@
+/*STYLE COMMENTS SINGLE PAGE*/
+.single-comments {
+
+    .comments__wrapper {
+      max-width: rem(960);
+      width: 76%;
+      margin: 0 auto;
+
+      .comments_container {
+
+        .comments_title {
+          background-color: $single-top_bg;
+          display: flex;
+          align-items: center;
+          height: rem(77);
+          margin-bottom: rem(54);
+
+          h3 {
+            display: block;
+            margin: 0 auto;
+            max-width: rem(690);
+            width: 72%;
+            font-family: $dosis;
+            font-size: rem(34);
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+
+        .comment {
+          margin: 0 auto;
+          max-width: rem(690);
+          width: 72%;
+          @include clearfix;
+
+          .comment-box {
+
+            .info-meta {
+              display: flex;
+              justify-content: space-between;
+              font-family: $dosis;
+
+              .info-meta__autor{
+                font-size: rem(14);
+                font-weight: 800;
+                margin-bottom: rem(25);
+                line-height: 24px;
+                text-transform: uppercase;
+              }
+
+              .info-meta__data-replay{
+                font-family: $arial;
+                font-size: rem(10);
+
+                .data__format {
+                  padding-right: 15px;
+                  margin-right: 15px;
+                  border-right: 1px solid $border_menu;
+                  height:rem(16);
+                }
+
+                .reply-link {
+
+                 a {
+                    font-family: $dosis;
+                    letter-spacing: 0.1px;
+                    font-size: rem(14);
+                    font-weight: 800;
+                    color: $icons;
+                    text-transform: uppercase;
+
+                    &:hover {
+                      opacity: 0.75;
+                      transition: all 300ms ease-in-out;
+                    }
+                  }
+                }
+              }
+            }
+
+            .info-content{
+              display: inline-block;
+              text-align: right;
+              border-radius: rem(10);
+              float: right;
+              background-color: $single-top_bg;
+              max-width: rem(652);
+              margin-bottom: rem(32);
+              position: relative;
+
+              p {
+                font-family: $arial;
+                font-size: rem(12);
+                padding: rem(29) rem(24) rem(29);
+                text-align: left;
+                line-height: rem(18);
+              }
+
+              &:before {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 10px 0 10px 20px;
+                border-color: transparent transparent transparent $single-top_bg;
+                top:-10px;
+                left: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .leave-a-comment {
+        background-color: $leave-a-com_bg;
+        padding-bottom: rem(50);
+        margin-bottom: rem(65);
+
+        .form_comments_box {
+          margin: 0 auto;
+          max-width: rem(690);
+          width: 72%;
+
+          .comments_name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: rem(44) 0 rem(44);
+
+            .comments_title {
+
+              h3 {
+                font-family: $dosis;
+                font-size: rem(24);
+                font-weight: bold;
+                text-transform: uppercase;
+                color: $white;
+              }
+            }
+
+            .comments_title--lable {
+              font-family: $arial;
+              font-size: rem(12);
+              color: $font_green;
+            }
+          }
+
+          form {
+
+            .loginforcomment {
+              font-family: $arial;
+              color: $white;
+
+              a {
+                color: $white;
+
+                &:hover {
+                  opacity: 0.5;
+                  transition: color 300ms ease-in-out;
+                }
+              }
+            }
+
+            .box__inputs {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: rem(10);
+
+              .third_item {
+                width: 32%;
+
+                input {
+                  font-family: $arial;
+                  font-size: rem(12);
+                  width: 100%;
+                  border-radius: rem(5);
+                  padding: rem(26) 0 rem(26) rem(28);
+                  border: none;
+                  outline: none;
+                  -webkit-box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.36);
+                  -moz-box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.36);
+                  box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.36);
+
+                  &::-moz-placeholder {
+                    font-family: $arial;
+                    font-size: rem(12);
+                    color: $single_content;
+                  }
+
+                  &::-webkit-input-placeholder {
+                    font-family: $arial;
+                    font-size: rem(12);
+                    color: $single_content;
+                  }
+                }
+              }
+            }
+
+            .comment_container {
+             padding-bottom: rem(22);
+
+              textarea {
+                font-family: $arial;
+                font-size: rem(12);
+                width: 100%;
+                min-height: rem(132);
+                border-radius: 5px;
+                padding: rem(26) 0 0 rem(28);
+                -webkit-box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.36);
+                -moz-box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.36);
+                box-shadow: inset 3px 3px 10px 0px rgba(0,0,0,0.36);
+              }
+            }
+
+            .submit_container {
+
+              input[type="submit"] {
+                width: 100%;
+                background-color: $hover_menu;
+                border: none;
+                outline: none;
+                font-family: $arial;
+                font-size: rem(17);
+                font-weight: bold;
+                color: $footer_caption;
+                padding: rem(26) 0 rem(26);
+                border-radius: rem(10);
+                text-transform: uppercase;
+                letter-spacing: 0.42em;
+                cursor: pointer;
+
+                &:hover {
+                  opacity: 0.6;
+                  transition: color 300ms ease-in-out;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
