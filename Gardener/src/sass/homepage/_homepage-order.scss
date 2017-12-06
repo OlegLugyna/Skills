@@ -1,0 +1,240 @@
+/*Styles HOMEPAGE*/
+.order {
+
+  .wrapper-order {
+
+    .top {
+      -webkit-box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
+      -moz-box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
+      box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
+      background-color: $header;
+
+      &__header {
+        max-width: rem(964);
+        width: 75%;
+        margin: 0 auto;
+        padding: rem(66) 0 rem(66);
+
+        h1 {
+          font-family: $dosis;
+          font-size:rem(53);
+          font-weight: 500;
+          line-height: rem(18);
+          text-transform: uppercase;
+          color: $white;
+          text-align: center;
+        }
+      }
+
+      &__navigation {
+        max-width: rem(964);
+        width: 75%;
+        margin: 0 auto;
+
+        .menu__list {
+
+          ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+              border-left: 1px solid $border_crumb;
+              border-top: 1px solid $border_crumb;
+              border-right: 1px solid $border_crumb;
+              overflow: hidden;
+
+              &:first-child {
+                border-radius: rem(5) 0 0;
+              }
+
+              &:last-child {
+                border-radius: 0 rem(5) 0 0;
+              }
+
+
+              a {
+                display: block;
+                line-height: rem(75);
+                text-transform: uppercase;
+                font-family: $dosis;
+                font-size:rem(18);
+                font-weight: 500;
+                color: $white;
+                padding: 0 rem(50) 0;
+
+                &:hover {
+                  background-color: $white;
+                  color: $header;
+                  border-bottom: none;
+
+                }
+              }
+
+              .active {
+                background-color: $white;
+                color: $header;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .middle {
+      max-width: rem(964);
+      width: 75%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+
+
+      .gardener {
+        max-width: rem(260);
+        width: 26.5%;
+        outline: 1px solid red;
+
+        .slider {
+
+          .items {
+            &__arrows {
+              padding: rem(50) 0 rem(15);
+
+              span {
+                border: 1px solid $single-top_bg;
+                display: inline-block;
+                width: 30px;
+                line-height: 30px;
+                border-radius: 50%;
+                text-align: center;
+                cursor: pointer;
+
+                &:hover {
+                  border: 1px solid $icons;
+                }
+
+                i {
+                  color: $arrow;
+                }
+
+              }
+            }
+            &__caption {
+              padding: 0 0 rem(45);
+
+              h2 {
+                font-family: $dosis;
+                font-size: rem(39);
+                font-family: 500;
+                text-transform: uppercase;
+                line-height: 1;
+                padding-bottom: rem(16);
+
+              }
+              p {
+                font-family: $arial;
+                font-size: rem(8);
+                text-transform: uppercase;
+                color: $single_content;
+                letter-spacing: 0.2px;
+              }
+            }
+
+            &__personal {
+              display: flex;
+              align-items: center;
+
+
+              i {
+                display: block;
+                height: rem(85);
+                width: rem(85);
+
+                img {
+                  display: block;
+                  height: 100%;
+                  width: 100%;
+                  border-radius: 100%;
+                }
+              }
+
+              .personal__id {
+                padding-left: rem(20);
+
+                p {
+
+                  &:first-child {
+                    font-family: $dosis;
+                    font-size: rem(18);
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    line-height: 1.2;
+                    padding-bottom: rem(10);
+                  }
+
+                  &:last-child {
+                    font-family: $arial;
+                    font-size: rem(11);
+                    color: $single_content;
+                    line-height: 1;
+                  }
+                }
+              }
+            }
+
+            &__text {
+              padding: 0 0 rem(30);
+
+              h3 {
+                font-family: $dosis;
+                font-size: rem(14);
+                font-weight: bold;
+                text-transform: uppercase;
+              }
+
+              p {
+                font-family: $arial;
+                font-size: rem(12);
+                color: $footer_caption;
+                width: 95%;
+              }
+            }
+
+            &__social {
+
+              .fa-facebook-official {
+                color: $fb;
+              }
+
+              .fa-twitter {
+                color: $twitter;
+              }
+
+              .fa-envelope{
+                color: $icons;
+
+
+              }
+
+
+
+
+            }
+          }
+        }
+      }
+
+      .form {
+        max-width: rem(450);
+        width: 46%;
+        outline: 1px solid red;
+      }
+
+      .project {
+        max-width: rem(260);
+        width: 26.5%;
+        outline: 1px solid red;
+      }
+    }
+
+  }
+}
