@@ -2481,8 +2481,7 @@ button {
 .header__homepage {
   background-color: #2a7b39;
   -webkit-box-shadow: 0px 19px 31px -4px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 19px 31px -4px rgba(0, 0, 0, 0.75);
-  margin-bottom: 25px; }
+  box-shadow: 0px 19px 31px -4px rgba(0, 0, 0, 0.75); }
   .header__homepage .header__top {
     background-image: url(../img/circle.png);
     background-repeat: no-repeat;
@@ -2542,7 +2541,8 @@ button {
           cursor: pointer; }
   .header__homepage .header__slider {
     height: 55rem;
-    background-size: cover; }
+    background-size: cover;
+    background: url(../img/homepage/slide_1_bg.png) center center no-repeat; }
     .header__homepage .header__slider .header__slider--wrapper {
       background-color: rgba(130, 183, 72, 0.9);
       height: 100%;
@@ -2589,6 +2589,10 @@ button {
                 font-size: 2.75rem;
                 text-transform: uppercase;
                 color: #fff; }
+                .header__homepage .header__slider .header__slider--wrapper .flexslider .slides li .slides__text h1 a:hover {
+                  opacity: 0.7;
+                  -webkit-transition: color 300ms ease-in-out;
+                  transition: color 300ms ease-in-out; }
             .header__homepage .header__slider .header__slider--wrapper .flexslider .slides li .slides__text .text__box {
               display: -webkit-box;
               display: -ms-flexbox;
@@ -2609,6 +2613,10 @@ button {
                 background-color: #ffde5a;
                 border-radius: 100%;
                 color: #000; }
+                .header__homepage .header__slider .header__slider--wrapper .flexslider .slides li .slides__text .text__box span a:hover {
+                  opacity: 0.7;
+                  -webkit-transition: color 300ms ease-in-out;
+                  transition: color 300ms ease-in-out; }
                 .header__homepage .header__slider .header__slider--wrapper .flexslider .slides li .slides__text .text__box span a i {
                   color: inherit; }
               .header__homepage .header__slider .header__slider--wrapper .flexslider .slides li .slides__text .text__box p {
@@ -2619,6 +2627,10 @@ button {
                   font-size: 0.75rem;
                   color: #ffde5a;
                   line-height: 14px; }
+                  .header__homepage .header__slider .header__slider--wrapper .flexslider .slides li .slides__text .text__box p a:hover {
+                    opacity: 0.7;
+                    -webkit-transition: color 300ms ease-in-out;
+                    transition: color 300ms ease-in-out; }
       .header__homepage .header__slider .header__slider--wrapper .flexslider ol {
         display: -webkit-box;
         display: -ms-flexbox;
