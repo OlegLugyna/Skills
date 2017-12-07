@@ -111,12 +111,14 @@
       </section>
       <div class="order__middle middle">
         <section class="middle__gardeners gardener">
+          <span class="gardener__button gardener__button--left">
+            <i class="fa fa-caret-left" aria-hidden="true"></i>
+          </span>
+          <span class="gardener__button gardener__button--right">
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+          </span>
           <div class="gardener__slider slider">
             <div class="slider__items items">
-              <div class="items__arrows">
-                <span><i class="fa fa-caret-left" aria-hidden="true"></i></span>
-                <span><i class="fa fa-caret-right" aria-hidden="true"></i></span>
-              </div>
               <div class="items__caption">
                 <h2>gardeners</h2>
                 <p>Our best specialist</p>
@@ -133,13 +135,67 @@
                 <p>There are many variantios of passages of lorem ipsum availabele, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believalde</p>
               </div>
               <div class="items__social">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <a href="#">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a href="#">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
               </div>
             </div>
-            <div class="slider__item"></div>
-            <div class="slider__item"></div>
+            <div class="slider__items items">
+              <div class="items__caption">
+                <h2>gardeners</h2>
+                <p>Our suoer star</p>
+              </div>
+              <div class="items__personal">
+                <i><img src="./img/homepage/gardener_2.png" alt=""></i>
+                <div class="personal__id">
+                  <p>Jack Hamilton</p>
+                  <p>Leader gardener</p>
+                </div>
+              </div>
+              <div class="items__text">
+                <h3>There are many variantios of passages of lorem ipsum availabele, but the majority have suffered alteration in some form</h3>
+                <p>There are many variantios of passages of lorem ipsum availabele, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believalde</p>
+              </div>
+              <div class="items__social">
+                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div class="slider__items items">
+              <div class="items__caption">
+                <h2>gardeners</h2>
+                <p>You personaly adviser</p>
+              </div>
+              <div class="items__personal">
+                <i><img src="./img/homepage/gardener_3.png" alt=""></i>
+                <div class="personal__id">
+                  <p>Nensy Borg</p>
+                  <p>Good maneger</p>
+                </div>
+              </div>
+              <div class="items__text">
+                <h3>There are many variantios of passages of lorem ipsum availabele, but the majority have suffered alteration in some form</h3>
+                <p>There are many variantios of passages of lorem ipsum availabele, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believalde</p>
+              </div>
+              <div class="items__social">
+                <a href="#">
+                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
           </div>
         </section>
         <section class="middle__form form">
@@ -196,11 +252,12 @@
   </footer>
 
 <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script> -->
 
 <!-- Flexslider   -->
-<script defer src="js/scripts.js"></script>
+<!-- <script defer src="js/scripts.js"></script> -->
 <script type="text/javascript">
 	$(window).load(function(){
 	  $('.flexslider').flexslider({
@@ -214,6 +271,20 @@
 	});
 </script>
 
+<!-- Slick slider -->
+<script>
+  $(document).ready(function () {
+      $('.gardener__slider').slick({
+        autoplay: true,
+        pauseOnHover: false,
+        adaptiveHeight: true,
+        nextArrow: '.gardener__button--left',
+        prevArrow: '.gardener__button--right',
+        pauseOnHover: true
+      });
+    });
+</script>
+
 <!-- Facebook button -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
@@ -224,6 +295,8 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
   </script>
-  <script></script>
+
+<!-- File scripts (total scripts)-->
+<script src="./js/scripts.js"></script>
 </body>
 </html>

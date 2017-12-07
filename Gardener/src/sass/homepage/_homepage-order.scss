@@ -2,12 +2,14 @@
 .order {
 
   .wrapper-order {
+    padding-bottom: rem(70);
 
     .top {
       -webkit-box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
       -moz-box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
       box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
       background-color: $header;
+
 
       &__header {
         max-width: rem(964);
@@ -51,7 +53,6 @@
                 border-radius: 0 rem(5) 0 0;
               }
 
-
               a {
                 display: block;
                 line-height: rem(75);
@@ -66,7 +67,6 @@
                   background-color: $white;
                   color: $header;
                   border-bottom: none;
-
                 }
               }
 
@@ -86,38 +86,35 @@
       margin: 0 auto;
       display: flex;
       justify-content: center;
-
+      padding: rem(68) 0 0 0;
 
       .gardener {
-        max-width: rem(260);
+        max-width: rem(270);
         width: 26.5%;
-        outline: 1px solid red;
+        padding-top: rem(52);
+
+          .gardener__button {
+            border: 1px solid $single-top_bg;
+            display: inline-block;
+            width: 30px;
+            line-height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            cursor: pointer;
+
+            &:hover {
+              border: 1px solid $icons;
+            }
+
+            i {
+              color: $arrow;
+            }
+          }
 
         .slider {
 
           .items {
-            &__arrows {
-              padding: rem(50) 0 rem(15);
 
-              span {
-                border: 1px solid $single-top_bg;
-                display: inline-block;
-                width: 30px;
-                line-height: 30px;
-                border-radius: 50%;
-                text-align: center;
-                cursor: pointer;
-
-                &:hover {
-                  border: 1px solid $icons;
-                }
-
-                i {
-                  color: $arrow;
-                }
-
-              }
-            }
             &__caption {
               padding: 0 0 rem(45);
 
@@ -127,9 +124,9 @@
                 font-family: 500;
                 text-transform: uppercase;
                 line-height: 1;
-                padding-bottom: rem(16);
-
+                padding: rem(14) 0 rem(16);
               }
+
               p {
                 font-family: $arial;
                 font-size: rem(8);
@@ -142,7 +139,7 @@
             &__personal {
               display: flex;
               align-items: center;
-
+              padding-bottom: rem(35);
 
               i {
                 display: block;
@@ -154,6 +151,7 @@
                   height: 100%;
                   width: 100%;
                   border-radius: 100%;
+                  object-fit: cover;
                 }
               }
 
@@ -169,6 +167,7 @@
                     text-transform: uppercase;
                     line-height: 1.2;
                     padding-bottom: rem(10);
+                    width: rem(100);
                   }
 
                   &:last-child {
@@ -189,6 +188,7 @@
                 font-size: rem(14);
                 font-weight: bold;
                 text-transform: uppercase;
+                padding-bottom: rem(20);
               }
 
               p {
@@ -203,21 +203,17 @@
 
               .fa-facebook-official {
                 color: $fb;
+                margin-right: rem(18);
               }
 
               .fa-twitter {
                 color: $twitter;
+                margin-right: rem(18);
               }
 
               .fa-envelope{
                 color: $icons;
-
-
               }
-
-
-
-
             }
           }
         }
