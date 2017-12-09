@@ -24,11 +24,11 @@
         <span class="gardener__button gardener__button--right">
           <i class="fa fa-caret-right" aria-hidden="true"></i>
         </span>
+        <h2 class="gardener__title--primary">gardeners</h2>
         <div class="gardener__slider slider">
           <div class="slider__items items">
             <div class="items__caption">
-              <h2>gardeners</h2>
-              <p>Our best specialist</p>
+            <p>Our best specialist</p>
             </div>
             <div class="items__personal">
               <i><img src="./img/homepage/gardener_1.png" alt=""></i>
@@ -55,7 +55,7 @@
           </div>
           <div class="slider__items items">
             <div class="items__caption">
-              <h2>gardeners</h2>
+              <!-- <h2>gardeners</h2> -->
               <p>Our suoer star</p>
             </div>
             <div class="items__personal">
@@ -77,7 +77,7 @@
           </div>
           <div class="slider__items items">
             <div class="items__caption">
-              <h2>gardeners</h2>
+              <!-- <h2>gardeners</h2> -->
               <p>You personaly adviser</p>
             </div>
             <div class="items__personal">
@@ -105,12 +105,58 @@
           </div>
         </div>
       </section>
-      <section class="middle__form form">
-        FORM HERE
 
+      <section class="middle__form">
+        <div class="middle__container">
+          <form class="form__list form" method="post" action="">
+            <div class="form__item">
+              <input name="contact[name]" type="text" placeholder="Full name" value="" required="required" id="contact-form-name" />
+            </div>
+            <div class="form__item items">
+              <input name="contact[phone]" type="text" placeholder="Phone" value="" required="required" id="contact-form-phone" />
+              <input name="contact[email]" type="email" placeholder="E-mail" value="" required="required" id="contact-form-email" />
+            </div>
+            <div class="form__item">
+              <input name="contact[address]" type="text" placeholder="Address" value="" required="required" id="contact-form-address" />
+            </div>
+            <div class="form__item">
+              <input name="contact[date]" type="date" value=""  required="required" id="contact-form-date" />
+            </div>
+            <div class="form__item">
+              <textarea name="contact[message]" placeholder="Message..." id="contact-form-message" required="required"></textarea>
+            </div>
+
+            <input type="submit" class="submit" value="Order" />
+            <input type="hidden" class="category_hidden_field" name="contact[category]" value=""/>
+          </form>
+        </div>
       </section>
+
       <section class="middle__project project">
-        PROJECT HERE
+        <div class="middle__project">
+          <h2 class="project__title">latest project</h2>
+          <div class="project__block block">
+            <span class="block__data">07 DEC 2017</span>
+            <a class="block__name"href="#"><h3>First you. Under hath, multiply of moved land</h3></a>
+          </div>
+          <div class="project__block block">
+            <span class="block__data">07 DEC 2017</span>
+            <a href="#"><h3 class="block__name">Dominion. Divide don't the wherein him.</h3></a>
+          </div>
+          <div class="project__block block">
+            <span class="block__data">07 DEC 2017</span>
+            <a href="#"><h3 class="block__name">Form. Rule i fill dry divide without multiply.</h3></a>
+          </div>
+          <a class="project__total" href="#">
+            <span class="text">all project</span>
+            <span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </span>
+          </a>
+
+        </div>
+
+
       </section>
     </div>
   </div>

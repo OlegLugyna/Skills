@@ -2,7 +2,7 @@
 .order {
 
   .wrapper-order {
-    padding-bottom: rem(70);
+    padding: 0 0 rem(70);
 
     .top {
       -webkit-box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
@@ -90,6 +90,7 @@
 
       .gardener {
         max-width: rem(270);
+        min-height: rem(500);
         width: 26.5%;
         padding-top: rem(52);
 
@@ -111,21 +112,27 @@
             }
           }
 
+            .gardener__title--primary {
+            font-family: $dosis;
+            font-size: rem(39);
+            font-family: 500;
+            text-transform: uppercase;
+            line-height: 1;
+            padding: rem(14) 0 rem(16);
+          }
+
+
         .slider {
+          padding-right: rem(25);
+
 
           .items {
+            outline: none;
+            border: none;
+
 
             &__caption {
               padding: 0 0 rem(45);
-
-              h2 {
-                font-family: $dosis;
-                font-size: rem(39);
-                font-family: 500;
-                text-transform: uppercase;
-                line-height: 1;
-                padding: rem(14) 0 rem(16);
-              }
 
               p {
                 font-family: $arial;
@@ -189,6 +196,7 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 padding-bottom: rem(20);
+                min-height: rem(70);
               }
 
               p {
@@ -201,9 +209,15 @@
 
             &__social {
 
+              a {
+                outline: none;
+                border: none;
+              }
+
               .fa-facebook-official {
                 color: $fb;
                 margin-right: rem(18);
+
               }
 
               .fa-twitter {
@@ -219,18 +233,183 @@
         }
       }
 
-      .form {
+      .middle__form {
+        background-color: $leave-a-com_bg;
+        border-radius: rem(10);
         max-width: rem(450);
+        height: rem(600);
         width: 46%;
-        outline: 1px solid red;
+        padding: rem(48);
+
+        .middle__container {
+
+          .form {
+
+            .form__item {
+              padding-bottom: rem(10);
+
+              input {
+                font-family: $arial;
+                color: $single_content;
+                font-size: rem(12);
+                width: 100%;
+                border-radius: rem(5);
+                padding: rem(26) 0 rem(26) rem(26);
+                border: none;
+                outline: none;
+                -webkit-box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+                -moz-box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+                box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+                &::-moz-placeholder {
+                  font-family: $arial;
+                  font-size: rem(12);
+                  color: $single_content;
+                }
+                &::-webkit-input-placeholder {
+                  font-family: $arial;
+                  font-size: rem(12);
+                  color: $single_content;
+                }
+              }
+
+              textarea {
+                font-family: $arial;
+                font-size: rem(12);
+                width: 100%;
+                min-height: rem(100);
+                border-radius: 5px;
+                padding: rem(26) 0 0 rem(28);
+                -webkit-box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+                -moz-box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+                box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+              }
+
+
+            }
+
+            input[type="submit"] {
+              width: 100%;
+              background-color:$button_yellow;
+              border: none;
+              outline: none;
+              font-family: $arial;
+              font-size: rem(17);
+              font-weight: bold;
+              color: $footer_caption;
+              padding: rem(26) 0 rem(26);
+              border-radius: rem(10);
+              text-transform: uppercase;
+              letter-spacing: 0.42em;
+              cursor: pointer;
+
+              &:hover {
+                opacity: 0.6;
+                transition: color 300ms ease-in-out;
+              }
+            }
+
+            .items {
+              display: flex;
+              justify-content: space-between;
+              position: relative;
+
+               &::before {
+                 content: "";
+                 display: block;
+                 height: rem(66);
+                 border-left: 1px solid $border_menu;
+                 position: absolute;
+                 left: 50%;
+                 top: 0;
+               }
+
+              input {
+                -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.36);
+                -moz-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.36);
+                box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.36);
+
+                &:first-child {
+                  border-radius: rem(10) 0 0 rem(10);
+                  margin-right: -0.5px;
+                  border-right: 1px solid #000;
+
+                }
+                &:last-child {
+                  border-radius: 0 rem(10) rem(10) 0;
+                  margin-left: -0.5px;
+
+                }
+              }
+            }
+          }
+        }
       }
 
       .project {
         max-width: rem(260);
         width: 26.5%;
-        outline: 1px solid red;
+        padding: rem(90) rem(5) 0 rem(25);
+
+        &__title {
+          font-family: $dosis;
+          font-size: rem(39);
+          line-height: 1.2;
+          text-transform: uppercase;
+        }
+
+        .block {
+          padding: rem(30) 0 rem(30);
+          border-bottom: 1px solid $icons;
+
+          &__data {
+            font-family: $arial;
+            font-size: rem(9);
+            font-weight: bold;
+            color: $single_content;
+
+          }
+
+          &__name {
+            font-family: $dosis;
+            font-size: rem(14);
+            font-weight: bold;
+            line-height: rem(18);
+            text-transform: uppercase;
+            color: $black;
+
+            &:hover {
+              color: $search;
+            }
+          }
+
+        }
+
+        &__total {
+          padding: rem(40) 0 0;
+          line-height: 1;
+
+          &:hover {
+            transition: color 300ms ease-in-out;
+            opacity: 0.7;
+          }
+
+          .text {
+            font-family: $dosis;
+            font-size: rem(13);
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $header;
+          }
+          span {
+            .fa-arrow-right {
+              font-size: rem(13);
+              font-weight: 800;
+              color: $button_yellow;
+              padding-left: rem(7);
+            }
+          }
+        }
       }
     }
-
   }
 }

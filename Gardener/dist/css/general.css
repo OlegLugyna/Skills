@@ -2709,7 +2709,7 @@ button {
 
 /*Styles HOMEPAGE*/
 .order .wrapper-order {
-  padding-bottom: 4.375rem; }
+  padding: 0 0 4.375rem; }
   .order .wrapper-order .top {
     -webkit-box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
     box-shadow: inset 0px 19px 44px -2px rgba(0, 0, 0, 0.56);
@@ -2776,6 +2776,7 @@ button {
     padding: 4.25rem 0 0 0; }
     .order .wrapper-order .middle .gardener {
       max-width: 16.875rem;
+      min-height: 31.25rem;
       width: 26.5%;
       padding-top: 3.25rem; }
       .order .wrapper-order .middle .gardener .gardener__button {
@@ -2790,84 +2791,242 @@ button {
           border: 1px solid rgba(0, 0, 0, 0.35); }
         .order .wrapper-order .middle .gardener .gardener__button i {
           color: #999999; }
-      .order .wrapper-order .middle .gardener .slider .items__caption {
-        padding: 0 0 2.8125rem; }
-        .order .wrapper-order .middle .gardener .slider .items__caption h2 {
-          font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
-          font-size: 2.4375rem;
-          font-family: 500;
-          text-transform: uppercase;
-          line-height: 1;
-          padding: 0.875rem 0 1rem; }
-        .order .wrapper-order .middle .gardener .slider .items__caption p {
+      .order .wrapper-order .middle .gardener .gardener__title--primary {
+        font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+        font-size: 2.4375rem;
+        font-family: 500;
+        text-transform: uppercase;
+        line-height: 1;
+        padding: 0.875rem 0 1rem; }
+      .order .wrapper-order .middle .gardener .slider {
+        padding-right: 1.5625rem; }
+        .order .wrapper-order .middle .gardener .slider .items {
+          outline: none;
+          border: none; }
+          .order .wrapper-order .middle .gardener .slider .items__caption {
+            padding: 0 0 2.8125rem; }
+            .order .wrapper-order .middle .gardener .slider .items__caption p {
+              font-family: Arial, Tahoma, sans-serif;
+              font-size: 0.5rem;
+              text-transform: uppercase;
+              color: #555555;
+              letter-spacing: 0.2px; }
+          .order .wrapper-order .middle .gardener .slider .items__personal {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            padding-bottom: 2.1875rem; }
+            .order .wrapper-order .middle .gardener .slider .items__personal i {
+              display: block;
+              height: 5.3125rem;
+              width: 5.3125rem; }
+              .order .wrapper-order .middle .gardener .slider .items__personal i img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                -o-object-fit: cover;
+                object-fit: cover; }
+            .order .wrapper-order .middle .gardener .slider .items__personal .personal__id {
+              padding-left: 1.25rem; }
+              .order .wrapper-order .middle .gardener .slider .items__personal .personal__id p:first-child {
+                font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+                font-size: 1.125rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                line-height: 1.2;
+                padding-bottom: 0.625rem;
+                width: 6.25rem; }
+              .order .wrapper-order .middle .gardener .slider .items__personal .personal__id p:last-child {
+                font-family: Arial, Tahoma, sans-serif;
+                font-size: 0.6875rem;
+                color: #555555;
+                line-height: 1; }
+          .order .wrapper-order .middle .gardener .slider .items__text {
+            padding: 0 0 1.875rem; }
+            .order .wrapper-order .middle .gardener .slider .items__text h3 {
+              font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+              font-size: 0.875rem;
+              font-weight: bold;
+              text-transform: uppercase;
+              padding-bottom: 1.25rem;
+              min-height: 4.375rem; }
+            .order .wrapper-order .middle .gardener .slider .items__text p {
+              font-family: Arial, Tahoma, sans-serif;
+              font-size: 0.75rem;
+              color: #434343;
+              width: 95%; }
+          .order .wrapper-order .middle .gardener .slider .items__social a {
+            outline: none;
+            border: none; }
+          .order .wrapper-order .middle .gardener .slider .items__social .fa-facebook-official {
+            color: #3b5998;
+            margin-right: 1.125rem; }
+          .order .wrapper-order .middle .gardener .slider .items__social .fa-twitter {
+            color: #55acee;
+            margin-right: 1.125rem; }
+          .order .wrapper-order .middle .gardener .slider .items__social .fa-envelope {
+            color: rgba(0, 0, 0, 0.35); }
+    .order .wrapper-order .middle .middle__form {
+      background-color: #1e6b2d;
+      border-radius: 0.625rem;
+      max-width: 28.125rem;
+      height: 37.5rem;
+      width: 46%;
+      padding: 3rem; }
+      .order .wrapper-order .middle .middle__form .middle__container .form .form__item {
+        padding-bottom: 0.625rem; }
+        .order .wrapper-order .middle .middle__form .middle__container .form .form__item input {
           font-family: Arial, Tahoma, sans-serif;
-          font-size: 0.5rem;
-          text-transform: uppercase;
           color: #555555;
-          letter-spacing: 0.2px; }
-      .order .wrapper-order .middle .gardener .slider .items__personal {
+          font-size: 0.75rem;
+          width: 100%;
+          border-radius: 0.3125rem;
+          padding: 1.625rem 0 1.625rem 1.625rem;
+          border: none;
+          outline: none;
+          -webkit-box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36); }
+          .order .wrapper-order .middle .middle__form .middle__container .form .form__item input::-moz-placeholder {
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 0.75rem;
+            color: #555555; }
+          .order .wrapper-order .middle .middle__form .middle__container .form .form__item input::-webkit-input-placeholder {
+            font-family: Arial, Tahoma, sans-serif;
+            font-size: 0.75rem;
+            color: #555555; }
+        .order .wrapper-order .middle .middle__form .middle__container .form .form__item textarea {
+          font-family: Arial, Tahoma, sans-serif;
+          font-size: 0.75rem;
+          width: 100%;
+          min-height: 6.25rem;
+          border-radius: 5px;
+          padding: 1.625rem 0 0 1.75rem;
+          -webkit-box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: inset 3px 3px 10px 0px rgba(0, 0, 0, 0.36); }
+      .order .wrapper-order .middle .middle__form .middle__container .form input[type="submit"] {
+        width: 100%;
+        background-color: #deab22;
+        border: none;
+        outline: none;
+        font-family: Arial, Tahoma, sans-serif;
+        font-size: 1.0625rem;
+        font-weight: bold;
+        color: #434343;
+        padding: 1.625rem 0 1.625rem;
+        border-radius: 0.625rem;
+        text-transform: uppercase;
+        letter-spacing: 0.42em;
+        cursor: pointer; }
+        .order .wrapper-order .middle .middle__form .middle__container .form input[type="submit"]:hover {
+          opacity: 0.6;
+          -webkit-transition: color 300ms ease-in-out;
+          transition: color 300ms ease-in-out; }
+      .order .wrapper-order .middle .middle__form .middle__container .form .items {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        padding-bottom: 2.1875rem; }
-        .order .wrapper-order .middle .gardener .slider .items__personal i {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        position: relative; }
+        .order .wrapper-order .middle .middle__form .middle__container .form .items::before {
+          content: "";
           display: block;
-          height: 5.3125rem;
-          width: 5.3125rem; }
-          .order .wrapper-order .middle .gardener .slider .items__personal i img {
-            display: block;
-            height: 100%;
-            width: 100%;
-            border-radius: 100%;
-            -o-object-fit: cover;
-            object-fit: cover; }
-        .order .wrapper-order .middle .gardener .slider .items__personal .personal__id {
-          padding-left: 1.25rem; }
-          .order .wrapper-order .middle .gardener .slider .items__personal .personal__id p:first-child {
-            font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
-            font-size: 1.125rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            line-height: 1.2;
-            padding-bottom: 0.625rem;
-            width: 6.25rem; }
-          .order .wrapper-order .middle .gardener .slider .items__personal .personal__id p:last-child {
-            font-family: Arial, Tahoma, sans-serif;
-            font-size: 0.6875rem;
-            color: #555555;
-            line-height: 1; }
-      .order .wrapper-order .middle .gardener .slider .items__text {
-        padding: 0 0 1.875rem; }
-        .order .wrapper-order .middle .gardener .slider .items__text h3 {
-          font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
-          font-size: 0.875rem;
-          font-weight: bold;
-          text-transform: uppercase;
-          padding-bottom: 1.25rem; }
-        .order .wrapper-order .middle .gardener .slider .items__text p {
-          font-family: Arial, Tahoma, sans-serif;
-          font-size: 0.75rem;
-          color: #434343;
-          width: 95%; }
-      .order .wrapper-order .middle .gardener .slider .items__social .fa-facebook-official {
-        color: #3b5998;
-        margin-right: 1.125rem; }
-      .order .wrapper-order .middle .gardener .slider .items__social .fa-twitter {
-        color: #55acee;
-        margin-right: 1.125rem; }
-      .order .wrapper-order .middle .gardener .slider .items__social .fa-envelope {
-        color: rgba(0, 0, 0, 0.35); }
-    .order .wrapper-order .middle .form {
-      max-width: 28.125rem;
-      width: 46%;
-      outline: 1px solid red; }
+          height: 4.125rem;
+          border-left: 1px solid rgba(0, 0, 0, 0.15);
+          position: absolute;
+          left: 50%;
+          top: 0; }
+        .order .wrapper-order .middle .middle__form .middle__container .form .items input {
+          -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.36);
+          box-shadow: inset 0px 3px 10px 0px rgba(0, 0, 0, 0.36); }
+          .order .wrapper-order .middle .middle__form .middle__container .form .items input:first-child {
+            border-radius: 0.625rem 0 0 0.625rem;
+            margin-right: -0.5px;
+            border-right: 1px solid #000; }
+          .order .wrapper-order .middle .middle__form .middle__container .form .items input:last-child {
+            border-radius: 0 0.625rem 0.625rem 0;
+            margin-left: -0.5px; }
     .order .wrapper-order .middle .project {
       max-width: 16.25rem;
       width: 26.5%;
+      padding: 5.625rem 0.3125rem 0 1.5625rem; }
+      .order .wrapper-order .middle .project__title {
+        font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+        font-size: 2.4375rem;
+        line-height: 1.2;
+        text-transform: uppercase; }
+      .order .wrapper-order .middle .project .block {
+        padding: 1.875rem 0 1.875rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.35); }
+        .order .wrapper-order .middle .project .block__data {
+          font-family: Arial, Tahoma, sans-serif;
+          font-size: 0.5625rem;
+          font-weight: bold;
+          color: #555555; }
+        .order .wrapper-order .middle .project .block__name {
+          font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+          font-size: 0.875rem;
+          font-weight: bold;
+          line-height: 1.125rem;
+          text-transform: uppercase;
+          color: #000; }
+          .order .wrapper-order .middle .project .block__name:hover {
+            color: #277135; }
+      .order .wrapper-order .middle .project__total {
+        padding: 2.5rem 0 0;
+        line-height: 1; }
+        .order .wrapper-order .middle .project__total:hover {
+          -webkit-transition: color 300ms ease-in-out;
+          transition: color 300ms ease-in-out;
+          opacity: 0.7; }
+        .order .wrapper-order .middle .project__total .text {
+          font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+          font-size: 0.8125rem;
+          font-weight: 800;
+          text-transform: uppercase;
+          color: #2a7b39; }
+        .order .wrapper-order .middle .project__total span .fa-arrow-right {
+          font-size: 0.8125rem;
+          font-weight: 800;
+          color: #deab22;
+          padding-left: 0.4375rem; }
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .services .services__image {
+    width: 25%; }
+    .services .services__image img {
+      display: block;
+      width: 100%;
+      height: 550px;
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .services .services__buttons {
+    width: 25%;
+    outline: 1px solid red; }
+  .services .services__description {
+    width: 50%;
+    background-color: #2a7b39;
+    background-image: url(../img/mask.png); }
+    .services .services__description .description__content {
+      width: 50%;
       outline: 1px solid red; }
+      .services .services__description .description__content img {
+        display: block;
+        width: 100%;
+        height: auto;
+        -o-object-fit: cover;
+        object-fit: cover; }
 
 /*FOOTER STYLES*/
 footer {

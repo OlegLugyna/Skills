@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Gardener-About</title>
+  <title>Gardener-Homepage</title>
   <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Playfair+Display:700" rel="stylesheet">
   <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/general.css">
@@ -117,11 +117,11 @@
           <span class="gardener__button gardener__button--right">
             <i class="fa fa-caret-right" aria-hidden="true"></i>
           </span>
+          <h2 class="gardener__title--primary">gardeners</h2>
           <div class="gardener__slider slider">
             <div class="slider__items items">
               <div class="items__caption">
-                <h2>gardeners</h2>
-                <p>Our best specialist</p>
+              <p>Our best specialist</p>
               </div>
               <div class="items__personal">
                 <i><img src="./img/homepage/gardener_1.png" alt=""></i>
@@ -148,7 +148,7 @@
             </div>
             <div class="slider__items items">
               <div class="items__caption">
-                <h2>gardeners</h2>
+                <!-- <h2>gardeners</h2> -->
                 <p>Our suoer star</p>
               </div>
               <div class="items__personal">
@@ -170,7 +170,7 @@
             </div>
             <div class="slider__items items">
               <div class="items__caption">
-                <h2>gardeners</h2>
+                <!-- <h2>gardeners</h2> -->
                 <p>You personaly adviser</p>
               </div>
               <div class="items__personal">
@@ -198,15 +198,90 @@
             </div>
           </div>
         </section>
-        <section class="middle__form form">
-          FORM HERE
   
+        <section class="middle__form">
+          <div class="middle__container">
+            <form class="form__list form" method="post" action="">
+              <div class="form__item">
+                <input name="contact[name]" type="text" placeholder="Full name" value="" required="required" id="contact-form-name" />
+              </div>
+              <div class="form__item items">
+                <input name="contact[phone]" type="text" placeholder="Phone" value="" required="required" id="contact-form-phone" />
+                <input name="contact[email]" type="email" placeholder="E-mail" value="" required="required" id="contact-form-email" />
+              </div>
+              <div class="form__item">
+                <input name="contact[address]" type="text" placeholder="Address" value="" required="required" id="contact-form-address" />
+              </div>
+              <div class="form__item">
+                <input name="contact[date]" type="date" value=""  required="required" id="contact-form-date" />
+              </div>
+              <div class="form__item">
+                <textarea name="contact[message]" placeholder="Message..." id="contact-form-message" required="required"></textarea>
+              </div>
+  
+              <input type="submit" class="submit" value="Order" />
+              <input type="hidden" class="category_hidden_field" name="contact[category]" value=""/>
+            </form>
+          </div>
         </section>
+  
         <section class="middle__project project">
-          PROJECT HERE
+          <div class="middle__project">
+            <h2 class="project__title">latest project</h2>
+            <div class="project__block block">
+              <span class="block__data">07 DEC 2017</span>
+              <a class="block__name"href="#"><h3>First you. Under hath, multiply of moved land</h3></a>
+            </div>
+            <div class="project__block block">
+              <span class="block__data">07 DEC 2017</span>
+              <a href="#"><h3 class="block__name">Dominion. Divide don't the wherein him.</h3></a>
+            </div>
+            <div class="project__block block">
+              <span class="block__data">07 DEC 2017</span>
+              <a href="#"><h3 class="block__name">Form. Rule i fill dry divide without multiply.</h3></a>
+            </div>
+            <a class="project__total" href="#">
+              <span class="text">all project</span>
+              <span>
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+              </span>
+            </a>
+  
+          </div>
+  
+  
         </section>
       </div>
     </div>
+  </article>
+  <article class="services">
+    <section class="services__image">
+      <img src="./img/homepage/left_1.png" alt="">
+    </section>
+    <section class="services__buttons">
+  
+    </section>
+    <section class="services__description">
+      <div class="description__content content">
+        <h4 class="content__caption">gardener's suply</h4>
+        <p class="content__undercaption">There are many variantios of passages of lorem ipsum availabele, but the majority have suffered alteration in some form</p>
+        <div class="content__pic">
+          <img src="./img/homepage/three_foto.png" alt="">
+        </div>
+        <p class="content__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="content__decor">
+          <img src="./img/homepage/decor_line.png" alt="">
+        </div>
+        <div class="content__links">
+          <a href="#">See project</a>
+          <a href="#">Read testimonials</a>
+          <a href="#">More about gardener's suply</a>
+        </div>
+  
+      </div>
+  
+    </section>
   </article>
   <footer>
     <div class="footer__wrapper">
@@ -296,7 +371,7 @@
   }(document, 'script', 'facebook-jssdk'));
   </script>
 
-<!-- File scripts (total scripts)-->
+<!-- File scripts (total git scripts)-->
 <script src="./js/scripts.js"></script>
 </body>
 </html>
