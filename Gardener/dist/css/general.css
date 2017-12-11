@@ -3012,21 +3012,132 @@ button {
       -o-object-fit: cover;
       object-fit: cover; }
   .services .services__buttons {
-    width: 25%;
-    outline: 1px solid red; }
+    width: 30%; }
+    .services .services__buttons ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      background-color: #2a7b39; }
+      .services .services__buttons ul li {
+        width: 50%;
+        padding-top: 50%;
+        background-color: #2a7b39;
+        position: relative; }
+        .services .services__buttons ul li:nth-child(1) {
+          background-color: #0f613a; }
+        .services .services__buttons ul li:nth-child(2) {
+          background-color: #0d6d3a; }
+        .services .services__buttons ul li:nth-child(3) {
+          background-color: #2c813c; }
+        .services .services__buttons ul li:nth-child(4) {
+          background-color: #2a7c3c; }
+        .services .services__buttons ul li:nth-child(5) {
+          background-color: #369141; }
+        .services .services__buttons ul li:nth-child(6) {
+          background-color: #59a032; }
+        .services .services__buttons ul li div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .services .services__buttons ul li div:hover {
+            background-color: #2a7b39;
+            margin: -10px;
+            z-index: 999;
+            width: calc(100% + 20px);
+            height: calc(100% + 20px);
+            cursor: pointer; }
+            .services .services__buttons ul li div:hover .button__img--hover {
+              display: block; }
+            .services .services__buttons ul li div:hover .button__img {
+              display: none; }
+          .services .services__buttons ul li div i {
+            margin: 0 auto; }
+            .services .services__buttons ul li div i img {
+              display: block;
+              width: 75px;
+              height: 75px;
+              -o-object-fit: contain;
+              object-fit: contain;
+              margin: 0 auto; }
+            .services .services__buttons ul li div i h4 {
+              font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+              font-size: 1.125rem;
+              font-weight: 500;
+              font-style: normal;
+              text-transform: uppercase;
+              color: #fff;
+              text-align: center;
+              padding-top: 1.25rem; }
+        .services .services__buttons ul li .button__img--hover {
+          display: none; }
   .services .services__description {
-    width: 50%;
+    width: 45%;
     background-color: #2a7b39;
-    background-image: url(../img/mask.png); }
+    background-image: url(../img/mask.png);
+    padding: 5.75rem 0 7.1875rem 5rem; }
     .services .services__description .description__content {
-      width: 50%;
-      outline: 1px solid red; }
-      .services .services__description .description__content img {
-        display: block;
-        width: 100%;
-        height: auto;
-        -o-object-fit: cover;
-        object-fit: cover; }
+      width: 65%; }
+      .services .services__description .description__content .content__caption {
+        font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+        font-weight: 600;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: #fff;
+        padding-bottom: 2.8125rem; }
+      .services .services__description .description__content .content__undercaption {
+        font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+        font-weight: 800;
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        color: #ffde5a;
+        padding-bottom: 2.1875rem; }
+      .services .services__description .description__content .content__pic {
+        padding-bottom: 2.1875rem; }
+        .services .services__description .description__content .content__pic img {
+          display: block;
+          width: 100%;
+          height: auto;
+          -o-object-fit: cover;
+          object-fit: cover; }
+      .services .services__description .description__content .content__text {
+        font-family: Arial, Tahoma, sans-serif;
+        font-size: 0.8125rem;
+        color: #fff;
+        line-height: 1.5rem;
+        padding-bottom: 2.8125rem;
+        max-width: 22.8125rem;
+        width: 98%; }
+      .services .services__description .description__content .content__decor {
+        padding-bottom: 2.5rem; }
+        .services .services__description .description__content .content__decor img {
+          display: block;
+          width: 100%;
+          height: auto;
+          -o-object-fit: contain;
+          object-fit: contain; }
+      .services .services__description .description__content .content__links {
+        font-family: Arial, Tahoma, sans-serif;
+        font-size: 0.71875rem; }
+        .services .services__description .description__content .content__links a {
+          color: #2d4231;
+          padding: 0.125rem 0.8125rem;
+          border-right: 1px solid rgba(255, 255, 255, 0.15);
+          height: 0.8125rem; }
+          .services .services__description .description__content .content__links a:first-child {
+            padding-left: 0; }
+          .services .services__description .description__content .content__links a:last-child {
+            padding-right: 0;
+            border: 0; }
 
 /*FOOTER STYLES*/
 footer {
