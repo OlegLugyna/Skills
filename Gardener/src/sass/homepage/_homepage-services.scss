@@ -8,10 +8,15 @@
     img {
       display: block;
       width: 100%;
-      height: 550px;
+      height: rem(570);
       object-fit: cover;
     }
   }
+
+  .display_none {
+    display: none;
+  }
+
 
   .services__buttons {
     width: 30%;
@@ -63,6 +68,11 @@
              width: calc(100% + 20px);
              height: calc(100% + 20px);
              cursor: pointer;
+             border-radius: 2px;
+             transition: all 300ms ease-in-out;
+             -webkit-box-shadow: 0px 5px 22px 2px rgba(0, 0, 0, 0.37);
+             -moz-box-shadow: 0px 5px 22px 2px rgba(0, 0, 0, 0.37);
+             box-shadow: 0px 5px 22px 2px rgba(0, 0, 0, 0.37);
 
              .button__img--hover {
                display: block;
@@ -95,39 +105,49 @@
               padding-top: rem(20);
             }
           }
-
-
         }
-
-
-
-
-
-
 
         .button__img--hover {
           display: none;
+        }
+
+        .active {
+          background-color: $header;
+          margin: -10px;
+          z-index: 999;
+          width: calc(100% + 20px);
+          height: calc(100% + 20px);
+          cursor: pointer;
+          border-radius: 2px;
+          transition: all 300ms ease-in-out;
+          -webkit-box-shadow: 0px 5px 22px 2px rgba(0, 0, 0, 0.37);
+          -moz-box-shadow: 0px 5px 22px 2px rgba(0, 0, 0, 0.37);
+          box-shadow: 0px 5px 22px 2px rgba(0, 0, 0, 0.37);
         }
       }
     }
   }
 
   .services__description {
-    width: 45%;
+    width: 46%;
     background-color: $header;
     background-image: url(../img/mask.png);
-    padding: rem(92) 0 rem(115) rem(80);
+    padding: 8% 0 8% rem(70);
+
+    .display_none {
+      display: none;
+    }
 
     .description__content {
-      width: 65%;
+      width: 66%;
 
-        .content__caption {
+      .content__caption {
         font-family: $dosis;
         font-weight: 600;
         font-size: rem(40);
         text-transform: uppercase;
         color: $white;
-        padding-bottom: rem(45);
+        padding-bottom: rem(35);
       }
 
       .content__undercaption {
@@ -155,13 +175,13 @@
         font-size: rem(13);
         color: $white;
         line-height: rem(24);
-        padding-bottom: rem(45);
+        padding-bottom: rem(35);
         max-width: rem(365);
         width: 98%;
       }
 
       .content__decor {
-        padding-bottom: rem(40);
+        padding-bottom: rem(35);
 
         img {
           display: block;
@@ -173,11 +193,11 @@
 
       .content__links {
         font-family: $arial;
-        font-size: rem(11.5);
+        font-size: rem(11);
 
         a {
           color: $link_services;
-          padding: rem(2) rem(13);
+          padding: rem(2) rem(10);
           border-right: 1px solid $border_crumb;
           height: rem(13);
 
@@ -188,6 +208,11 @@
           &:last-child {
             padding-right: 0;
             border: 0;
+          }
+
+          &:hover {
+            opacity: 0.6;
+            transition: color 300ms ease-in-out;
           }
         }
       }
