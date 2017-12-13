@@ -1,0 +1,139 @@
+.partners {
+  color:$white;
+  background-position: center bottom;
+
+  .partners__mask{
+    background-color: rgba(0,0,0, .80);
+
+    .partners__wrapper {
+      max-width: rem(960);
+      width: 60%;
+      margin: 0 auto;
+      padding: rem(100) 0 rem(60);
+
+      .partners__caption {
+        @include clearfix;
+        line-height: 1;
+        padding: 0 0 rem(48);
+        border-bottom: 1px solid $border_crumb;
+
+        .wrapper__caption {
+          max-width: rem(670);
+          width: 69.8%;
+          float: right;
+          display: flex;
+          justify-content: center;
+
+          .caption__annunciator {
+            font-family: $dosis;
+            font-size: rem(9);
+            color: $icons_partners;
+            line-height: rem(66);
+            padding-right: rem(16);
+          }
+
+          .caption__btn {
+            color: $icons_partners;
+
+            div {
+              width: 30px;
+              height: 30px;
+              border: 2px solid $icons_partners;
+              border-radius: 50%;
+              margin: 0 auto;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              &:hover {
+                opacity: 0.6;
+                transition: color 300ms ease-in;
+              }
+
+              &:first-child {
+                margin-bottom: rem(7);
+              }
+            }
+          }
+
+          .caption__caption {
+              text-align: center;
+              padding-left: rem(30);
+              line-height: rem(66);
+
+            h3 {
+              font-family: $dosis;
+              font-weight: 500;
+              font-size: rem(53);
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      .partners__list {
+        display: flex;
+        padding-top: rem(50);
+
+        .list__slider {
+
+          div {
+
+            h4 {
+              font-family: $dosis;
+              font-size: rem(36);
+              font-weight: 300;
+              text-transform: uppercase;
+              color: $hover_menu;
+            }
+
+            p {
+              font-family: $arial;
+              font-size: rem(11);
+              color:$border_crumb;
+              text-align: right;
+            }
+          }
+        }
+
+        .list__description {
+          padding: 0 0 0 rem(54);
+
+          p {
+            font-family: $arial;
+            font-size: rem(14);
+            line-height: rem(24);
+            padding-bottom: rem(35);
+          }
+
+          .descriotion__links {
+
+            a {
+              font-family: $arial;
+              font-size: rem(14);
+              line-height: rem(26);
+              color: $hover_menu;
+              display: inline-block;
+
+              &:hover {
+                opacity: 0.7;
+                transition: color 300ms ease-in;
+              }
+
+              &:first-child {
+                border-right: 1px solid $border_crumb;
+                padding-right: rem(14);
+                line-height: 1;
+              }
+
+              &:last-child {
+                padding-left: rem(14);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

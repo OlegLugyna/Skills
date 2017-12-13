@@ -27,6 +27,7 @@ $button_yellow: #deab22;
 $font_green: #8bba66;
 $hover_menu: #ffde5a;
 $icons: rgba(0,0,0,0.35);
+$icons_partners:rgba(255, 255, 255, .40);
 $link_services: #2d4231;
 $single_content: #555555;
 $footer_caption: #434343;
@@ -49,7 +50,7 @@ $notebook: "screen and (max-width: rem(960))";
 
 //MIXINS
 @mixin clearfix {
-            &:after {
+            &::after {
               display: block;
               content: '';
               clear: both;
