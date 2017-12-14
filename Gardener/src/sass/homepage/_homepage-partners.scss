@@ -73,11 +73,13 @@
 
       .partners__list {
         display: flex;
-        padding-top: rem(50);
+        padding-top: rem(20);
 
         .list__slider {
+          width: rem(210);
 
           div {
+            margin-top: 7px;
 
             h4 {
               font-family: $dosis;
@@ -85,6 +87,8 @@
               font-weight: 300;
               text-transform: uppercase;
               color: $hover_menu;
+              opacity: 0.3;
+
             }
 
             p {
@@ -93,6 +97,17 @@
               color:$border_crumb;
               text-align: right;
             }
+          }
+
+          .slick-active {
+
+            h4 {
+              opacity: 1;
+            }
+          }
+
+          .slick-list {
+            min-height: rem(217);
           }
         }
 
@@ -104,6 +119,7 @@
             font-size: rem(14);
             line-height: rem(24);
             padding-bottom: rem(35);
+            padding-top: rem(30);
           }
 
           .descriotion__links {

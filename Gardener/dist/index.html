@@ -367,7 +367,7 @@
               <h4>envato</h4>
               <p>Business company</p>
             </div>
-            <!-- <div>
+            <div>
                 <h4>themeforest</h4>
                 <p>Perfect company</p>
               </div>
@@ -386,7 +386,7 @@
               <div>
                 <h4>photodune</h4>
                 <p>The best company</p>
-              </div> -->
+              </div>
           </div>
           <div class="list__description">
             <p class="description__text">
@@ -460,6 +460,7 @@
 	  $('.flexslider').flexslider({
 		animation: "fade",
     slideshowSpeed: '9000',
+
     prevText: "",
     nextText: "",
     directioNav: false,
@@ -468,7 +469,7 @@
 	});
 </script>
 
-<!-- Slick slider -->
+<!-- Slick slider GARDENERS-->
 <script>
   $(document).ready(function () {
       $('.gardener__slider').slick({
@@ -477,7 +478,25 @@
         adaptiveHeight: true,
         nextArrow: '.gardener__button--left',
         prevArrow: '.gardener__button--right',
-        pauseOnHover: true
+      });
+    });
+</script>
+
+<!-- Slick slider PARTNERS-->
+<script>
+  $(document).ready(function () {
+      $('.list__slider').slick({
+        pauseOnHover: false,
+        adaptiveHeight: true,
+        vertical: true,
+        infinite: true,
+        slidesToShow: 1,
+        draggable: false,
+        //adaptiveHeight: true,
+        centerMode: true,
+        verticalSwiping:true,
+        nextArrow: '.caption__btn--up',
+        prevArrow: '.caption__btn--down',
       });
     });
 </script>

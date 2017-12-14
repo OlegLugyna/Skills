@@ -3236,25 +3236,35 @@ button {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        padding-top: 3.125rem; }
-        .partners .partners__mask .partners__wrapper .partners__list .list__slider div h4 {
-          font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
-          font-size: 2.25rem;
-          font-weight: 300;
-          text-transform: uppercase;
-          color: #ffde5a; }
-        .partners .partners__mask .partners__wrapper .partners__list .list__slider div p {
-          font-family: Arial, Tahoma, sans-serif;
-          font-size: 0.6875rem;
-          color: rgba(255, 255, 255, 0.15);
-          text-align: right; }
+        padding-top: 1.25rem; }
+        .partners .partners__mask .partners__wrapper .partners__list .list__slider {
+          width: 13.125rem; }
+          .partners .partners__mask .partners__wrapper .partners__list .list__slider div {
+            margin-top: 7px; }
+            .partners .partners__mask .partners__wrapper .partners__list .list__slider div h4 {
+              font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+              font-size: 2.25rem;
+              font-weight: 300;
+              text-transform: uppercase;
+              color: #ffde5a;
+              opacity: 0.3; }
+            .partners .partners__mask .partners__wrapper .partners__list .list__slider div p {
+              font-family: Arial, Tahoma, sans-serif;
+              font-size: 0.6875rem;
+              color: rgba(255, 255, 255, 0.15);
+              text-align: right; }
+          .partners .partners__mask .partners__wrapper .partners__list .list__slider .slick-active h4 {
+            opacity: 1; }
+          .partners .partners__mask .partners__wrapper .partners__list .list__slider .slick-list {
+            min-height: 13.5625rem; }
         .partners .partners__mask .partners__wrapper .partners__list .list__description {
           padding: 0 0 0 3.375rem; }
           .partners .partners__mask .partners__wrapper .partners__list .list__description p {
             font-family: Arial, Tahoma, sans-serif;
             font-size: 0.875rem;
             line-height: 1.5rem;
-            padding-bottom: 2.1875rem; }
+            padding-bottom: 2.1875rem;
+            padding-top: 1.875rem; }
           .partners .partners__mask .partners__wrapper .partners__list .list__description .descriotion__links a {
             font-family: Arial, Tahoma, sans-serif;
             font-size: 0.875rem;
