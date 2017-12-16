@@ -1,0 +1,123 @@
+.portfolio {
+  position: relative;
+
+  .portfolio__slider {
+
+    .slider__element {
+
+      figure {
+         color: $white;
+         position: relative;
+
+        .element__img {
+          width: 100%;
+          height: rem(680);
+        }
+
+        .element__gradient {
+          height: 100%;
+          width: 100%;
+          background: rgba(0, 0, 0, 0);
+          background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 72%, rgba(0, 0, 0, 0.54) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(72%, rgba(0, 0, 0, 0.54)), color-stop(100%, rgba(0, 0, 0, 0.54)));
+          background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 72%, rgba(0, 0, 0, 0.54) 100%);
+          background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 72%, rgba(0, 0, 0, 0.54) 100%);
+          background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 72%, rgba(0, 0, 0, 0.54) 100%);
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.54) 72%, rgba(0, 0, 0, 0.54) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0);
+        }
+
+        .element__caption {
+          position: absolute;
+          bottom: rem(40);
+          left: 27%;
+
+          p {
+            font-family: $dosis;
+            font-size: rem(16);
+            font-weight: 600;
+            text-transform: uppercase;
+            color: $button_yellow;
+            letter-spacing: 0.5px;
+            padding-bottom: 20px;
+          }
+
+          h3 {
+            font-family: $dosis;
+            font-size: rem(53);
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 1;
+            padding-bottom: rem(22);
+
+          }
+
+          .element_additional {
+            font-family: $dosis;
+            font-size: rem(13);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+
+            .client {
+              display: inline-block;
+              padding-right: rem(13);
+            }
+
+            .date {
+              display: inline-block
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio__navigation {
+    position: absolute;
+    bottom: rem(40);
+    left: 20%;
+    //color: $white;
+    color: $icons_partners;
+
+
+
+    .navigation__btn {
+
+      span {
+        display: inline-block;
+        width: 31px;
+        line-height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid $icons_partners;
+        border-radius: 50%;
+
+        &:first-child {
+          margin-right: 8px;
+        }
+
+      }
+    }
+
+    .navigation__annunciator {
+      text-align: center;
+
+    span {
+      font-family: $dosis;
+      font-size: rem(10);
+    }
+
+
+
+
+    }
+
+
+  }
+
+
+
+}
