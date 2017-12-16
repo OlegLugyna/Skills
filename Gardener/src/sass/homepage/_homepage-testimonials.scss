@@ -1,0 +1,138 @@
+  .testimonials {
+
+    .testimonials__bg {
+      color: $testy_word;
+      font-family: $dosis;
+      font-weight: 600;
+      font-size: 15.5vw;
+      position: absolute;
+      z-index: -100;
+      width: 100%;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 0.7;
+    }
+
+    .testimonial__container {
+      width: 50%;
+      margin: 0 auto;
+      position: relative;
+
+      .container__navigation {
+        text-align: center;
+        width: rem(236);
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: rem(25);
+        color: $icons;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: rem(130);
+
+        span {
+          display: block;
+          width: 25px;
+          height: 25px;
+          z-index: 1000;
+          cursor: pointer;
+        }
+      }
+
+      .container__slider {
+        text-align: center;
+        padding: rem(95) 0 rem(65);
+
+        .slider__testy{
+
+          .testy__photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            margin: 0 auto;
+            margin-bottom: rem(18);
+
+            img {
+              width: 100%;
+              height: 100%;
+              display: block;
+              border-radius: 100%;
+              object-fit: cover;
+            }
+          }
+
+          h4 {
+            font-family: $dosis;
+            font-size: rem(18);
+            font-weight: 800;
+            text-transform: uppercase;
+            padding-bottom: rem(11);
+          }
+
+          p {
+            font-family: $arial;
+            font-size: rem(11);
+            color:$single_content;
+            padding-bottom: rem(30);
+          }
+
+          .testy__stars {
+            color: $single_content;
+            padding-bottom: rem(35);
+            color: $icons;
+
+            .active {
+              color: $hover_menu;
+            }
+          }
+
+          .testy__citation {
+            font-family: $arial;
+            font-size: rem(16);
+            font-style: italic;
+            font-weight: 600;
+            color: $black;
+          }
+
+          .testy__text {
+            width: 85%;
+            margin: 0 auto;
+            font-family: $arial;
+            font-size: rem(16);
+            color: $single_content;
+            padding-bottom: rem(40);
+          }
+
+          .testy__separator {
+            width: 50%;
+            margin: 0 auto;
+            color: $icons;
+            position: relative;
+
+            i {
+              font-size: rem(30);
+            }
+
+            &::before {
+              content: '';
+              width: 35%;
+              border: 0.5px solid $icons;
+              position: absolute;
+              left: 0;
+              top: 50%;
+            }
+
+            &::after {
+              content: '';
+              width: 35%;
+              border: 0.5px solid $icons;
+              position: absolute;
+              right: 0;
+              top: 50%;
+            }
+          }
+        }
+      }
+    }
+}

@@ -15,6 +15,8 @@
   //= html/homepage/homepage-order.html
   //= html/homepage/homepage-services.html
   //= html/homepage/homepage-partners.html
+  //= html/homepage/homepage-testimonials.html
+  //= html/homepage/homepage-portfolio.html
   //= html/footer.html
 
 <!-- jQuery -->
@@ -68,6 +70,19 @@
         prevArrow: '.caption__btn--down',
       });
     });
+</script>
+
+<!-- Slick slider TESTIMONIALS-->
+<script>
+  $(document).ready(function () {
+    $('.container__slider').slick({
+      autoplay: true,
+      pauseOnHover: true,
+      adaptiveHeight: true,
+      nextArrow: '.container__navigation--left',
+      prevArrow: '.container__navigation--right',
+    });
+  });
 </script>
 
 <!-- Facebook button -->

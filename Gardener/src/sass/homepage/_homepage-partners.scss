@@ -1,9 +1,12 @@
 .partners {
   color:$white;
   background-position: center bottom;
+  margin-top: -22%;
 
   .partners__mask{
     background-color: rgba(0,0,0, .80);
+    padding-top: 21%;
+
 
     .partners__wrapper {
       max-width: rem(960);
@@ -44,6 +47,7 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              cursor: pointer;
 
               &:hover {
                 opacity: 0.6;
@@ -66,6 +70,7 @@
               font-weight: 500;
               font-size: rem(53);
               text-transform: uppercase;
+              color:$white;
             }
           }
         }
@@ -87,8 +92,7 @@
               font-weight: 300;
               text-transform: uppercase;
               color: $hover_menu;
-              opacity: 0.3;
-
+              opacity: 0.15;
             }
 
             p {
@@ -103,6 +107,11 @@
 
             h4 {
               opacity: 1;
+            }
+
+            p {
+              color: rgba(255, 255, 255, 0.5);
+
             }
           }
 
@@ -130,6 +139,7 @@
               line-height: rem(26);
               color: $hover_menu;
               display: inline-block;
+              outline: none;
 
               &:hover {
                 opacity: 0.7;
