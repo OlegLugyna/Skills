@@ -42,14 +42,14 @@
             padding-bottom: 20px;
           }
 
-          h3 {
+          .element__caption--name {
             font-family: $dosis;
             font-size: rem(53);
             font-weight: 600;
             text-transform: uppercase;
             line-height: 1;
             padding-bottom: rem(22);
-
+            color: $white;
           }
 
           .element_additional {

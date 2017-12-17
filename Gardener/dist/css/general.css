@@ -3426,13 +3426,14 @@ button {
         color: #deab22;
         letter-spacing: 0.5px;
         padding-bottom: 20px; }
-      .portfolio .portfolio__slider .slider__element figure .element__caption h3 {
+      .portfolio .portfolio__slider .slider__element figure .element__caption .element__caption--name {
         font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
         font-size: 3.3125rem;
         font-weight: 600;
         text-transform: uppercase;
         line-height: 1;
-        padding-bottom: 1.375rem; }
+        padding-bottom: 1.375rem;
+        color: #fff; }
       .portfolio .portfolio__slider .slider__element figure .element__caption .element_additional {
         font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
         font-size: 0.8125rem;
