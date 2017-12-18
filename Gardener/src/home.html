@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gardener-Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800|Playfair+Display:700" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/general.css">
+</head>
+<body>
+
+  //= html/homepage/header-homepage.html
+  //= html/homepage/homepage-order.html
+  //= html/homepage/homepage-services.html
+  //= html/homepage/homepage-partners.html
+  //= html/homepage/homepage-testimonials.html
+  //= html/homepage/homepage-portfolio.html
+  //= html/footer.html
+
+<!-- jQuery -->
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script> -->
+
+<!-- Flexslider   -->
+<!-- <script defer src="js/scripts.js"></script> -->
+<script type="text/javascript">
+	$(window).load(function(){
+	  $('.flexslider').flexslider({
+		animation: "fade",
+    slideshowSpeed: '9000',
+
+    prevText: "",
+    nextText: "",
+    directioNav: false,
+    pauseOnHover: true,
+	  });
+	});
+</script>
+
+<!-- Slick slider GARDENERS-->
+<script>
+  $(document).ready(function () {
+      $('.gardener__slider').slick({
+        autoplay: true,
+        pauseOnHover: false,
+        adaptiveHeight: true,
+        nextArrow: '.gardener__button--left',
+        prevArrow: '.gardener__button--right',
+      });
+    });
+</script>
+
+<!-- Slick slider PARTNERS-->
+<script>
+  $(document).ready(function () {
+      $('.list__slider').slick({
+        pauseOnHover: false,
+        adaptiveHeight: true,
+        vertical: true,
+        infinite: true,
+        slidesToShow: 1,
+        draggable: false,
+        //adaptiveHeight: true,
+        centerMode: true,
+        verticalSwiping:true,
+        nextArrow: '.caption__btn--up',
+        prevArrow: '.caption__btn--down',
+      });
+    });
+</script>
+
+<!-- Slick slider TESTIMONIALS-->
+<script>
+  $(document).ready(function () {
+    $('.container__slider').slick({
+      autoplay: true,
+      pauseOnHover: true,
+      adaptiveHeight: true,
+      nextArrow: '.container__navigation--left',
+      prevArrow: '.container__navigation--right',
+    });
+  });
+</script>
+
+<!-- Slick slider PORTFOLIO-->
+<script>
+  $(document).ready(function () {
+    $('.portfolio__slider').slick({
+      autoplay: true,
+      pauseOnHover: true,
+      adaptiveHeight: true,
+      nextArrow: '.portfolio__button--left',
+      prevArrow: '.portfolio__button--right',
+    });
+  });
+</script>
+
+<!-- Facebook button -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/uk_UA/sdk.js#xfbml=1&version=v2.11';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+<!-- File scripts (total git scripts)-->
+<script src="./js/scripts.js"></script>
+</body>
+</html>
