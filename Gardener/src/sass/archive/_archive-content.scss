@@ -13,6 +13,7 @@
         width: 78%;
         display: flex;
         justify-content: space-between;
+        margin: 0 auto;
 
         li {
           line-height: rem(60);
@@ -293,7 +294,8 @@
       }
     }
 
-    .archive__boxes--specials {
+    .archive__boxes--specials,
+    .format-quote {
        background-color: $header;
 
       .boxes__infoblock {
@@ -311,13 +313,13 @@
         }
 
         .infoblock__under {
-          color: $link_services;
+          color: $archive_undertext;
         }
 
         .icons {
 
             span:last-child,
-            .icons__read--more a span:last-child {
+            .icons__read--more a sparan:last-child {
             color: $white;
           }
         }

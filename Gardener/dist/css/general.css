@@ -4182,7 +4182,8 @@ footer {
       display: flex;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between; }
+      justify-content: space-between;
+      margin: 0 auto; }
       .archive .archive__categories .categories__wrapper ul li {
         line-height: 3.75rem;
         text-transform: uppercase;
@@ -4392,18 +4393,25 @@ footer {
       width: 50%; }
     .archive .archive__wrapper .archive__boxes--width2 .boxes__infoblock {
       width: 50%; }
-  .archive .archive__wrapper .archive__boxes--specials {
+  .archive .archive__wrapper .archive__boxes--specials,
+  .archive .archive__wrapper .format-quote {
     background-color: #2a7b39; }
-    .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock {
+    .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock,
+    .archive .archive__wrapper .format-quote .boxes__infoblock {
       background-color: #2a7b39; }
-      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .infoblock__category a {
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .infoblock__category a,
+      .archive .archive__wrapper .format-quote .boxes__infoblock .infoblock__category a {
         background-color: #f14f4f; }
-      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock h1 a {
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock h1 a,
+      .archive .archive__wrapper .format-quote .boxes__infoblock h1 a {
         color: #fff; }
-      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .infoblock__under {
-        color: #2d4231; }
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .infoblock__under,
+      .archive .archive__wrapper .format-quote .boxes__infoblock .infoblock__under {
+        color: #c8c8c8; }
       .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .icons span:last-child,
-      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .icons .icons__read--more a span:last-child {
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .icons .icons__read--more a sparan:last-child,
+      .archive .archive__wrapper .format-quote .boxes__infoblock .icons span:last-child,
+      .archive .archive__wrapper .format-quote .boxes__infoblock .icons .icons__read--more a sparan:last-child {
         color: #fff; }
 
 .pagination {
