@@ -23,17 +23,16 @@
   <!-- <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script> -->
 
   <!-- Flexslider   -->
-  <!-- <script defer src="js/scripts.js"></script> -->
-  <script type="text/javascript">
-    $(window).load(function () {
-      $('.flexslider').flexslider({
-        animation: "fade",
-        slideshowSpeed: '9000',
 
-        prevText: "",
-        nextText: "",
-        directioNav: false,
-        pauseOnHover: true,
+  <script type="text/javascript">
+   $(document).ready(function () {
+
+       $('.archive__wrapper').masonry({
+        //columnWidth: '.archive__boxes',
+        columnWidth: 475,
+        itemSelector: '.archive__boxes',
+        percentPosition: true,
+        gutter:10
       });
     });
   </script>
