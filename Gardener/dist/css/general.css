@@ -4392,10 +4392,52 @@ footer {
       width: 50%; }
     .archive .archive__wrapper .archive__boxes--width2 .boxes__infoblock {
       width: 50%; }
-  .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock {
+  .archive .archive__wrapper .archive__boxes--specials {
     background-color: #2a7b39; }
-    .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .infoblock__category a {
-      background-color: #f14f4f; }
+    .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock {
+      background-color: #2a7b39; }
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .infoblock__category a {
+        background-color: #f14f4f; }
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock h1 a {
+        color: #fff; }
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .infoblock__under {
+        color: #2d4231; }
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .icons span:last-child,
+      .archive .archive__wrapper .archive__boxes--specials .boxes__infoblock .icons .icons__read--more a span:last-child {
+        color: #fff; }
+
+.pagination {
+  background-color: #4b4b4b;
+  line-height: 6.875rem; }
+  .pagination .pagination__box {
+    max-width: 60rem;
+    width: 76%;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .pagination .pagination__box .box_arraw {
+      font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.8px; }
+      .pagination .pagination__box .box_arraw span {
+        color: #fff;
+        text-transform: uppercase; }
+      .pagination .pagination__box .box_arraw .arrow {
+        color: #000; }
+      .pagination .pagination__box .box_arraw .prev {
+        padding-left: 0.5rem; }
+      .pagination .pagination__box .box_arraw .next {
+        padding-right: 0.5rem; }
+    .pagination .pagination__box .box__numero {
+      font-family: "Dosis", sans-serif, "Arial", sans-serif, "Tahoma", sans-serif;
+      font-size: 1.125rem;
+      font-weight: bold;
+      color: #fff; }
 
 /* Slider */
 .slick-slider {

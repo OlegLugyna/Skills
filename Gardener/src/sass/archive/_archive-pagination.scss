@@ -1,0 +1,42 @@
+.pagination {
+  background-color: $pagination_bg;
+  line-height: rem(110);
+
+  .pagination__box {
+    max-width: rem(960);
+    width: 76%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .box_arraw {
+      font-family: $dosis;
+      font-size: rem(14);
+      font-weight: 600;
+      letter-spacing: 0.8px;
+
+      span {
+        color:$white;
+        text-transform: uppercase;
+      }
+      .arrow {
+        color: $black;
+      }
+
+      .prev {
+        padding-left: rem(8);
+      }
+      .next {
+        padding-right: rem(8);
+      }
+    }
+
+    .box__numero {
+      font-family: $dosis;
+      font-size: rem(18);
+      font-weight: bold;
+      color: $white;
+    }
+
+  }
+}
