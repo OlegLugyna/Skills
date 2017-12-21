@@ -14,21 +14,28 @@
 <body>
 
   //= html/header-otherpage.html
-   //= html/about/about-underheader.html
-  //= html/about/about-content.html
-  //= html/about/about-partner.html
+  //= html/archive/archive-content.html
+  //= html/archive/archive-pagination.html
   //= html/footer.html
 
   <!-- jQuery -->
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
   <!-- <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script> -->
 
-    <!-- <script type="text/javascript">
-    $(document).ready(function () {
+  <!-- Flexslider   -->
 
+  <script type="text/javascript">
+   $(document).ready(function () {
 
+       $('.archive__wrapper').masonry({
+        //columnWidth: '.archive__boxes',
+        columnWidth: 475,
+        itemSelector: '.archive__boxes',
+        percentPosition: true,
+        gutter:10
+      });
     });
-  </script> -->
+  </script>
 
   <!-- Facebook button -->
   <div id="fb-root"></div>

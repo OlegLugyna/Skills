@@ -10,12 +10,13 @@
 @import 'homepage/homepage-testimonials';
 @import 'homepage/homepage-portfolio';
 @import 'footer';
+
+
 @import 'header-otherpage';
-@import 'about/1about-content';
-@import 'about/2about-add_info';
-@import 'about/3about-skills';
-@import 'about/4about-partners';
-@import 'about/5about-video';
+@import 'about/about-content';
+@import 'about/about-partner';
+@import 'about/about-underheader';
+
 @import 'single/1single_underheader';
 @import 'single/2single_content';
 @import 'single/3single_comments';
@@ -23,5 +24,3 @@
 @import 'archive/archive-pagination';
 
 @import 'theme/slick';
-
-

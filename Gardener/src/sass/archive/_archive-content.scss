@@ -14,6 +14,7 @@
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+        position: relative;
 
         li {
           line-height: rem(60);
@@ -32,6 +33,21 @@
               transition: color 600ms ease-in-out;
             }
           }
+        }
+
+        &::before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: rem(60);
+          left: rem(5);
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 10px 6px 0 6px;
+          border-color: $footer_bg transparent transparent transparent;
+
+
         }
       }
     }

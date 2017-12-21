@@ -15,28 +15,72 @@
       font-weight: 600;
       letter-spacing: 0.8px;
 
-      span {
+      .prev,
+      .next {
         color:$white;
         text-transform: uppercase;
+
+        a {
+          color:$white;
+          text-transform: uppercase;
+        }
+
       }
+
       .arrow {
         color: $black;
       }
 
       .prev {
-        padding-left: rem(8);
+
+        .arrow {
+          color: $black;
+          padding-right: rem(8);
+        }
+
       }
+
       .next {
         padding-right: rem(8);
+        .arrow {
+          color: $black;
+          padding-left: rem(8);
+        }
+
+      }
+
+      &:hover {
+        cursor: pointer;
+        .arrow {
+          color: $button_yellow;
+        }
       }
     }
 
     .box__numero {
       font-family: $dosis;
-      font-size: rem(18);
+      font-size: rem(14);
       font-weight: bold;
       color: $white;
-    }
 
+      a {
+        font-family: $dosis;
+        font-size: rem(14);
+        font-weight: bold;
+        color: $white;
+        vertical-align: top;
+      }
+
+      .page-numbers {
+        margin-right: rem(25);
+      }
+
+      .current {
+        font-family: $dosis;
+        font-size: rem(20);
+        font-weight: bold;
+        color: $button_yellow;
+      }
+    }
   }
 }

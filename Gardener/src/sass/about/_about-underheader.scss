@@ -1,0 +1,82 @@
+.underheader {
+
+ position: relative;
+
+
+  .underheader__content {
+    max-width: rem(960);
+    width: 76%;
+    margin: 0 auto ;
+
+
+
+    .underheader__content--photo {
+      float: right;
+      max-width: rem(370);
+      width: 38,55%;
+      height: auto;
+      margin-left: 6.25%;
+      -webkit-box-shadow: 10px 10px 120px 0px rgba(0, 0, 0, 0.62);
+      -moz-box-shadow: 10px 10px 120px 0px rgba(0, 0, 0, 0.62);
+      box-shadow: 10px 10px 120px 0px rgba(0, 0, 0, 0.62);
+
+
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+      }
+    }
+
+    .underheader__content--caption {
+      display: block;
+      font-family: $dosis;
+      font-size: rem(14);
+      font-weight: bold;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: rem(40) 0 rem(30);
+      text-align: justify;
+    }
+    .underheader__content--text {
+      font-family: $arial;
+      font-size: rem(14);
+      line-height: rem(22);
+      color: $about_underheader;
+      text-align: justify;
+      padding-bottom: rem(40);
+    }
+
+    .underheader__content--name {
+      position: absolute;
+      top:100%;
+      right: 45%;
+      padding: rem(40) 0 0;
+
+      p {
+        text-align: right;
+
+        &:first-child {
+          font-family: $dosis;
+          font-size: rem(18);
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        &:last-child {
+          font-family: $arial;
+          font-size: rem(11);
+          line-height: rem(18);
+          color: $footer_text;
+        }
+      }
+    }
+  }
+}
+.clerfix {
+  @include clearfix;
+}
+
